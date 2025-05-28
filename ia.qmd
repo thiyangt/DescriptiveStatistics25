@@ -1,0 +1,125 @@
+---
+title: "Individual Assignment"
+---
+
+Date released: July 9, 2024
+
+As part of your coursework, you will be working on an individual assignment. This assignment will contribute 20% towards your final grade.
+
+Below are the details:
+
+**Objective:**
+
+The aim of this assignment is to develop your data analysis and presentation skills by selecting and analyzing a publicly available data set. You will prepare a research poster in A1 size, including charts, tables, and interpretations, all hand-drawn. The final poster should be scanned and uploaded to Google Classroom and the Learning Management System (LMS).
+
+**Steps to Complete the Assignment:**
+
+**1. Select a Publicly Available Data Set:**
+
+-   Choose a data set from a reputable source such as the Central Bank of Sri Lanka, Department of Census and Statistics, or any other publicly available data set.
+
+-   Ensure the data set is relevant to a topic of your interest and has sufficient data points for analysis.
+
+-   If you find a very large data set, select a subset of the data. As you are going to do the calculations manually, it will be difficult to handle a large data set. It is recommended not to select data sets with more than 100 rows.
+
+**2. Analyze Your Data Set:**
+
+-   Conduct a thorough analysis of the data set using charts and tables.
+
+-   Hand-Drawn Elements:
+
+All charts, tables, and interpretations must be hand-drawn. Ensure they are clear, well-labeled, and accurately represent your findings.
+
+**3. Prepare a research poster**
+
+-   Your poster should be A1 size and include the following sections:
+
+**Introduction:**
+
+Provide an overview of the topic and the importance of the data set.
+
+**Objectives of the Study:**
+
+Clearly state the goals and objectives of your analysis.
+
+**Data:**
+
+Describe the data set, including its source, type of data, and any preprocessing steps taken. (for example if you select a subset, you can mention it here)
+
+**Data Analysis:**
+
+Present your findings using **hand-drawn** charts and tables. Each visual and table should be accompanied by a brief interpretation.
+
+**Conclusions:**
+
+Summarize the key insights and implications of your analysis.
+
+**Name and Index number**
+
+Clearly mention your index number and name.
+
+**4. Submission**
+
+-   Once your poster is complete, scan it to create a digital copy.
+
+-   Upload the dataset that you used for the data analysis.
+
+-   You can show your calculation in separate A4 sheets (maximum pages 4 (that means 2 A4 sheets with both sides))
+
+-   Upload the scanned poster, calculation sheet and dataset to both Google Classroom and the LMS by the specified deadline.
+
+**5. Submission deadline**
+
+July 21, 2024
+
+It is the student’s responsibility to manage their time effectively to ensure that they have enough time to complete the assignment within the given timeframe. This includes allocating enough time to research, plan, and write the assignment, as well as allowing for unexpected circumstances or delays. It is important for students to plan their workload and prioritize their assignments to ensure that they are able to complete them on time and to the best of their ability.
+
+**Late submission:** Submitting late work will be penalized by 1 mark per day. I will not accept any submissions after July 25, 2024.
+
+**Extensions will be made in exceptional circumstances only.**
+
+## Requesting a deadline extension
+
+> You are allowed to apply for a deadline extension for the assignment under the following conditions only.
+
+**Category A**
+
+An illness that requires the student to miss all of his or her classes for 2 days or more.
+
+**Category B**
+
+A period of grief for the loss of a family member or friend.
+
+**Category C**
+
+A family emergency.
+
+Valid documentation of proof is required **prior** to the assignment deadline.
+
+The philosophy driving our late policy has three goals
+
+-   Keep things fair.
+
+-   Encourage good time management.
+
+-   Encouragement and appreciation of on-time submission students.
+
+**You have been given a 11 days timeframe to complete the assignment. Please begin work promptly to accommodate any unforeseen circumstances.**
+
+If you have any questions or require further clarification, please feel free to reach out to me (email: ttalagala\@sjp.ac.lk).
+
+## Help desk
+
+First help desk session will be held on July 10, 2024 from 3.15pm to 4.00pm.
+
+If you need any additional support, please send an email to statdemos\@sci.sjp.ac.lk and reserve a time for a meeting (weekdays only between 8 a.m. and 4 p.m.).
+
+## Help desk 2
+
+First help desk session will be held on July 17, 2024 from 3.15pm to 4.00pm.
+
+## Submission
+
+-   The scanned poster, calculation sheet, and dataset should be saved using your index number.
+
+-   Store all the documents inside a folder. Convert the folder to a zip file and upload it.

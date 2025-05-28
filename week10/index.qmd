@@ -1,0 +1,462 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Summary Measures (Cont.)"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 2000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+## Variance of a sample
+
+The variance of a sample of `n` observations $x_1, x_2, x_3,..,x_n$ having mean $\bar{x}$ is defined as
+
+$$s^2 = \frac{\sum_{i=1}^n(x_i - \bar{x})^2}{n-1}$$
+
+Alternatively, the sample variance can be written in the following forms:
+
+$$s^2 = \frac{1}{n-1}[\sum_{i=1}^n x_i^2 - \frac{(\sum_{i=1}^nx_i)^2}{n}]$$
+
+or
+
+$$s^2 = \frac{1}{n-1}[\sum_{i=1}^nx_i^2-n\bar{x}]$$
+
+## Measures of relative standing/ Measures of noncentral location
+
+-   Quartiles
+
+-   Percentiles
+
+------------------------------------------------------------------------
+
+## Quantiles
+
+Quantiles are descriptive measures that split the ordered data into four quarters (four equal parts).
+
+Q1 - first (lower) quantile
+
+Q2 - second (middle) quantile
+
+Q3 - third (upper) quantile
+
+> First quantile
+
+The value which 25% of the observations are smaller and 75% are larger
+
+$$Q_1 = \frac{n+1}{4} \text{ ordered observation}$$
+
+> Second quantile
+
+Same as median
+
+> Third quantile
+
+The value for which 75% of the observations are smaller and 25% are larger
+
+$$Q_3 = \frac{3(n+1)}{4} \text{ ordered observation}$$
+
+## Rules
+
+1.  If the resulting positioning point is an integer, take the particular value corresponding to that positioning point.
+
+2.  For a non-integer position $p$, let $k$ be the integer part and $d$ be the fractional part (e.g., for $p=2.75$, $k=2$ and $d=0.75$)
+
+$$Q_q = ((1-d) \times \text{ value at position }k )+ (d \times \text{ value at position } (k+1))$$
+
+> Your turn
+
+Find quantiles for
+
+1,3,4,6,7,8,10,12,14,15
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 5, seconds = 00)
+```
+
+## Percentiles
+
+-   Percentiles divides a given ordered data array into 100 equal parts, it divides the complete data set into hundred groups of 1% each. There are total of 99 percentiles denoted as P1, P2, P3,…, and, P99, and they are known as 1st percentile, 2nd percentile,…., 99th percentile respectively.
+
+first decile = 10th percentile
+
+Q1 = 25th percentile
+
+Q2 = 50th percentile
+
+Q3 = 75th percentile
+
+ninth decile = 90th percentile
+
+**Location of a percentile**
+
+The following formula allows us to approximate the location of any percentile.
+
+$$L_p = (n+1)\frac{p}{100}$$
+
+where $L_p$ is the location of the $p^{th}$ percentile.
+
+------------------------------------------------------------------------
+
+## Your turn
+
+5, 5, 10, 12, 13, 14, 17, 19, 27, 38
+
+Find $L_{25}$, $L_{50}$ and $L_{75}$.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 5, seconds = 00)
+```
+
+## Interquartile Range (IQR)
+
+-   Measure of dispersion
+
+$$IQR = Q_3 - Q_1$$
+
+-   Measure considers the spread in the middle 50% of the data.
+
+-   Not influenced by extreme values.
+
+## Box and whisker Plot
+
+::: columns
+::: {.column width="50%"}
+```{r, echo=FALSE}
+library(ggplot2)
+a <- c(1, 3, 4, 7, 8, 8, 9, 10, 11, 2, 5, 6, 4, 7, 3, 2, 2, 20, 20, 30)
+matrix(a, nrow=2) |> knitr::kable()
+
+
+```
+
+```{r}
+summary(a) 
+```
+
+**Let's draw the box and whisker plot**
+:::
+
+::: {.column width="50%"}
+:::
+:::
+
+## Data
+
+```{r}
+# Generate sample data 
+set.seed(25052020)
+# normal
+s1 <- rnorm(100)
+s2 <- rbeta(100, 2, 1)
+s3 <- rexp(100)
+# mixture
+s4 <- rnorm(100, rep(c(-1, 1), each = 50) * sqrt(0.9), sqrt(0.1))
+four <- data.frame(
+dist = factor(rep(c("s1", "s2", "s3", "s4"),
+each = 100),
+c("s1", "s2", "s3", "s4")),
+vals = c(s1, s2, s3, s4)
+)
+df <- data.frame(s1=s1, s2=s2, s3=s3, s4=s4)
+
+
+```
+
+::: columns
+::: {.column width="33%"}
+```{r}
+library(kableExtra)
+df[1:33, ] |> knitr::kable() |> kable_styling(font_size = 18)
+```
+:::
+
+::: {.column width="33%"}
+```{r}
+df[34:67, ] |> knitr::kable() |> kable_styling(font_size = 18)
+```
+:::
+
+::: {.column width="34%"}
+```{r}
+df[68:100, ] |> knitr::kable() |> kable_styling(font_size = 18)
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+**Histogram**
+
+```{r, comment=NA, message=FALSE, echo=FALSE, fig.height=10}
+library(ggplot2)
+ggplot(four, aes(x = vals)) + 
+geom_histogram(aes(fill = dist), colour = "black") + 
+coord_cartesian(xlim = c(-3, 6)) + 
+facet_wrap(~ dist) 
+```
+:::
+
+::: {.column width="50%"}
+**Box and whisker Plot**
+
+```{r, comment=NA, message=FALSE, echo=FALSE, fig.height=10}
+library(tidyverse)
+df2 <- df |> pivot_longer(1:4, names_to = "group", values_to="value")
+ggplot(df2, aes(x=group, y=value, fill=group)) + geom_boxplot()
+```
+:::
+:::
+
+## Your turn
+
+Prices of Chocolate in Rupees (LKR):
+
+50, 75, 100, 125, 150, 175, 200, 225, 250, 275
+
+Prices of Chocolate in USD:
+
+5, 7, 9, 12, 15, 18, 20, 23, 26, 0
+
+Which group of chocolate prices exhibits the highest variation?
+
+------------------------------------------------------------------------
+
+## Coefficient of variation
+
+-   Relative measure of variation
+
+-   It always expressed as a percentage rather than in terms of the units of the particular data.
+
+-   This is useful when comparing two or more sets of data that are measured in the different units.
+
+$$CV = \frac{s}{\bar{x}}\times 100\%$$
+
+------------------------------------------------------------------------
+
+The coefficient of variation of the height of 30 people selected at random from a given village is found to be 15%. The mean weight of the selected group is 72 kg and a standard deviation 8 kg.
+
+The obtained results show that
+
+A)  the weight is more variable than height.
+
+B)  the weight is less variable than height.
+
+C)  height and weight have the same degree of variation.
+
+D)  height and weight values are identical.
+
+------------------------------------------------------------------------
+
+# Measures of shape
+
+------------------------------------------------------------------------
+
+## Skewness and the relationship of the mean, median and mode
+
+::: columns
+::: {.column width="50%"}
+In-class diagram:
+:::
+
+::: {.column width="50%"}
+Skewness describes the degree and direction of asymmetry in the data.
+
+Formula used to calculate skewness in Excel:
+
+$$\text{Skewness} = \frac{n}{(n-1)(n-2)}\sum_{i=1}^{n}(\frac{X_i - \bar{X}}{8})^3$$
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Skewness
+
+-   Skewness is the degree of asymmetry of a distribution.
+
+-   If the frequency distribution has a longer “tail” to the right of the central maximum than to the left, the distribution is said to be skewed to the right (or to have a positive skewness).
+
+-   If the reverse is true, it is said to be skewed to the left (or to have a negative skewness)
+
+> Pearson's first coefficient of skewness
+
+$$\text{Skewness} = \frac{\text{mean}-\text{mode}}{\text{standard deviation}}$$
+
+or
+
+> Pearson's second coefficient of skewness
+
+To avoid using the mode
+
+$$\text{Skewness} = \frac{3(\text{mean}-\text{median})}{\text{standard deviation}}$$
+
+------------------------------------------------------------------------
+
+## Conditions
+
+1.  $Mean = Mode = Median$, then the coefficient of skewness is zero for symmetrical distribution.
+
+2.  $Mean > Mode$, then the coefficient of skewness will be positive.
+
+3.  $Mean < Mode$, then the coefficient of skewness will be negative.
+
+Karl person\`s coefficient of skewness has a positive sign for the positively skewed and a negative sign for the negatively skewed.
+
+------------------------------------------------------------------------
+
+## Empirical relationship between mean, median and mode
+
+Using Karl Pearson’s formula we can show
+
+$3 (median) = mode + 2 mean$
+
+------------------------------------------------------------------------
+
+## 
+
+1.  **Symmetric**
+
+$Mean = Median = Mode$
+
+2.  **Positively Skewed**
+
+$Mean > Median > Mode$
+
+3.  **Negatively Skewed**
+
+$Mean < Median < Mode$
+
+------------------------------------------------------------------------
+
+## Kurtosis
+
+-   Degree of peakness of a distribution
+
+-   Usually taken relative to a normal distribution
+
+```{r}
+Type <- c("Mesokurtic", "Leptokurtic", "Platykurtic")
+Kurtosis <- c("=3", ">3", "<3")
+Ek <- c("=0", ">0", "<0")
+ts <- tibble(Type=Type, Kurtosis=Kurtosis, `Excess Kurtosis`=Ek)
+ts |> knitr::kable()
+```
+
+Excess Kurtosis = Kurtosis - 3
+
+## Your turn
+
+Find kurtosis and excess kurtosis formula
+
+## Interpret the following
+
+```{r, fig.cap="Figure 1: Boxplot of Flipper Length by Species"}
+# Load necessary libraries
+library(ggplot2)
+library(palmerpenguins)
+library(dplyr)
+# Load the dataset
+# Remove rows with missing values
+penguins <- na.omit(penguins)
+
+# Create a boxplot for flipper length by species
+ggplot(penguins, aes(x = species, y = flipper_length_mm, fill = species)) +
+  geom_boxplot() +
+  labs(
+       x = "Species",
+       y = "Flipper Length (mm)") +
+  theme_minimal()
+```
+
+```{r}
+# Load necessary libraries
+library(moments) # For skewness and kurtosis functions
+
+descriptive_stats <- function(x) {
+  stats <- list(
+    mean = mean(x),
+    median = median(x),
+    mode = as.numeric(names(sort(table(x), decreasing = TRUE)[1])),
+    sd = sd(x),
+    Q1 = quantile(x, 0.25),
+    Q2 = quantile(x, 0.50),
+    Q3 = quantile(x, 0.75),
+    kurtosis = kurtosis(x),
+    skewness = skewness(x)
+  )
+  return(stats)
+}
+
+# Calculate descriptive statistics for flipper length by species
+descriptive_stats_penguins <- penguins |>
+  group_by(species) |>
+  summarise(
+    Mean = mean(flipper_length_mm),
+    Median = median(flipper_length_mm),
+    Mode = as.numeric(names(sort(table(flipper_length_mm), decreasing = TRUE)[1])),
+    SD = sd(flipper_length_mm),
+    Q1 = quantile(flipper_length_mm, 0.25),
+    Q2 = quantile(flipper_length_mm, 0.50),
+    Q3 = quantile(flipper_length_mm, 0.75),
+    Kurtosis = kurtosis(flipper_length_mm),
+    Skewness = skewness(flipper_length_mm)
+  )
+library(kableExtra)
+kable(descriptive_stats_penguins, format = "html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F)
+```
+
+------------------------------------------------------------------------
+
+```{r}
+ggplot(penguins, aes(x = species, y = flipper_length_mm, fill = species)) +
+  geom_boxplot() +
+  labs(
+       x = "Species",
+       y = "Flipper Length (mm)") +
+  theme_minimal()
+```
+
+-   The distributions of flipper lengths for each species appear to be roughly symmetric.
+
+-   Gentoo penguins have longer flippers than both Adélie and Chinstrap penguins, which have similar flipper lengths.
+
+-   There are two notable outliers in the flipper lengths for Adélie penguins, which are visible in the boxplot.
+
+------------------------------------------------------------------------
+
+```{r}
+p1 <- ggplot(penguins, aes(x = flipper_length_mm, fill = species)) +
+  geom_histogram(aes(y = ..density..), position = "identity", alpha = 0.5, binwidth = 5, col="black") +
+  facet_wrap(~ species, scales="free") +
+  labs(title = "Density and Histogram of Flipper Lengths by Species",
+       x = "Flipper Length (mm)",
+       y = "Density") +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+```{r, fig.height=15}
+p2 <- ggplot(penguins, aes(x = flipper_length_mm, color = species, fill = species)) +
+  geom_density(alpha = 0.5) +
+  labs(title = "Density Plot of Flipper Lengths by Species",
+       x = "Flipper Length (mm)",
+       y = "Density") +
+  theme_minimal() +
+  theme(legend.title = element_blank())
+library(patchwork)
+p1/p2
+```

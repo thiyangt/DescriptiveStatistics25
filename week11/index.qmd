@@ -1,0 +1,172 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Relationships Between Numerical Variables"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 2000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+## Scatter plot
+
+-   Allows us to visually see how two variables related to each other.
+
+```{r, fig.cap="Figure 1: Scatter pllot of body mass vs flipper length", fig.pos="center"}
+library(palmerpenguins)
+library(ggplot2)
+penguins |>
+  ggplot(aes(y=body_mass_g,
+             x=flipper_length_mm)) +
+  geom_point() + theme(aspect.ratio = 1.2)+xlab("flipper length (mm)") + ylab("body mass (g)")
+```
+
+## Measures of Association: Covariance
+
+We can quantify how two variables move together by a summary measure called the **covariance**.
+
+The sample covariance of two variables, $X$ and $Y$, is given by the formula:
+
+$$Cov(X, Y) = \frac{1}{n-1}\sum_{i=1}^n (X_i - \bar{X})(Y_i - \bar{Y})$$
+
+**What is the covariance of** $X$ with $X$?
+
+------------------------------------------------------------------------
+
+## Covariance
+
+The problem with using the covariance to measure the relationship between two quantitative variables is that we can only interpret the **direction of the relationships**, not the strength of it.
+
+------------------------------------------------------------------------
+
+## Measures of association: Pearson's Product Moment Correlation Coefficient ($r$)
+
+$$Corr(X, Y)=\frac{\sum_{i=1}^n(X_i-\bar{X})(Y_i-\bar{Y})}{\sqrt\sum_{i=1}^n(X_i-\bar{X})\sum_{i=1}^n(Y_i-\bar{Y})}$$
+
+We can show that
+
+$$Corr(X, Y) = \frac{Cov(X, Y)}{S_xS_y}$$
+
+------------------------------------------------------------------------
+
+## 
+
+```{r, fig.height=10, fig.width=10}
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+
+# Function to generate data with a specified correlation
+generate_data <- function(r, n = 100) {
+  set.seed(0)
+  x <- runif(n)
+  if (r == 1) {
+    y <- x
+  } else if (r == -1) {
+    y <- -x
+  } else if (r == 0) {
+    y <- runif(n)
+  } else {
+    y <- r * x + sqrt(1 - r^2) * runif(n)
+  }
+  data.frame(x = x, y = y, r = as.factor(r))
+}
+
+# List of correlation coefficients to plot
+correlation_coefficients <- c(1, -1, 0, 0.8, -0.8, 0.5, -0.5, 0.2, -0.2)
+
+# Generate data for each correlation coefficient
+data <- bind_rows(lapply(correlation_coefficients, generate_data))
+
+# Plot using ggplot2
+plot <- ggplot(data, aes(x = x, y = y)) +
+  geom_point() +
+  facet_wrap(~ r, scales = 'free') +
+  labs(title = 'Scatter plots with different Pearson correlation coefficients',
+       x = 'X', y = 'Y') +
+  theme(aspect.ratio = 1)
+
+# Display the plot
+print(plot)
+
+```
+
+## Interpretations
+
+```{r}
+correlation_data <- data.frame(
+  r_value = c("r = 1", "1 > r ≥ 0.8", "0.8 > r ≥ 0.4", "0.4 > r > 0", "r = 0", 
+              "0 > r ≥ -0.4", "-0.4 > r ≥ -0.8", "-0.8 > r > -1", "r = -1"),
+  interpretation = c("Perfect positive linear correlation", 
+                     "Strong positive linear correlation", 
+                     "Moderate positive linear correlation", 
+                     "Weak positive linear correlation", 
+                     "No correlation", 
+                     "Weak negative linear correlation", 
+                     "Moderate negative linear correlation", 
+                     "Strong negative linear correlation", 
+                     "Perfect negative linear correlation")
+)
+
+correlation_data |> knitr::kable()
+```
+
+------------------------------------------------------------------------
+
+## Scatter plot matrix
+
+```{r, fig.height=10, fig.width=10}
+library(GGally)
+# Create pairwise scatterplot matrix using GGally
+# Selecting numerical columns using dplyr
+penguins_numeric <- penguins |>
+  select_if(is.numeric) |>
+  select(-year)
+
+# Create pairwise scatterplot matrix using GGally
+ggpairs(penguins_numeric)
+```
+
+## 
+
+```{r, fig.height=10, fig.width=10}
+penguins |>
+  select(species, body_mass_g, ends_with("_mm")) |>
+  GGally::ggpairs(aes(color = species),
+          columns = c("flipper_length_mm", "body_mass_g", 
+                      "bill_length_mm", "bill_depth_mm")) +
+  scale_colour_manual(values = c("darkorange","purple","cyan4")) +
+  scale_fill_manual(values = c("darkorange","purple","cyan4"))
+
+```
+
+## Pearson's correlation coefficient = 0
+
+```{r, fig.height=4, fig.width=4}
+x = -20:20
+y = 5*(x^2) + 10
+df <- data.frame(x=x, y=y)
+ggplot(df, aes(x=x, y=y)) + geom_point()
+
+```
+
+------------------------------------------------------------------------
+
+## Which plot has the highest correlation coefficient?
+
+```{r, fig.height=10, fig.width=10}
+knitr::include_graphics("images.png")
+```
+
+------------------------------------------------------------------------
+
+![](DataSaurus.gif)

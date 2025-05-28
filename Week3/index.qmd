@@ -1,0 +1,245 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Data Collection"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 1000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+<!--https://researchguides.ben.edu/c.php?g=282050&p=4036581-->
+
+# Primary vs Secondary Data
+
+------------------------------------------------------------------------
+
+## Primary Data
+
+-   Primary data refers to information collected directly by the researcher.
+
+-   This data is gathered specifically to address the researcher’s current problem or objective, tailored to meet the specific requirements of a particular study.
+
+## Secondary Data
+
+-   Secondary data refers to information that has already been collected, compiled, and published by others for purposes different from the researcher’s current study.
+
+## Methods of collecting primary data
+
+::: columns
+::: {.column width="50%"}
+-   surveys
+
+-   census
+
+-   interviews
+
+-   observational studies
+
+-   experimental studies
+
+-   case studies
+
+-   content analysis
+
+-   ethnography
+:::
+
+::: {.column width="50%"}
+-   surveillance
+
+-   focus groups
+
+-   analyse social media content
+:::
+:::
+
+# Observational Studies vs Experimental Study
+
+# Observational Studies vs Experimental Study: Examples
+
+Investigate the effect of fertilizer A and B on chili crop yield.
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+### Researcher 1
+
+**Step 1:** Population: Identify two groups of chili farmers based on the fertilizer they use.
+
+Group A: Farmers using fertilizer A.
+
+Group B: Farmers using fertilizer B.
+
+**Step 2:** Data collection: Collect data on chili crop yield from both groups at the end of the growing season.
+:::
+
+::: {.column width="50%"}
+### Researcher 2
+
+**Step 1:** Randomization: Randomly assign plots of land to receive either fertilizer A or fertilizer B. Same seed variety is used.
+
+**Step 2:** Control Conditions: Ensure all other conditions (water, sunlight, humidity, soil type) are kept constant across all plots. Use consistent pest management practices and ensure uniform planting and harvesting techniques.
+
+**Step 3:** Data Collection: Measure the chili crop yield from each plot at the end of the growing season.
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+### Researcher 1
+
+In-class demo:
+:::
+
+::: {.column width="50%"}
+### Researcher 2
+
+In-class demo:
+:::
+:::
+
+------------------------------------------------------------------------
+
+```{r, fig.cap="Source: https://www.greenproventures.com/guide-to-starting-greenhouse-farming-with-shade-nets/"}
+knitr::include_graphics("greenhouse.png")
+```
+
+## Methods of collecting secondary data
+
+-   Online databases: These databases can be categorized into two main types based on their accessibility: commercial and open-access.
+
+> Ex: Department of Census and Statistics website: http://www.statistics.gov.lk/#gsc.tab=0
+
+> Ex: Open-access: Dengue data hub: https://denguedatahub.netlify.app/
+
+-   Government and Institutional Reports
+
+> Ex: Annual Report, Central Bank of Sri Lanka
+
+## Methods of collecting secondary data (cont.)
+
+-   **Commercial Data:** Purchasing or accessing data from commercial sources like market research firms, industry reports, and business analytics services
+
+-   **Census and Public Records:** Using demographic data, economic statistics, and other information from national censuses and public records maintained by government agencies.
+
+-   **Media Archives:** Reviewing newspapers, magazines, television broadcasts, and other media sources for relevant historical data and trends.
+
+## Methods of collecting secondary data (cont.)
+
+-   **Internal Company Records:** Examining an organization's internal reports, financial statements, sales records, and other documents for business research purposes.
+
+-   **Libraries and Archives:** Visiting physical or digital libraries and archives to access a wide range of historical documents, manuscripts, and archival records.
+
+-   **Meta-Analysis:** Synthesizing data from multiple studies to draw broader conclusions, often used in scientific and medical research.
+
+## Why Secondary Data?
+
+1.  Cost-Effective (not always)
+
+2.  Time-Saving
+
+3.  Preliminary Research: It serves as a valuable resource for preliminary research or background studies, helping to identify gaps in knowledge, formulate hypotheses, and refine research questions.
+
+4.  Historical Analysis: Enables researchers to conduct historical analyses and understand past trends, events, and behaviors, which can inform present and future research directions.
+
+5.  Validation: Secondary data can be used to validate findings from primary data
+
+## Your Turn
+
+Find advatages and disadvatages of using primary and secondary data.
+
+# True or False?
+
+## Question 1
+
+In an observational study, researchers directly intervene and manipulate variables to observe their effects on the outcome.
+
+```{r}
+library(countdown)
+countdown(minutes = 2, seconds = 00)
+```
+
+## Question 2
+
+The sample in a study refers to the entire group of individuals or objects that researchers want to study.
+
+```{r}
+countdown(minutes = 2, seconds = 00)
+```
+
+## Question 3
+
+Descriptive statistics are used to make inferences and predictions about a population based on sample data.
+
+```{r}
+countdown(minutes = 2, seconds = 00)
+```
+
+## Question 4
+
+Inferential statistics are used to summarize and describe the characteristics of a dataset.
+
+```{r}
+countdown(minutes = 2, seconds = 00)
+```
+
+## Question 5
+
+The sample in a study represents the entire group of individuals or objects that researchers want to study.
+
+```{r}
+countdown(minutes = 2, seconds = 00)
+```
+
+## Question 6
+
+Descriptive statistics are used to make predictions about a population based on sample data.
+
+```{r}
+countdown(minutes = 2, seconds = 00)
+```
+
+## Question 7
+
+If there is no data, statistical analysis can still be performed based on theoretical assumptions.
+
+```{r}
+countdown(minutes = 2, seconds = 00)
+```
+
+## Question 8
+
+Primary data is collected through methods such as surveys, interviews, and experiments.
+
+```{r}
+countdown(minutes = 2, seconds = 00)
+```
+
+## Question 9
+
+Primary data collection allows researchers to have more control over the data quality and reliability.
+
+```{r}
+countdown(minutes = 2, seconds = 00)
+```
+
+## Question 10
+
+Secondary data sources may include government databases, archival records, and proprietary datasets.
+
+```{r, fig.height=4}
+countdown(minutes = 2, seconds = 00)
+```

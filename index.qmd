@@ -1,0 +1,47 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+---
+
+## Lecturer-in-charge
+
+### [Dr Thiyanga S. Talagala](https://thiyanga.netlify.app/)
+
+## Email
+
+ttalagala\@sjp.ac.lk
+
+## Policies and regulations
+
+To access important information regarding the unit STA 113 2.0 Descriptive Statistics, please go to the course Learning Management System (LMS) page **and** Google Classroom. [**Click here**](https://lms.fas.sjp.ac.lk/enrol/index.php?id=3646) to go directly to the LMS. You must carefully read the "Course Information and Logistic" slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the "Course Information and Logistic" slides.
+
+
+
+## Course outline
+
+Available on Google Classroom
+
+## Weekly schedule
+
+Here’s your roadmap for the semester!
+
+# Lectures
+
+### Week 1: May 28, 2025
+
+**Slides 1.1:** [Course Information and Logistics](./week0/index.html)
+
+**Slides 1.2:** [Definition of Statistics and Role of Statistics](./week1/index.html)
+
+**Reading 1.1:** [American Statistical Association (ASA) Statement on The Role of Statistics in Data Science ...](https://www.amstat.org/docs/default-source/amstat-documents/the-role-of-statistics-in-data-science-and-artificial-intelligence.pdf)
+
+**Exercise:** Find history of statistics.
+
+### Week 2: June 04, 2025
+
+**Slides 2:** [Basic Terminologies and Concepts in Statistics](./week2/index.html)
+
+**Task:** Fill out the survey questionnaire available on the LMS.
+
+# Tutorials
+
+Commenced on June 4th, 2025

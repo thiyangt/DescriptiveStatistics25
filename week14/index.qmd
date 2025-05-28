@@ -1,0 +1,121 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Measures of Central Tendency and Variability: Grouped Data"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 2000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(tsibble)
+library(lubridate)
+library(feasts)
+library(denguedatahub)
+# install.packages("devtools")
+#devtools::install_github("thiyangt/TourSriLanka")
+library(TourSriLanka)
+```
+
+## Data
+
+```{r}
+c1 <- c("(1, 3]", "(3, 5]", "(5, 7]",
+        "(7, 9]", "(9, 11]", "(11, 13]")
+f <- c(16, 2, 4, 3, 9, 6)
+
+df <- data.frame(c1, f)
+df |>
+  knitr::kable( col.names = c("Class interval",
+                           "Frequency (f)"))
+
+```
+
+## Data
+
+```{r}
+c1 <- c("(1, 3]", "(3, 5]", "(5, 7]",
+        "(7, 9]", "(9, 11]", "(11, 13]")
+f <- c(16, 2, 4, 3, 9, 6)
+m <- c(2, 4, 6, 8, 10, 12)
+
+df <- data.frame(c1, f, m)
+df |>
+  knitr::kable( col.names = c("Class interval",
+                           "Frequency (f)",
+                           "Class midpoint (M)"))
+
+```
+
+---
+
+# Mean
+
+$$Mean = \frac{\sum fM}{\sum f}$$
+
+---
+
+# Mode
+
+In-class demo
+
+Plot the histogram.
+
+---
+
+# Median
+
+$$Median = L_M + [\frac{\frac{(\sum f)}{2}-F}{f_M}]W$$
+
+$L_M$ - lower limit of the class containing the median
+
+$\sum f$ - total number of observations
+
+$F$ - the cumulative frequency up to the lower limit of the class containing the median
+
+$f_M$ - frequency of the class containing the median
+
+$W$ - width of the class containing the median
+
+---
+
+# Quartiles
+
+$$Q_1 = L_{q1} + [\frac{\frac{(\sum f)}{4}-F_{q1}}{f_{q1}}]W$$
+
+$L_{q1}$ - lower limit of the class containing the first quartile
+
+$\sum f$ - total number of observations
+
+$F_{q1}$ - the cumulative frequency up to the lower limit of the class containing the first quartile
+
+$f_M$ - frequency of the class containing the median
+
+$W$ - width of the class containing the median
+
+> Your turn: Write the formula for Q3
+
+
+# Population variance
+
+$$\sigma^2 = \frac{\sum f(M-\mu)^2}{\sum f}$$
+
+$M$ - Class midpoint
+
+
+# Sample variance
+
+$$s^2 = \frac{\sum f(M-\bar{x})^2}{\sum f -1}$$
+
+$M$ - Class midpoint

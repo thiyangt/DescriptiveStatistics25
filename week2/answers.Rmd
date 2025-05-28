@@ -1,0 +1,79 @@
+---
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Question 1
+
+i.  Population:
+
+The population in this study refers to all the species of bacteria, bugs, and other organisms present in Beira Lake. This includes every living organism that inhabits the lake ecosystem.
+
+ii. Sample:
+
+The sample in this study is the bucket of water (1L) that the researcher collected from Beira Lake and examined for species diversity. The sample represents a subset of the lake's biodiversity.
+
+iii. Parameter:
+
+The parameter in this context would be the proportion of different species counts within the entire population of species in Beira Lake. For example, the proportion of bacteria, bugs, and other organisms based on the sample collected from the lake.
+
+iv. Statistics:
+
+The statistics in this study would be the counts and characteristics of species observed in the collected sample (1L of water from the lake). This includes the number of different species of bacteria, bugs, and other organisms identified in the bucket of water. In summary:
+
+Population: All species of bacteria, bugs, and organisms in Beira Lake.
+
+Sample: The bucket of water (1L) collected from Beira Lake. Parameter: Proportion of species counts (e.g., bacteria, bugs) in the entire lake ecosystem.
+
+Statistics: Counts and characteristics of species observed in the collected sample (1L) from Beira Lake.
+
+In summary:
+
+Population: All species of bacteria, bugs, and organisms in Beira Lake.
+
+Sample: The bucket of water (1L) collected from Beira Lake.
+
+Parameter: Proportion of species counts (e.g., bacteria, bugs) in the entire lake ecosystem.
+
+Statistics: Counts and characteristics of species observed in the collected sample (1L) from Beira Lake.
+
+## Question 2:
+
+i.  Population:
+
+The population in this study is all the hard disk drives (HDDs) produced by the computer manufacturing company. This includes every HDD manufactured by the company within a certain timeframe.
+
+ii. Sample:
+
+The sample in this study is the subset of 100 HDDs selected randomly from the recent production batch. The sample represents a smaller group of HDDs chosen for examination to estimate the failure rate.
+
+iii. Parameter:
+
+The parameter in this context would be the failure rate of all HDDs produced by the company. It represents the proportion or percentage of HDDs that are expected to fail within a specified period based on the entire population of HDDs.
+
+iv. Statistics:
+
+The statistics in this study would include the observed failure rate among the selected sample of 100 HDDs. This involves counting the number of HDDs that have failed or exhibit signs of malfunction within the sample and calculating the proportion or percentage of failures.
+
+Summary:
+
+Population: All hard disk drives (HDDs) produced by the computer manufacturing company.
+
+Sample: A random selection of 100 HDDs from a recent production batch.
+
+Parameter: The failure rate of all HDDs produced by the company.
+
+Statistics: The observed failure rate among the selected sample of 100 HDDs.
+
+## Question 3
+
+Population: All students attending online Zoom lecture today.
+
+Sample: A random selection of 50 students
+
+Parameter: The proportion of all university students who actively listen to lectures during online Zoom sessions.
+
+Statistics: The observed proportion of active listeners among the selected sample of 50 students.

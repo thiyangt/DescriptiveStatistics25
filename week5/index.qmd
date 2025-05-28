@@ -1,0 +1,403 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Tables and Graphs for Categorical Data"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 1000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+## Data Set
+
+```{r, message=FALSE, warning=FALSE}
+library(palmerpenguins)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+names(penguins)[names(penguins) == "sex"] <- "gender"
+penguins_complete <- penguins |>
+  drop_na()
+quartiles <- quantile(penguins_complete$body_mass_g, probs = c(0.1, 0.5, 0.8))
+
+pf <- penguins_complete |>
+  mutate(BMI_category = case_when(
+    body_mass_g <= quartiles[1] ~ "Underweight",
+    body_mass_g > quartiles[1] & body_mass_g <= quartiles[2] ~ "Normal",
+    body_mass_g > quartiles[2] & body_mass_g <= quartiles[3] ~ "Overweight",
+    body_mass_g > quartiles[3] ~ "Obese"
+  ))
+
+as.data.frame(pf)
+```
+
+------------------------------------------------------------------------
+
+## Extract qualitative variables
+
+```{r}
+pf2 <- pf |> select(species, island, gender, BMI_category)
+pf2  |> as.data.frame()
+
+```
+
+------------------------------------------------------------------------
+
+# Univariate Analysis
+
+---
+# Nominal Scale Data
+---
+
+## Frequency tables/ Contingency Tables
+
+```{r}
+# Create the frequency table
+frequency_table <- pf |>
+  count(species) |>
+  mutate(percentage = round(n / sum(n) * 100, 2))
+
+# Add the total row
+total_row <- data.frame(species = "Total", 
+                        n = sum(frequency_table$n), 
+                        percentage = sum(frequency_table$percentage))
+
+# Combine the frequency table with the total row
+frequency_table <- bind_rows(frequency_table, total_row)
+
+# Print the frequency table using kable
+frequency_table |>
+  knitr::kable(format = "markdown", col.names = c("Species", "Count", "Percentage (%)"))
+```
+
+# Uni-variate Graphical Representations
+
+-   Simple Bar Charts
+
+-   Pie Charts
+
+## Vertical Bar Chart
+
+::: columns
+::: {.column width="50%"}
+### Counts Bar Chart
+
+```{r}
+library(scales) # For percentage formatting
+library(RColorBrewer) # For Dark2 color palette
+count_bar_chart <- ggplot(pf, aes(x = species,  fill = species)) +
+  geom_bar() +
+  labs(title = "Composition of the Sample by Species",
+       x = "Species",
+       y = "Count") +
+scale_fill_brewer(palette = "Dark2")
+
+count_bar_chart
+```
+:::
+
+::: {.column width="50%"}
+### Percentage Bar Chart
+
+```{r}
+percentage_bar_chart <- ggplot(pf, aes(x = species,  fill = species,
+y=after_stat(count/sum(count)*100))) +
+  geom_bar() +
+  labs(title = "Composition of the Sample by Species",
+       x = "Species",
+       y = "Percentage") +
+scale_fill_brewer(palette = "Dark2")
+
+percentage_bar_chart
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Horizontal Bar Chart
+
+::: columns
+::: {.column width="50%"}
+### Counts Bar Chart
+
+```{r}
+library(scales) # For percentage formatting
+library(RColorBrewer) # For Dark2 color palette
+count_bar_chart <- ggplot(pf, aes(x = species,  fill = species)) +
+  geom_bar() +
+  labs(title = "Composition of the Sample by Species",
+       x = "Species",
+       y = "Count") +
+scale_fill_brewer(palette = "Dark2") + coord_flip()
+
+count_bar_chart
+```
+:::
+
+::: {.column width="50%"}
+### Percentage Bar Chart
+
+```{r}
+percentage_bar_chart <- ggplot(pf, aes(x = species,  fill = species,
+y=after_stat(count/sum(count)*100))) +
+  geom_bar() +
+  labs(title = "Composition of the Sample by Species",
+       x = "Species",
+       y = "Percentage") +
+scale_fill_brewer(palette = "Dark2") + coord_flip()
+
+percentage_bar_chart
+```
+:::
+:::
+
+# Sort bars for easy comparison
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+```{r}
+penguins_complete <- penguins %>%
+  drop_na(species)
+
+# Create the frequency table with counts and percentages
+frequency_table <- penguins_complete %>%
+  count(species) %>%
+  mutate(percentage = n / sum(n) * 100) %>%
+  arrange(desc(n)) # Arrange species based on counts
+
+# Plot the count bar chart
+count_bar_chart <- ggplot(frequency_table, aes(x = reorder(species, n), y = n, fill = species)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Composition of the Sample by Species",
+       x = "Species",
+       y = "Count") +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::comma) +
+  scale_fill_brewer(palette = "Dark2")
+count_bar_chart 
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+percentage_bar_chart <- ggplot(frequency_table, aes(x = reorder(species, n), y = percentage, fill = species)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Composition of the Sample by Species",
+       x = "Species",
+       y = "Percentage") +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  scale_fill_brewer(palette = "Dark2")
+percentage_bar_chart
+```
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+```{r}
+penguins_complete <- penguins %>%
+  drop_na(species)
+
+# Create the frequency table with counts and percentages
+frequency_table <- penguins_complete %>%
+  count(species) %>%
+  mutate(percentage = n / sum(n) * 100) %>%
+  arrange(desc(n)) # Arrange species based on counts
+
+# Plot the count bar chart
+count_bar_chart <- ggplot(frequency_table, aes(x = reorder(species, n), y = n, fill = species)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Composition of the Sample by Species",
+       x = "Species",
+       y = "Count") +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::comma) +
+  scale_fill_brewer(palette = "Dark2")
+count_bar_chart + coord_flip()
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+percentage_bar_chart <- ggplot(frequency_table, aes(x = reorder(species, n), y = percentage, fill = species)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Composition of the Sample by Species",
+       x = "Species",
+       y = "Percentage") +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  scale_fill_brewer(palette = "Dark2")
+percentage_bar_chart + coord_flip()
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Pie chart
+
+```{r}
+# Remove rows with missing species data
+pf <- penguins %>%
+  drop_na(species)
+
+# Create the frequency table with counts and percentages
+frequency_table <- pf %>%
+  count(species) %>%
+  mutate(percentage = n / sum(n) * 100)
+
+# Plot pie chart
+pie_chart <- ggplot(frequency_table, aes(x = "", y = n, fill = species)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y", start=0) +
+  labs(title = "Composition of the Sample by Species") +
+  theme_void() +
+scale_fill_brewer(palette = "Dark2") +
+  theme(legend.position = "bottom")
+pie_chart
+```
+
+------------------------------------------------------------------------
+
+## Which is the best?
+
+::: columns
+::: {.column width="50%"}
+```{r}
+percentage_bar_chart <- ggplot(frequency_table, aes(x = reorder(species, n), y = percentage, fill = species)) +
+  geom_bar(stat = "identity") +
+  labs(title = "Composition of the Sample by Species",
+       x = "Species",
+       y = "Percentage") +
+  theme_minimal() +
+  scale_y_continuous(labels = scales::percent_format(scale = 1)) +
+  scale_fill_brewer(palette = "Dark2")
+percentage_bar_chart + coord_flip()
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+# Remove rows with missing species data
+pf <- penguins %>%
+  drop_na(species)
+
+# Create the frequency table with counts and percentages
+frequency_table <- pf %>%
+  count(species) %>%
+  mutate(percentage = n / sum(n) * 100)
+
+# Plot pie chart
+pie_chart <- ggplot(frequency_table, aes(x = "", y = n, fill = species)) +
+  geom_bar(stat = "identity", width = 1) +
+  coord_polar("y", start=0) +
+  labs(title = "Composition of the Sample by Species") +
+  theme_void() +
+scale_fill_brewer(palette = "Dark2") +
+  theme(legend.position = "bottom")
+pie_chart
+```
+:::
+:::
+
+# 
+
+::: columns
+::: {.column width="50%"}
+### Pie Chart
+
+-   Pie charts are easier to compare for relative proportions.
+
+-   Pie charts are best for a small number of categories.
+:::
+
+::: {.column width="50%"}
+### Bar Chart
+
+-   Bar charts are better for comparing precise values.
+
+-   Bar charts can handle more categories without becoming cluttered.
+:::
+:::
+
+**Note:** Our visual system is typically better at comparing lengths or heights than angles. This inherent characteristic of human perception makes bar charts more effective than pie charts for comparing values or proportions.
+
+# Your turn
+
+What other types of charts are suitable for visualizing nominal scale data?
+
+# Ordinal Scale Data
+
+## Frequency table
+
+```{r}
+pf2$BMI_category <- factor(pf2$BMI_category, levels=c("Underweight", "Normal",
+"Overweight", "Obese"))
+frequency_table2 <- pf2 |>
+  count(BMI_category) |>
+  mutate(counts = n) |>
+  mutate(Cumulative_Count = cumsum(n)) |>
+  mutate(percentage = round(n / sum(n) * 100, 2)) |>
+ mutate(Cumulative_Percentage = round(cumsum(percentage), 2))
+
+# View the results using kable
+frequency_table2 <- frequency_table2 |> select(-n)
+knitr::kable(frequency_table2, format = "markdown", col.names = c("BMI Category", "Count", "Cumulative Count", "Percentage", "Cumulative Percentage"))
+```
+
+# Your turn: Take a suitable graphical representation.
+
+------------------------------------------------------------------------
+
+```{r}
+pf2 |> ggplot(aes(x=BMI_category)) + geom_bar() + labs(x="BMI Category", title="Composition of the Sample by BMI Category")
+```
+
+**Question:** In this case, is it necessary to sort the bars in our data visualization for better clarity and interpretation?
+
+# Bi-variate Analysis
+
+# Two-way tables
+
+# Let's compute
+
+-   Row percentage: percent that each cell represents of the row total
+-   Column percentage: percent that each cell represents of the column total
+-   Overall percentage (total percentage): percent that each cell represents of the grand total
+
+```{r}
+library(janitor)
+# Create the two-way table
+two_way_table <- pf2 |>
+  count(species, BMI_category) |>
+  spread(BMI_category, n, fill = 0) |>
+  adorn_totals("row") |>
+  adorn_totals("col") 
+
+two_way_table |> knitr::kable()
+```
+
+# Why is it important to represent both counts and percentages?
+
+## 
+
+-   Percentages can sometimes be misleading when the sample size is small. By presenting both counts and percentages, the reader can see the actual numbers behind the percentages.
+
+-   When comparing different groups or datasets, percentages help standardize the comparison by accounting for differences in group sizes.
+
+# Next week
+
+-   Bar charts to show two-way relationships

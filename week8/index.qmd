@@ -1,0 +1,311 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Measures of Central Tendency"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 1000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+## Data
+
+```{r}
+# Generate sample data 
+set.seed(25052020)
+# normal
+s1 <- rnorm(100)
+s2 <- rbeta(100, 2, 1)
+s3 <- rexp(100)
+# mixture
+s4 <- rnorm(100, rep(c(-1, 1), each = 50) * sqrt(0.9), sqrt(0.1))
+four <- data.frame(
+dist = factor(rep(c("s1", "s2", "s3", "s4"),
+each = 100),
+c("s1", "s2", "s3", "s4")),
+vals = c(s1, s2, s3, s4)
+)
+df <- data.frame(s1=s1, s2=s2, s3=s3, s4=s4)
+
+
+```
+
+::: columns
+::: {.column width="33%"}
+```{r}
+library(kableExtra)
+df[1:33, ] |> knitr::kable() |> kable_styling(font_size = 18)
+```
+:::
+
+::: {.column width="33%"}
+```{r}
+df[34:67, ] |> knitr::kable() |> kable_styling(font_size = 18)
+```
+:::
+
+::: {.column width="34%"}
+```{r}
+df[68:100, ] |> knitr::kable() |> kable_styling(font_size = 18)
+```
+:::
+:::
+
+## Histogram
+
+```{r, comment=NA, message=FALSE, echo=FALSE}
+library(ggplot2)
+ggplot(four, aes(x = vals)) + 
+geom_histogram(aes(fill = dist), colour = "black") + 
+coord_cartesian(xlim = c(-3, 6)) + 
+facet_wrap(~ dist) 
+```
+
+## Histogram (binwidth = .1)
+
+```{r, comment=NA, message=FALSE, echo=FALSE}
+library(ggplot2)
+ggplot(four, aes(x = vals)) + 
+geom_histogram(binwidth = .1, aes(fill = dist), colour = "black") + 
+coord_cartesian(xlim = c(-3, 6)) + 
+facet_wrap(~ dist) 
+```
+
+## Histogram (binwidth = 2)
+
+```{r, comment=NA, message=FALSE, echo=FALSE}
+library(ggplot2)
+ggplot(four, aes(x = vals)) + 
+geom_histogram(binwidth = 2, aes(fill = dist), colour = "black") + 
+coord_cartesian(xlim = c(-3, 6)) + 
+facet_wrap(~ dist) 
+```
+
+## What is Descriptive Statistics?
+
+-   Describe the data
+
+-   Descriptive statistics involves summarizing and organizing the data so they can be easily understood
+
+-   Does **not** attempt to make inferences from the sample to the whole population
+
+## Measures
+
+::: columns
+::: {.column width="50%"}
+```{r, comment=NA, message=FALSE, echo=FALSE, fig.height=10}
+library(ggplot2)
+ggplot(four, aes(x = vals)) + 
+geom_histogram(aes(fill = dist), colour = "black") + 
+coord_cartesian(xlim = c(-3, 6)) + 
+facet_wrap(~ dist) 
+```
+:::
+
+::: {.column width="50%"}
+-   Measures of central tendency
+
+-   Measures of variability (Measures of dispersion/ Measures of spread)
+
+-   Measures of Shape: Kurtosis, Skewness
+
+<!--https://vitalflux.com/descriptive-statistics-key-concepts-examples/-->
+:::
+:::
+
+## Measures of Central Tendency
+
+-   Used to identify the center of data distribution.
+
+-   It describes a whole set of data with a single value that represents the center of its distribution.
+
+-   One number that best summarizes the entire set of measurement.
+
+-   Measures of central tendency: mode, median, mean, weighted mean, harmonic mean, geometric mean, quadratic mean
+
+# 
+
+Let's look at how to compute measures of central tendancy for ungrouped and grouped data.
+
+## In-calss demo
+
+# Ungrouped Data
+
+## Mode
+
+-   The most frequently occurring value in a set of data.
+
+-   Can be used to determine which category occurs most frequently
+
+    -   Example 1: Determine the mode for the following numbers.
+
+    2, 4, 8, 4, 6, 2, 7, 8, 4, 3, 8, 9, 4, 3, 10, 21, 4
+
+-   The mode can be determined for qualitative data as well as quantitative data.
+
+    -   Example 2: A group of 10 people were asked about their favorite shoe color.
+
+    Black, Blue, Brown, White, Black, Black, Black, Brown, Brown, Black
+
+## Your turn
+
+Determine the mode for the following numbers
+
+**Question 1**
+
+0.5, 0.1, 0.8, 0.8, 0.8, 0.7, 0.7, 0.7, 0.6, 0.2, 0.3, 0.1, 0.8, 0.7
+
+**Question 2**
+
+2, 4, 6, 8, 10, 12, 14, 16
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 5, seconds = 00)
+```
+
+## Important facts
+
+1.  Unimodal - only 1 mode
+
+2.  Bimodal - 2 modes
+
+3.  Multimodal - more than 2 modes
+
+4.  No mode: There is no mode when all observed values appear the same number of times in a data set.
+
+## Applications: qualitative data example
+
+-   A shoe manufacturing company conducted a market survey to understand consumer preferences for shoe colors. The mode is the color that appears the most frequently in the dataset. The company can use this information to decide which color of shoes to produce more.
+
+## Applications: quantitative data example
+
+-   A shoe manufacturing company conducted a survey to find out the most popular shoe size among its customers. The mode of the shoe sizes is Size 9. The company can use this information to decide which shoe size to produce more. Since Size 9 is the most popular size, the company should prioritize producing more shoes in Size 9 to meet consumer demand.
+
+## Median
+
+-   The middle value in an ordered array of numbers.
+
+-   For an array with an odd number of observations, the median is the middle number.
+
+-   For an array with an even number of observations, median is the mean of the two middle numbers.
+
+## Steps in calculating median
+
+1.  Arrange the data in an ordered array of numbers.
+
+2.  Count the number of observations. Suppose there are $n$ number of observations.
+
+3.  Locate the middle value of the ordered array as follws
+
+::: columns
+::: {.column width="50%"}
+**Median formula when n is [odd]{style="color:red;"}**
+
+$Median = (\frac{n+1}{2})^{th} \text{observation}$
+:::
+
+::: {.column width="50%"}
+**Median formula when n is [even]{style="color:blue;"}**
+
+$Median = \frac{(\frac{n}{2})^{observation} + (\frac{n}{2} + 1)^{observation}}{2}$
+:::
+:::
+
+Important: To compute the median, at least the required scale of measurement is ordinal.
+
+## Your turn
+
+Determine the median for the following numbers.
+
+Q1:
+
+214, 215, 216, 105, 109, 8, 50, 1000, 150
+
+Q2:
+
+2, 3, 10, 11, 50, 5, 8, 9, 10, 5
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 6, seconds = 00)
+```
+
+## Mean (Arithmetic mean)
+
+::: columns
+::: {.column width="50%"}
+$$\mu = \frac{\sum_{i=1}^Nx_i}{N}$$ Population mean: $\mu$
+
+Population size: $N$
+:::
+
+::: {.column width="50%"}
+$$\bar{x} = \frac{\sum_{i=1}^nx_i}{n}$$
+
+Sample mean: $\bar{x}$
+
+Sample size: $n$
+:::
+:::
+
+## Your turn
+
+Determine the mean for the following numbers.
+
+Q1:
+
+214, 215, 216, 105, 109, 8, 50, 1000, 150
+
+Q2:
+
+2, 3, 10, 11, 50, 5, 8, 9, 10, 5
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 6, seconds = 00)
+```
+
+## Your turn
+
+The following table shows the number of insects observed on a farm over the course of a week. Calculate the mean, median, and mode of data.
+
+```{r}
+library(tibble)
+day = c("Monday", "Tuesday",
+"Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+insects = c(45, 50, 42, 55, 48, 53, 47)
+df1 <- tibble(Day=day, `Number of Insects`=insects)
+df1 |> knitr::kable() |>  kable_styling(font_size = 32)
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 6, seconds = 00)
+```
+
+## Your turn
+
+The following table shows the number of insects observed on a farm over the course of the month of April. Calculate the mean, median, and mode of the number of insects observed during this period.
+
+```{r}
+library(tibble)
+value = c(45, 50, 42, 55, 48, 53, 47, 40)
+days = c(5, 6, 3, 3, 2, 1, 2, 8)
+df2 <- tibble(`Number of Insects`= value, `Number of days`=days)
+df2 |> knitr::kable() |>  kable_styling(font_size = 32)
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 10, seconds = 00)
+```

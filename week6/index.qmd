@@ -1,0 +1,479 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Bar Charts for Two Categorical Variables"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 1000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+## Data Set
+
+```{r, message=FALSE, warning=FALSE}
+library(palmerpenguins)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(RColorBrewer)
+names(penguins)[names(penguins) == "sex"] <- "gender"
+penguins_complete <- penguins |>
+  drop_na()
+quartiles <- quantile(penguins_complete$body_mass_g, probs = c(0.1, 0.5, 0.8))
+
+pf <- penguins_complete |>
+  mutate(BMI_category = case_when(
+    body_mass_g <= quartiles[1] ~ "Underweight",
+    body_mass_g > quartiles[1] & body_mass_g <= quartiles[2] ~ "Normal",
+    body_mass_g > quartiles[2] & body_mass_g <= quartiles[3] ~ "Overweight",
+    body_mass_g > quartiles[3] ~ "Obese"
+  ))
+pf2 <- pf |> select(species, island, gender, BMI_category)
+pf2$BMI_category <- factor(pf2$BMI_category, levels=c("Underweight", "Normal",
+"Overweight", "Obese"))
+
+library(janitor)
+# Create the two-way table
+two_way_table <- pf2 |>
+  count(species, BMI_category) |>
+  spread(BMI_category, n, fill = 0) |>
+  adorn_totals("row") |>
+  adorn_totals("col") 
+
+two_way_table |> knitr::kable()
+```
+
+# Grouped Bar Chart/ Clustered Bar Chart
+
+## 
+
+```{r, fig.cap="Figure 1: Composition of the Sample by Species and BMI Category"}
+pf2 |>
+  count(species, BMI_category) |>
+  complete(species = unique(species), BMI_category = unique(BMI_category), 
+           fill = list(n = 0)) |>
+  ggplot(aes(factor(species), n, fill = factor(BMI_category))) + 
+  geom_bar(stat = 'identity', position = 'dodge') + labs(fill = "BMI Category", x="Species", y="Counts")
+
+```
+
+## 
+
+```{r, fig.cap="Figure 1: Composition of the Sample by Species and BMI Category"}
+pf2 |>
+  count(species, BMI_category) |>
+  complete(species = unique(species), BMI_category = unique(BMI_category), 
+           fill = list(n = 0)) |>
+  ggplot(aes(factor(species), n, fill = factor(BMI_category))) + 
+  geom_bar(stat = 'identity', position = 'dodge') + labs(fill = "BMI Category", x="Species", y="Counts") + scale_fill_manual(values = c("#042333ff",  "#593d9cff", "#b8627dff", "#f9a242ff"))
+
+```
+
+## 
+
+```{r, fig.cap="Figure 1: Composition of the Sample by Species and BMI Category"}
+p1 <- pf2 |>
+  count(species, BMI_category) |>
+  complete(species = unique(species), BMI_category = unique(BMI_category), 
+           fill = list(n = 0)) |>
+  ggplot(aes(factor(species), n, fill = factor(BMI_category))) + 
+  geom_bar(stat = 'identity', position = 'dodge') + 
+  geom_text(aes(label=n),  position = position_dodge(0.9),
+                  vjust = 0, color = "black") + labs(fill = "BMI Category", x="Species", y="Counts") + scale_fill_manual(values = c("#042333ff",  "#593d9cff", "#b8627dff", "#f9a242ff"))
+p1
+
+```
+
+## Percentage Grouped Bar Chart
+
+```{r}
+pf3 <- pf2 %>%
+  count(species, BMI_category) %>%
+  complete(species = unique(pf2$species), BMI_category = unique(pf2$BMI_category), fill = list(n = 0)) %>%
+  group_by(species) %>%
+  mutate(row_percentage = n / sum(n) * 100) %>%
+  ungroup()
+
+# Plotting code for row percentages
+p2 <- ggplot(pf3, aes(x = factor(species), y = row_percentage, fill = factor(BMI_category))) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  geom_text(aes(label = sprintf("%.1f%%", row_percentage)), 
+            position = position_dodge(width = 0.9), vjust = -0.5, color = "black") +
+  labs(fill = "BMI Category", x = "Species", y = "Percentage") +
+  scale_fill_manual(values = c("#042333ff",  "#593d9cff", "#b8627dff", "#f9a242ff")) +
+  ylim(0, 100) +  # Ensure y-axis starts from 0 and ends at 100
+  theme_minimal() 
+p2
+```
+
+## Row percentages
+
+```{r, out.width="200%"}
+knitr::include_graphics("tab1.png")
+```
+
+# 
+
+::: columns
+::: {.column width="50%"}
+## Counts
+
+```{r}
+p1
+```
+
+```{r, out.width="200%"}
+knitr::include_graphics("tab1.png")
+```
+:::
+
+::: {.column width="50%"}
+## Percentages
+
+```{r}
+p2
+```
+:::
+:::
+
+# Column Percentages
+
+```{r, out.width="200%"}
+knitr::include_graphics("tab2.png")
+```
+
+## 
+
+::: columns
+::: {.column width="50%"}
+### Counts
+
+```{r}
+pf2 |>
+  count(BMI_category, species) |>
+  complete(species = unique(species), BMI_category = unique(BMI_category), 
+           fill = list(n = 0)) |>
+  ggplot(aes(fill=factor(species), y= n, x = factor(BMI_category))) + 
+  geom_bar(stat = 'identity', position = 'dodge') + 
+ geom_text(aes(label =  n), 
+            position = position_dodge(width = 0.9), vjust = -0.5, color = "black") +
+labs(x = "BMI Category", fill ="Species", y="Counts") +
+scale_fill_brewer(palette = "Dark2")
+
+```
+
+```{r, out.width="200%"}
+knitr::include_graphics("tab2.png")
+```
+:::
+
+::: {.column width="50%"}
+### Percentages
+
+```{r}
+pf4 <- pf2 %>%
+  count(species, BMI_category) %>%
+  complete(species = unique(pf2$species), BMI_category = unique(pf2$BMI_category), fill = list(n = 0)) %>%
+  group_by(BMI_category) %>%
+  mutate(col_percentage = n / sum(n) * 100) %>%
+  ungroup()
+
+# Plotting code for row percentages
+p3 <- ggplot(pf4, aes(x = factor(BMI_category), y = col_percentage, fill = factor(species))) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  geom_text(aes(label = sprintf("%.1f%%", col_percentage)), 
+            position = position_dodge(width = 0.9), vjust = -0.5, color = "black") +
+  labs(x = "BMI Category", fill = "Species", y = "Percentage") +
+  ylim(0, 100) +  # Ensure y-axis starts from 0 and ends at 100
+ scale_fill_brewer(palette = "Dark2")
+p3
+```
+:::
+:::
+
+# Staked Bar Chart
+
+## 
+
+::: columns
+::: {.column width="50%"}
+### Counts
+
+```{r}
+pf2 |>
+  count(BMI_category, species) |>
+  ggplot(aes(fill=factor(species), y= n, x = factor(BMI_category))) + 
+  geom_bar(stat = 'identity', position = 'stack') + 
+ geom_text(aes(label =n),
+            position = position_stack(vjust = 0.5), 
+            size = 3, 
+            color = "white") +
+labs(x = "BMI Category", fill ="Species", y="Counts") +
+scale_fill_brewer(palette = "Dark2")
+
+```
+
+```{r, out.width="200%"}
+knitr::include_graphics("tab2.png")
+```
+:::
+
+::: {.column width="50%"}
+### Percentages
+
+```{r}
+pf2 |>
+  count(BMI_category, species) |>      
+  group_by(BMI_category) |>
+  mutate(pct= prop.table(n) * 100) %>%
+  ggplot() + aes(BMI_category, pct, fill=species) +
+  geom_bar(stat="identity") +
+  ylab("Percentage") +
+  xlab("BMI Category")+
+  geom_text(aes(label=paste0(sprintf("%1.1f", pct),"%")),
+            position=position_stack(vjust=0.5)) + scale_fill_brewer(palette = "Dark2")
+```
+:::
+:::
+
+## 
+
+::: columns
+::: {.column width="50%"}
+### Counts
+
+```{r}
+pf2 |>
+  count(BMI_category, species) |>
+  ggplot(aes(fill=factor(species), y= n, x = factor(BMI_category))) + 
+  geom_bar(stat = 'identity', position = 'stack') + 
+ geom_text(aes(label =n),
+            position = position_stack(vjust = 0.5), 
+            size = 3, 
+            color = "white") +
+labs(x = "BMI Category", fill ="Species", y="Counts") +
+scale_fill_brewer(palette = "Dark2") + coord_flip()
+
+```
+
+```{r, out.width="200%"}
+knitr::include_graphics("tab2.png")
+```
+:::
+
+::: {.column width="50%"}
+### Percentages
+
+```{r}
+pf2 |>
+  count(BMI_category, species) |>      
+  group_by(BMI_category) |>
+  mutate(pct= prop.table(n) * 100) %>%
+  ggplot() + aes(BMI_category, pct, fill=species) +
+  geom_bar(stat="identity") +
+  ylab("Percentage") +
+  xlab("BMI Category")+
+  geom_text(aes(label=paste0(sprintf("%1.1f", pct),"%")),
+            position=position_stack(vjust=0.5)) + scale_fill_brewer(palette = "Dark2") + coord_flip()
+```
+:::
+:::
+
+## Percentage chart
+
+::: columns
+::: {.column width="50%"}
+**Advantages**
+
+-   Shows the proportion of each category relative to the whole, making it easier to understand the distribution.
+
+-   Allows for fair comparisons between different groups or categories, regardless of their size.
+
+-   Highlights the relative importance of different categories within each group.
+:::
+
+::: {.column width="50%"}
+**Disadvantages**
+
+-   Doesn’t provide the raw counts, which might be necessary for understanding the actual volume or size of each category.
+:::
+:::
+
+## Counts chart
+
+::: columns
+::: {.column width="50%"}
+**Advantages**
+
+-   Clearly shows the frequency of each category, providing a direct understanding of the volume or size.
+
+-   Useful when the actual count is crucial for decision-making.
+:::
+
+::: {.column width="50%"}
+**Disadvantages**
+
+-   Difficulties arise when comparing groups, especially when their sizes differ.
+:::
+:::
+
+## Grouped Bar Chart (Percentage)
+
+::: columns
+::: {.column width="50%"}
+**Advantages**
+
+-   Comparison within groups: It allows for easy comparison of values within each category group.
+
+-   Comparison between groups: It also facilitates comparison between different category groups.
+:::
+
+::: {.column width="50%"}
+**Disadvantages**
+
+-   If there are too many groups or variables, the bars can become narrow, making it difficult to read.
+
+-   Complexity with many groups: With a large number of groups or variables, the chart can become crowded and hard to read.
+
+-   Difficulty in showing totals: It's not straightforward to show the total magnitude of each category since bars are grouped.
+:::
+:::
+
+## Stacked Bar Chart
+
+::: columns
+::: {.column width="50%"}
+**Stacked Count Chart**
+
+-   Allows viewers to see how totals accumulate as each category is stacked on top of one another.
+
+-   Useful for comparing the total magnitude of each category across different groups or segments.
+
+-   Ideal when the emphasis is on the total quantity of items in each category rather than their relative proportions.
+:::
+
+::: {.column width="50%"}
+**Stacked Percentage Chart**
+
+-   Use when you want to show the relative proportion or contribution of each category to the total.
+
+-   Helpful for illustrating the distribution of percentages within categories across different groups or segments.
+
+-   Suitable when you want to emphasize the composition or share of each category relative to the whole.
+:::
+:::
+
+## Stacked Bar Chart: Disadvantages
+
+-   It can be challenging to compare individual segments between different groups because they are not aligned horizontally.
+
+-   Small segments can be hard to interpret accurately when they are stacked on top of each other.
+
+## Which is the best?
+
+::: columns
+::: {.column width="50%"}
+```{r, fig.height=10}
+pf2 |>
+  count(BMI_category, gender) |>      
+  group_by(BMI_category) |>
+  mutate(pct= prop.table(n) * 100) %>%
+  ggplot() + aes(BMI_category, pct, fill=gender) +
+  geom_bar(stat="identity",  position = 'dodge') +
+  ylab("Percentage") +
+  xlab("Gender")+
+  geom_text(aes(label = sprintf("%.1f%%", pct)), 
+            position = position_dodge(width = 0.9), vjust = -0.5, color = "black") + scale_fill_manual(values=c("#f768a1", "#1d91c0")) + labs(fill="Gender")
+```
+:::
+
+::: {.column width="50%"}
+```{r, fig.height=10}
+pf2 |>
+  count(BMI_category, gender) |>      
+  group_by(BMI_category) |>
+  mutate(pct= prop.table(n) * 100) %>%
+  ggplot() + aes(BMI_category, pct, fill=gender) +
+  geom_bar(stat="identity") +
+  ylab("Percentage") +
+  xlab("Gender")+
+  geom_text(aes(label=paste0(sprintf("%1.1f", pct),"%")),
+            position=position_stack(vjust=0.5)) + scale_fill_manual(values=c("#f768a1", "#1d91c0")) + labs(fill="Gender")
+```
+:::
+:::
+
+# Facet Bar Chart
+
+# 
+
+**Facet by Gender**
+
+```{r, fig.height=10}
+pf2 |>
+  count(BMI_category, gender) |>      
+  group_by(BMI_category) |>
+  mutate(pct= prop.table(n) * 100) %>%
+  ggplot() + aes(BMI_category, pct, fill=gender) +
+  geom_bar(stat="identity",  position = 'dodge') +
+  ylab("Percentage") +
+  xlab("Gender")+
+  geom_text(aes(label = sprintf("%.1f%%", pct)), 
+            position = position_dodge(width = 0.9), vjust = -0.5, color = "black") + scale_fill_manual(values=c("#f768a1", "#1d91c0"))  + facet_wrap(vars(gender))
+```
+
+# 
+
+**Facet by BMI Category**
+
+```{r, fig.height=10, fig.width=12}
+pf2 |>
+  count(BMI_category, gender) |>      
+  group_by(BMI_category) |>
+  mutate(pct= prop.table(n) * 100) %>%
+  ggplot() + aes(fill=BMI_category, pct, x=gender) +
+  geom_bar(stat="identity",  position = 'dodge') +
+  ylab("Percentage") +
+  xlab("Gender")+
+  geom_text(aes(label = sprintf("%.1f%%", pct)), 
+            position = position_dodge(width = 0.9), vjust = -0.5, color = "black") +  facet_wrap(vars(BMI_category), ncol=4)
+```
+
+# Some rules
+
+## 
+
+1.  Don't make them 3D: 3D charts can distort data and make it difficult to accurately interpret values.
+
+2.  Don't use overly complex charts: Keep it simple. Overly complex charts can confuse the viewer and obscure the data.
+
+3.  Don't use excessive colors: Too many colors can be distracting and make the chart hard to read. Stick to a simple color palette.
+
+4.  Don't use misleading scales: Ensure the scales start at zero (when appropriate) and are consistent to avoid misrepresenting the data.
+
+5.  Don't use pie charts for too many categories: Pie charts are hard to interpret with more than a few slices. Use a bar chart instead.
+
+6.  Don't use inappropriate chart types: Match the chart type to the data you are presenting. For example, use line charts for trends over time and bar charts for comparing categories.
+
+------------------------------------------------------------------------
+
+7.  Don't omit axis labels and titles: Always label your axes and give your chart a clear, descriptive title.
+
+8.  Don't clutter with too much information: Avoid adding unnecessary elements like excessive gridlines, text, or data points.
+
+9.  Don't ignore accessibility: Ensure your charts are readable for people with color blindness by using colorblind-friendly palettes and providing text alternatives.
+
+10. Don't make legends and labels too small: Ensure that legends and labels are large enough to be easily read.
+
+11. Don't use default settings without customization: Default settings might not be the best for your data. Customize your charts to improve clarity and impact.
+
+12. Don't ignore data source and context: Always provide the data source and context to help the audience understand where the data comes from and its relevance.

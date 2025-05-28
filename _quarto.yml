@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "STA 113 2.0 Descriptive Statistics"
+  site-url: "https://thiyangt.github.io/descriptivestatisticsweb/"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - ga.qmd
+      - ia.qmd
+      - ma.qmd
+
+
+format:
+  html:
+    theme: pulse
+    css: styles.css
+    toc: true
+
+editor: visual
+

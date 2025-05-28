@@ -1,0 +1,482 @@
+---
+title: "STA 1132 Descriptive Statistics"
+subtitle: "Definition of Statistics and Role of Statistics"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    css:
+        - "custom.css"
+    width: 1600
+    height: 900
+    margin: 0.1
+    theme: simple
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+## Learning Objective:
+
+### By the end of this lecture, students will be able to:
+
+-   Define statistics and explain its fundamental concepts.
+-   Identify the various fields and contexts where statistics is used.
+-   Explain the importance and significance of statistics in decision-making and problem-solving processes.
+
+# Outline
+
+::: {style="margin-top: 10px; font-size: 1.5em; "}
+What is statistics?
+
+Where do we use statistics?
+
+Why do we need statistics?
+:::
+
+------------------------------------------------------------------------
+
+# Outline
+
+::: {style="margin-top: 10px; font-size: 1.5em; color: red;"}
+What is statistics?
+:::
+
+::: {style="margin-top: 10px; font-size: 1.5em;"}
+Where do we use statistics?
+
+Why do we need statistics?
+:::
+
+------------------------------------------------------------------------
+
+## What is Statistics? {.center .middle}
+
+::: {style="margin-top: 10px; font-size: 1.5em; "}
+The science of collecting, organizing, and analyzing data, and presenting and interpreting the results derived from that data to gain insights and make informed decisions.
+:::
+
+# The science of collecting, organizing, and analyzing data, and presenting and interpreting the results derived from that data to gain insights and make informed decisions.
+
+# The science of collecting, organizing, and analyzing [data]{style="color:red;"}, and presenting and interpreting the results derived from that data to gain insights and make informed decisions. 
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+```{r, echo=FALSE}
+knitr::include_graphics("i1.png")
+```
+:::
+
+::: {.column width="50%"}
+```{r, echo=FALSE}
+knitr::include_graphics("i2.png")
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+**Tabular data (Structured data)**
+
+```{r, echo=FALSE}
+knitr::include_graphics("i1.png")
+```
+:::
+
+::: {.column width="50%"}
+:::
+:::
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE, fig.cap="Source: Le Dinh, T., Lee, S. H., Kwon, S. G., & Kwon, K. R. (2022). COVID-19 Chest X-ray Classification and Severity Assessment Using Convolutional and Transformer Neural Networks. Applied Sciences, 12(10), 4861."}
+knitr::include_graphics("i4.png")
+```
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+**Tabular data (Structured data)**
+
+```{r, echo=FALSE}
+knitr::include_graphics("i1.png")
+```
+:::
+
+::: {.column width="50%"}
+**Image data**
+
+```{r, echo=FALSE, out.height="20%"}
+knitr::include_graphics("i4.png")
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+**Tabular data (Structured data)**
+
+```{r, echo=FALSE}
+knitr::include_graphics("i1.png")
+```
+
+**Audio data**
+
+![](i5.gif)
+:::
+
+::: {.column width="50%"}
+**Image data**
+
+```{r, echo=FALSE, out.height="20%"}
+knitr::include_graphics("i4.png")
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="50%"}
+**Tabular data (Structured data)**
+
+```{r, echo=FALSE}
+knitr::include_graphics("i1.png")
+```
+
+**Audio data**
+
+![](i5.gif)
+:::
+
+::: {.column width="50%"}
+**Image data**
+
+```{r, echo=FALSE}
+knitr::include_graphics("i4.png")
+```
+
+**Video data**
+
+[Link](https://youtu.be/398Zcag0Pw8?si=Uzi6-7AwxpVNSaTF)
+:::
+:::
+
+# The science of [collecting]{style="color:red;"}, organizing, and analyzing [data]{style="color:blue;"}, and presenting and interpreting the results derived from that data to gain insights and make informed decisions.
+
+
+
+------------------------------------------------------------------------
+
+### How to choose a representative subset of the population?
+
+```{r, echo=FALSE, fig.cap="Elephant distribution map for Sri Lanka. Image courtesy of Fernando et al (2019). (accessed from https://news.mongabay.com/2019/02/sri-lanka-gets-its-first-data-based-elephant-distribution-map/)"}
+knitr::include_graphics("https://imgs.mongabay.com/wp-content/uploads/sites/20/2019/02/15071717/Screen-Shot-2019-02-15-at-5.46.08-PM-364x512.png")
+```
+
+------------------------------------------------------------------------
+
+# The science of [collecting]{style="color:blue;"}, [organizing]{style="color:red;"}, and analyzing [data]{style="color:blue;"}, and presenting and interpreting the results derived from that data to gain insights and make informed decisions.
+
+# The science of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:red;"} [data]{style="color:blue;"}, and presenting and interpreting the results derived from that data to gain insights and make informed decisions.
+
+
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+ID <- 1:100
+g1 <- c("Male", "Female", "Female", "Female", "Female", "Male", "Male", "Male") 
+Gender <- c(g1, rep("Female", 46), rep("Male", 46))
+b2 <- rnorm(46, mean=3.5) 
+b3 <- rnorm(46, mean=3)
+w2 <- 1000*b2 + rnorm(46, mean=100)
+w3 <- 1500*b3 + rnorm(46, mean=100)
+b1 <- c(3.6, 2.5, 4, 4.5, 3, 3.9, 4.2, 4.6)
+w1 <- c(4000, 5000, 6000, 7000, 7550, 4500, 3375, 5500)
+B <- round(c(b1, b2, b3), 1)
+Weight <- round(c(w1, w2, w3), 0)
+a1 <- c(80, 90, 110, 100, 91.5, 92, 88, 70) 
+a2 <- rnorm(92, mean=100)
+A <- round(c(a1, a2), 1)
+c1 <- c(2.5, 6.3, 4.5, 3.2, 3.5, 3.7, 3.8, 3.9)
+c2 <- rnorm(92, mean=3.5)
+C <- round(c(c1, c2), 1)
+df <- data.frame(ID, Gender, A, B, C, Weight)
+df
+```
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="25%"}
+```{r, echo=FALSE}
+library(kableExtra)
+head(df, 28) |> knitr::kable() |> kable_styling(font_size = 20)
+```
+:::
+
+::: {.column width="25%"}
+```{r, echo=FALSE}
+library(kableExtra)
+head(df[29:56,], 50) |> knitr::kable() |> kable_styling(font_size = 20)
+```
+:::
+
+::: {.column width="25%"}
+```{r, echo=FALSE}
+library(kableExtra)
+df[57:83,] |> knitr::kable() |> kable_styling(font_size = 20)
+```
+:::
+
+::: {.column width="25%"}
+```{r, echo=FALSE}
+library(kableExtra)
+df[84:100,] |> knitr::kable() |> kable_styling(font_size = 20)
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+::: columns
+::: {.column width="25%"}
+```{r, echo=FALSE}
+library(kableExtra)
+df[1:28, c(1, 2, 4, 6)] |> knitr::kable() |> kable_styling(font_size = 20)
+```
+:::
+
+::: {.column width="25%"}
+```{r, echo=FALSE}
+library(kableExtra)
+df[29:56, c(1, 2, 4, 6)] |> knitr::kable() |> kable_styling(font_size = 20)
+```
+:::
+
+::: {.column width="25%"}
+```{r, echo=FALSE}
+library(kableExtra)
+df[57:83, c(1, 2, 4, 6)] |> knitr::kable() |> kable_styling(font_size = 20)
+```
+:::
+
+::: {.column width="25%"}
+```{r, echo=FALSE}
+library(kableExtra)
+df[84:100, c(1, 2, 4, 6)] |> knitr::kable() |> kable_styling(font_size = 20)
+```
+:::
+:::
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE, comment=NA, warning=FALSE, message=FALSE}
+
+library(ggplot2)
+ggplot(data=df, aes(x=B, y=Weight)) + 
+  geom_point() + ggtitle("Scatterplot of weight(kg) vs B(ft)") +
+  xlab("B (ft)") + ylab("Weight (kg)") + theme(plot.title = element_text(hjust = 0.5)) + theme(aspect.ratio=1) 
+```
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE, comment=NA, warning=FALSE, message=FALSE}
+
+p1 <- ggplot(data=df, aes(x=B, y=Weight,  col=Gender)) + 
+  geom_point() + ggtitle("Scatterplot of weight(kg) vs B(ft)") +
+  xlab("B (ft)") + ylab("Weight (kg)") + theme(plot.title = element_text(hjust = 0.5)) + scale_colour_manual(values = c("#e7298a","#1b9e77", "green")) + theme(aspect.ratio=1) 
+p1
+```
+
+------------------------------------------------------------------------
+
+```{r, fig.height=8, fig.width=8}
+library(plotly)
+ggplotly(p1)
+```
+
+------------------------------------------------------------------------
+
+## Summary measures
+
+```{r, echo=FALSE}
+df$Gender <- as.factor(df$Gender)
+summary(df[, -1]) |> knitr::kable() |> kable_styling(font_size = 40)
+```
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE}
+knitr::include_graphics("orange.jpeg")
+```
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE}
+knitr::include_graphics("i7.png")
+```
+
+------------------------------------------------------------------------
+
+# The science of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:red;"} and interpreting the results derived from that data to gain insights and make informed decisions.
+
+
+
+
+------------------------------------------------------------------------
+
+## Presenting Data: Example
+
+<https://thiyangt.github.io/dsjobtraker_dashboard_mc/#top-software-and-skills>
+
+```{r, echo=FALSE}
+knitr::include_graphics("dsjobtraker.png")
+```
+
+------------------------------------------------------------------------
+
+# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:red;"} results derived from that data to gain insights and make informed decisions.
+
+
+------------------------------------------------------------------------
+
+# Outline
+
+::: {style="margin-top: 10px; font-size: 1.5em; color: red;"}
+What is statistics?
+:::
+
+::: {style="margin-top: 10px; font-size: 1.5em;"}
+Where do we use statistics?
+
+Why do we need statistics?
+:::
+
+------------------------------------------------------------------------
+
+# Outline
+
+::: {style="margin-top: 10px; font-size: 1.5em; color: blue; "}
+What is statistics?
+:::
+
+::: {style="margin-top: 10px; font-size: 1.5em; color: red;"}
+Where do we use statistics?
+:::
+
+::: {style="margin-top: 10px; font-size: 1.5em; "}
+Why do we need statistics?
+:::
+
+------------------------------------------------------------------------
+
+# Your turn
+
+-   How often do you find yourself relying on statistics in your daily routines or decision-making processes?
+
+-   Could you provide a few examples of how you utilize statistical information?
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 10, seconds = 00)
+```
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE}
+knitr::include_graphics("i8.png")
+```
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE}
+knitr::include_graphics("i9.jpeg")
+```
+
+------------------------------------------------------------------------
+
+## Applications of statistics in different fields
+
+```{r, warning=FALSE, message=FALSE}
+library(tibble)
+Terminology <- c("Epidemiology", "Astrostatistics", "Biostatistics", "Demography", "Social statistics", "Chemometrics")
+Field <- c("The study and analysis of the patterns, causes and effects of health and disease conditions", "Applies statistical analysis to the understanding of astronomical data", "Studies biological phenomena", "Statistical study of all populations", "Study human behavior in a social environment", "Science of extracting information from chemical systems by data-driven means")
+tf <- tibble(Terminology, Field)
+tf |> knitr::kable()
+
+```
+
+------------------------------------------------------------------------
+
+```{r, warning=FALSE, message=FALSE}
+library(tibble)
+Terminology <- c("Actuarial statistics", "Forensic statistics", "Spatial statistics", "Econometrics", "Jurimetrics", "Psychometrics")
+Description <- c("Discipline that deals with assessing the risks in insurance and finance field.", "Studies DNA testing results", "Analysis of spatial data", "Uses economic theory, mathematics, and statistical inference to quantify economic phenomena. ", "Application of probability and statistics to law.", "Applies statistical methods to psychological measurements")
+tf <- tibble(Terminology, Description)
+tf |> knitr::kable()
+
+```
+
+[Source and Reading materials: https://en.wikipedia.org/wiki/List_of_fields_of_application_of_statistics](https://en.wikipedia.org/wiki/List_of_fields_of_application_of_statistics)
+
+# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:blue;"} results derived from that data to gain insights and make informed decisions.
+
+# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:blue;"} results derived from that data to [gain insights]{style="color:red;"} and make informed decisions.
+
+# When you analyze data and gain insights, you’re uncovering patterns, trends, or meaningful information.
+
+## Example:
+
+From the sales data, the company gained insights into customer behavior — such as which products were most popular in different regions.
+
+# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:blue;"} results derived from that data to [gain insights]{style="color:blue;"} and make [informed decisions]{style="color:red;"}.
+
+# "Informed" means based on knowledge, facts, or awareness.
+
+When we say "informed decisions," it refers to choices made after carefully considering relevant information or data, rather than guessing or relying on assumptions.
+
+# Outline
+
+::: {style="margin-top: 10px; font-size: 1.5em; color: blue; "}
+What is statistics?
+
+Where do we use statistics?
+:::
+
+::: {style="margin-top: 10px; font-size: 1.5em; color: red;"}
+Why do we need statistics?
+:::
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE}
+knitr::include_graphics("sydney2.png")
+```
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE}
+knitr::include_graphics("sy1.jpg")
+```
+
+Captured by Dr Thiyanga S. Talagala
+
+------------------------------------------------------------------------
+
+```{r, echo=FALSE}
+knitr::include_graphics("sy2.jpg")
+```
+
+> #Learn to Travel. Travel to Learn.

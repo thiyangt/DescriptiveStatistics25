@@ -1,0 +1,342 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Basic Terminologies and Concepts in Statistics"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 1000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+### Population
+
+The [complete collection]{style="color:red;"} of individuals or objects that are of interest.
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip2.png")
+```
+
+## Example
+
+1.  Population
+
+We're interested in studying the average height of [all adults in a country]{style="color:blue;"}, the population is all adult residents of that country.
+
+## Unit
+
+A unit is a single member of the population. It could be an individual or an object.
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip3.png")
+```
+
+## Unit
+
+A unit is a single member of the population. It could be an individual or an object.
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip4.png")
+```
+
+## Example
+
+1.  Population
+
+We're interested in studying the average height of [all adults in a country]{style="color:blue;"}, the population is all adult residents of that country.
+
+2.  Unit
+
+In our example of studying adult height, [each adult residing]{style="color:blue;"} in the country would be a unit.
+
+## Sample
+
+A subset of units in a population.
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip5.png")
+```
+
+## Sample
+
+A subset of units in a population.
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip6.png")
+```
+
+## Sampling
+
+Sampling is the [process]{style="color:red;"} of selecting a subset of individuals or items from a population.
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip7.png")
+```
+
+## Statistics
+
+A numerical summary of a sample.
+
+<!--A numerical value summarizing the sample data.-->
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip8.png")
+```
+
+## Parameter
+
+A numerical summary of a population.
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip9.png")
+```
+
+## Inferential Statistics
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip10.png")
+```
+
+## Inferential Statistics
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip11.png")
+```
+
+## Two Branches of Statistics
+
+::: columns
+::: {.column width="50%"}
+### 1. Descriptive Statistics
+:::
+
+::: {.column width="50%"}
+### 2. Inferential Statistics
+:::
+:::
+
+## Two Branches of Statistics
+
+::: columns
+::: {.column width="50%"}
+### 1. Descriptive Statistics
+
+Describe and summarize the collected data through numerical summaries, tables, and graphs.
+:::
+
+::: {.column width="50%"}
+### 2. Inferential Statistics
+:::
+:::
+
+## Two Branches of Statistics
+
+::: columns
+::: {.column width="50%"}
+### 1. Descriptive Statistics
+
+Describe and summarize the collected data through numerical summaries, tables, and graphs.
+:::
+
+::: {.column width="50%"}
+### 2. Inferential Statistics
+
+Statistical inference refers to the methods used to make estimations, decisions, or predictions about a population parameters based on the statistics computed from a sample that was selected from that population.
+:::
+:::
+
+## In-class demo
+
+**About the data**
+
+Data were collected and made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network.
+
+```{r}
+library(palmerpenguins)
+data(penguins)
+penguins
+```
+
+# 
+
+::: columns
+::: {.column width="50%"}
+```{r}
+knitr::include_graphics("culmen_depth.png")
+```
+
+Source: https://allisonhorst.github.io/palmerpenguins/
+:::
+
+::: {.column width="50%"}
+```{r}
+knitr::include_graphics("gorman-penguins.jpg")
+```
+
+source: https://education.rstudio.com/blog/2020/07/palmerpenguins-cran/
+:::
+:::
+
+# 
+
+> ## Census
+
+A [census]{style="color:red;"} involves collecting information from every individual or unit within the entire population of interest.
+
+> ## Sample Survey
+
+A [survey]{style="color:red;"} involves collecting information from a subset (sample) of the population to estimate characteristics of the entire population.
+
+## Notations
+
+[Parameters]{style="color:red;"} are usually denoted by Greek letters
+
+Example:
+
+$\mu - \text{population mean}$
+
+$\sigma - \text{population variance}$
+
+[Statistics]{style="color:blue;"} are denoted by English letters (Capital or Simple? You will learn more of this in your "Statistical Inference" course)
+
+Eample:
+
+$\bar{X} - \text{sample mean}$
+
+$S^2 - \text{sample variance}$
+
+## Inclass demo
+
+-   The value of the population parameter does not change.
+
+-   Sample statistics vary from sample to sample.
+
+------------------------------------------------------------------------
+
+```{r, out.height="120%"}
+knitr::include_graphics("ip2.png")
+```
+
+------------------------------------------------------------------------
+
+```{r, out.height="120%"}
+knitr::include_graphics("s1.png")
+```
+
+------------------------------------------------------------------------
+
+```{r, out.height="120%"}
+knitr::include_graphics("s3.png")
+```
+
+------------------------------------------------------------------------
+
+```{r, out.height="120%"}
+knitr::include_graphics("s2.png")
+```
+
+## Your turn: Question 1
+
+A researcher is studying the biodiversity of Beira Lake. To estimate the proportion of species counts, he took a bucket of water (1L) from the lake and counted how many species of bacteria, bugs, and other creepy crawlies he found in the bucket.
+
+Identify the following terms related to this study:
+
+i.  Population
+
+ii. Sample
+
+iii. Parameter
+
+iv. Statistics
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 6, seconds = 00)
+```
+
+## Your turn: Question 2
+
+A researcher wants to estimate the failure rate of hard disk drives (HDDs) produced by a computer manufacturing company. The researcher randomly selects 100 HDDs from a recent production batch and examines them for signs of malfunction or failure.
+
+Identify the following terms related to this study:
+
+i.  Population
+
+ii. Sample
+
+iii. Parameter
+
+iv. Statistics
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 5, seconds = 00)
+```
+
+## Your turn: Question 3
+
+The lecturer-in-charge is interested in estimating the proportion of students who actively listened to the lecture during today's online Zoom sessions. She randomly selects 50 students and asks questions related to the content covered during the lecture.
+
+Identify the following terms related to this study:
+
+i.  Population
+
+ii. Sample
+
+iii. Parameter
+
+iv. Statistics
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 5, seconds = 00)
+```
+
+## Your turn: Question 4
+
+A researcher is interested in estimating the mean monthly expenditure of government university students on educational expenses. The researcher randomly selects 100 government university students and asks them to report their total educational expenditure for the last month. Based on the observed values, the researcher computed the sample mean.
+
+Identify the following terms related to this study:
+
+i.  Population
+
+ii. Sample
+
+iii. Parameter
+
+iv. Statistics
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 5, seconds = 00)
+```
+
+## Your turn: Question 5
+
+The government wants to assess the willingness of all government officers earning a salary of Rs 100,000 to purchase electric vehicles. The government has posted a questionnaire to every government officers earning this salary. Identify whether this process is a census or a survey. Provide a justification for your answer.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 4, seconds = 00)
+```
+
+## Your turn: Question 6
+
+The government wants to assess the willingness of government officers earning a salary greater than Rs 100,000 to purchase electric vehicles. They have posted a questionnaire to a sample of government offices where officers earn salaries above this threshold. Identify whether this process is a census or a survey. Provide a justification for your answer.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(countdown)
+countdown(minutes = 4, seconds = 00)
+```
+
+## Copyright
+
+Up until slide 13 and slides 23-26, every image has been authored by Dr Thiyanga S. Talagala. Hence, all images up to slide 14 and 23-26 are copyrighted by Thiyanga S. Talagala.

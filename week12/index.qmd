@@ -1,0 +1,125 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Time Series Plots"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 2000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(tsibble)
+library(lubridate)
+library(feasts)
+library(denguedatahub)
+# install.packages("devtools")
+#devtools::install_github("thiyangt/TourSriLanka")
+library(TourSriLanka)
+```
+
+```{r}
+earnings <- earnings |>
+  arrange(Year, match(Month, month.name) )
+y.earnings <- earnings |> mutate(Date = seq(ymd_hm("2009-1-1 0:00"), ymd_hm("2023-12-1 12:00"), by = "month"))
+y.earnings <- y.earnings |>
+  select(Earnings, Date) |> mutate(Time = yearmonth(Date))
+ts.earnings <- y.earnings |>
+  select(Earnings, Time) |> as_tsibble(index=Time)
+ts.earnings |> knitr::kable()
+```
+
+## Earnings from tourism (USD Mn)
+
+```{r}
+#| echo: false
+ts.earnings |>
+    mutate(Time = as_date(yearmonth(Time))) |>
+  ggplot(aes(x = Time, y = Earnings)) +
+  geom_line() +
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  labs(y = "Earnings from tourism (USD Mn)", x="Time")
+```
+
+## Earnings from tourism (USD Mn)
+
+```{r}
+#| echo: false
+ts.earnings |>
+    mutate(Time = as_date(yearmonth(Time))) |>
+  ggplot(aes(x = Time, y = Earnings)) +
+  geom_line() +
+  geom_point()+
+  scale_x_date(date_breaks = "1 year", date_labels = "%Y") + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  labs(y = "Earnings from tourism (USD Mn)", x="Time")
+```
+
+## Area chart
+
+```{r}
+#| echo: true
+#| style: "font-size: 20px;"
+ts.earnings |>
+    mutate(Time = as_date(yearmonth(Time))) |>
+  autoplot(Earnings) + 
+  geom_area() + 
+  scale_x_date(date_breaks = "1 year",  date_labels = "%b-%y") + 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  labs(y = "Earnings from tourism (USD Mn)", x="Time") 
+```
+
+## Seasonal plot
+
+```{r}
+#| echo: false
+library(viridis)
+ts.earnings |>
+  gg_season(Earnings, period = "1 year")  
+  
+```
+
+## 
+
+```{r}
+y.tsibble <- tsibble(
+  Year = 2020:2023,
+  Earnings = c(682.4, 506.9, 1136.3, 2068.0),
+  index = Year)
+y.tsibble
+y.tsibble |>
+  autoplot(Earnings) +
+  geom_point() +
+  labs(y = "Earnings from tourism (USD Mn)", x="Time") 
+```
+
+Not suitable
+
+------------------------------------------------------------------------
+
+## 
+
+```{r}
+y.tsibble |> knitr::kable()
+ggplot(y.tsibble, aes(x = Year, y = Earnings)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  labs(title = "Earnings by Year",
+       x = "Year",
+       y = "Earnings (in $)") +
+  theme_minimal()
+```
+
+## 
+
+More about time series visualizations - Data Visualisation unit

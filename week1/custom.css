@@ -1,0 +1,5 @@
+/* Increase font size for all slides */
+  .reveal .slides section {
+    font-size: 48px;
+  }
+

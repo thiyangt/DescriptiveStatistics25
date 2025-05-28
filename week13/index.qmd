@@ -1,0 +1,73 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Spearman's rank correlation"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 2000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(tsibble)
+library(lubridate)
+library(feasts)
+library(denguedatahub)
+# install.packages("devtools")
+#devtools::install_github("thiyangt/TourSriLanka")
+library(TourSriLanka)
+```
+
+## Spearman's rank correlation
+
+-   Pearson's correlation coefficient: at least interval level of measurement for the data
+
+-   Spearman's rank correlation: at least ordinal-level or ranked data
+
+$r = 1 - \frac{6\sum_{i=1}^nd^2}{n(n^2-1)}$
+
+where
+
+$n = \text{number of pairs being correlated.}$
+
+$d = \text{the difference in the ranks of each pair}$
+
+------------------------------------------------------------------------
+
+## Example
+
+Compute Spearman's rank correlation for the following variables to determine the degree of association between the two variables.
+
+```{r}
+x <- c(10, 10, 4, 20, 30, 40, 40, 30, 20, 10)
+
+y <- c(3, 3, 1, 2, 3, 4.5, 5, 6, 7, 1)
+df <- data.frame(x=x, y=y)
+df |> knitr::kable()
+```
+
+# Important
+
+-   Pearson's correlation determines the strength and direction of the linear relationship between two variables.
+
+-   Spearman's correlation determines the strength and direction of the monotonic relationship.
+
+-   The Spearman's rank correlation formula is derived from the Pearson product moment formula and utilises the ranks of the $n$ pairs instead of the raw data.
+
+------------------------------------------------------------------------
+
+## In-class demonstration
+
+-   Monotonic vs Non-monotonic
+
+-   Monotonic & Non-linear vs Monotonic & Linear

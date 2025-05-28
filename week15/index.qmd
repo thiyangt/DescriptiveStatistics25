@@ -1,0 +1,103 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Misuse of Statistics"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 2000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+```{r, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(tsibble)
+library(lubridate)
+library(feasts)
+library(denguedatahub)
+# install.packages("devtools")
+#devtools::install_github("thiyangt/TourSriLanka")
+library(TourSriLanka)
+```
+
+------------------------------------------------------------------------
+
+## Non-zero baseline barchart
+
+```{r}
+# Load necessary libraries
+library(ggplot2)
+library(gridExtra)
+
+# Data
+data <- data.frame(
+  year = factor(c(2020, 2021, 2022, 2023, 2024)),
+  hires = c(100, 105, 110, 114, 121)
+)
+
+# Bar chart with y-axis starting at 100
+p1 <- ggplot(data, aes(x = year, y = hires)) +
+  geom_bar(stat = "identity") +
+  ggtitle("Bar Chart with Y-axis Starting at 100") +
+  xlab("Year") +
+  ylab("Number of Hires")
+
+# Bar chart without zero baseline (starting at 100)
+p2 <- ggplot(data, aes(x = year, y = hires)) +
+  geom_bar(stat = "identity") +
+ coord_cartesian(ylim = c(100, 125)) +
+  ggtitle("Bar Chart without Zero Baseline") +
+  xlab("Year") +
+  ylab("Number of Hires")
+
+# Arrange plots side by side
+grid.arrange(p1, p2, ncol = 2)
+
+```
+
+------------------------------------------------------------------------
+
+## Why is this chart misleading?
+
+```{r}
+library(here)
+knitr::include_graphics(here("week15","gundeaths.png"))
+```
+
+<!--inverted y-axis-->
+
+------------------------------------------------------------------------
+
+## Why is this chart misleading?
+
+```{r}
+library(here)
+knitr::include_graphics(here("week15","wrongy.png"))
+```
+
+<!--See y-axis tick marks-->
+
+------------------------------------------------------------------------
+
+# Why is this chart misleading?
+
+```{r}
+library(here)
+knitr::include_graphics(here("week15","colour.png"))
+```
+
+
+# Why is this chart misleading?
+
+```{r}
+library(here)
+knitr::include_graphics(here("week15","corona.png"))
+```

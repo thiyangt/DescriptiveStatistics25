@@ -1,0 +1,21 @@
+/*-- scss:defaults --*/
+
+
+$presentation-font-size-root: 50px;
+
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}
+
+/* Increase font size for all slides */
+  .reveal .slides section {
+    font-size: 60px;
+  }
+
+.reveal .slides {
+  margin-top: 5px; /* Adjust this value as needed */
+}

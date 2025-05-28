@@ -1,0 +1,355 @@
+---
+title: "STA 113 2.0 Descriptive Statistics"
+subtitle: "Frequency Distributions"
+author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
+format:
+  revealjs:
+    width: 2000
+    height: 1000
+    margin: 0.1
+    theme: [simple, custom.scss]
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    show-slide-number: all
+    title-slide-attributes: 
+      data-background-color: "#081d58"
+      data-background-image: none
+---
+
+## Marks
+
+Here are the marks for 50 students:
+
+```{r}
+library(knitr)
+library(kableExtra)
+set.seed(1)
+marks <- round(runif(50, 0, 100),0)
+matrix_data <- matrix(marks, ncol = 10, byrow = TRUE)
+kable(matrix_data) |>
+  kable_styling()
+
+```
+
+## Ordered array
+
+Ordered sequence of raw data
+
+```{r}
+smarks <- sort(round(runif(50, 0, 100),0))
+smatrix_data <- matrix(smarks, ncol = 10, byrow = TRUE)
+kable(smatrix_data) |>
+  kable_styling()
+```
+
+An ordered list makes it easier to find the highest and lowest values and see the range.
+
+## Frequency Distribution
+
+A summary table in which data are arranged into ordered classes or categories to determine the number of observations belonging to each class.
+
+# Constructing a frequency distribution
+
+## Step 1: Arrange data into an ordered array.
+
+```{r}
+kable(smatrix_data) |>
+  kable_styling()
+```
+
+## Step 2: Decide on the number of classes (k)
+
+**Sturges's Rule**
+
+$$\text{Number of classes} = 1+3.3log_{10}(N)$$
+
+Here $N$ is total number of obervations.
+
+> Example:
+
+$$ 1+3.3log_{10}(50) = 6.606$$
+
+$$\text{Number of classes} = 7$$
+
+## Step 3: Calculate the class width/ class size/ class length (c)
+
+$$\text{width of interval} = \frac{\text{range}}{k}$$
+
+$$\text{range = maximum - minimum}$$
+
+> Example
+
+$$\frac{96-6}{7}=12.86$$
+
+$$\text{c} \approx 13$$
+
+## Step 4: Calculate lower class limits
+
+$$6$$
+
+$$6+13 = 19$$
+
+$$19+13=32$$
+
+$$25+13=38$$
+
+$$31+13=44$$
+
+$$37+13=50$$
+
+$$43+13=62$$
+
+## Step 5: Calculate class limits/ class intervals
+
+```{r}
+df = data.frame(CI = c("6-18", "19-31", "32-44", "45-57", "58-70", "71-83", "84-96"))
+df |> kable()
+```
+
+## Step 6: Prepare a tally sheet
+
+```{r}
+df = data.frame(CI = c("6-18", "19-31", "32-44", "45-57", "58-70", "71-83", "84-96"),Tally = c("", "", "", "","", "", ""), Frequency= c(6, 6, 12, 6, 4, 8, 8))
+df |> kable()
+```
+
+## Step 7: Class Boundaries
+
+```{r}
+df = data.frame(CI = c("6-18", "19-31", "32-44", "45-57", "58-70", "71-83", "84-96"),
+                Boundaries = c("5.5-18.5", "18.5-31.5", "31.5-44.5", "44.5-57.5", "57.5-70.5", "70.5-83.5", "83.5-96.5"),
+                
+            Frequency= c(6, 6, 12, 6, 4, 8, 8))
+df |> kable()
+```
+
+## To find class boundaries
+
+1.  Subtract the first upper class limit from the second lower class limit and divide the difference by 2.
+
+2.  Subtract the value calculated in step 1
+
+    -   from all of the lower class limits
+
+    -   add to all of the upper class limits.
+
+<!--[Additional reading]( https://statisticstechs.weebly.com/desciptive-statistics/frequency-distribution-and-data-presentation)-->
+
+## Idea Behind Class Boundaries
+
+```{r}
+df = data.frame(CI = c("6-18", "19-31", "32-44", "45-57", "58-70", "71-83", "84-96"),
+                Boundaries = c("[5.5, 18.5)", "[18.5, 31.5)", "[31.5, 44.5)", "[44.5, 57.5)", "[57.5, 70.5)", "[70.5, 83.5)", "[83.5, 96.5)"),
+                
+            Frequency= c(6, 6, 12, 6, 4, 8, 8))
+df |> kable()
+```
+
+## Size or width of a class interval (c)
+
+$$c= \text{difference between successive lower class limits\class boundaries}$$
+
+or
+
+$$c= \text{difference between successive upper class limits\class boundaries}$$
+
+or
+
+$$c= \text{difference between successive upper class  boundary and its lower class boundary}$$ \> Example
+
+$$c=18.5-5.5=31.5-18.5=13$$
+
+## Step 8: Class mark/ class midpoint
+
+$$\text{class mark}=\frac{\text{upper limit} +\text{lower limit}}{2}$$
+
+> Example
+
+$$\text{class mark}=\frac{6+18}{2} = 12$$
+
+## Class mark/ class midpoint
+
+```{r}
+df = data.frame(CI = c("6-18", "19-31", "32-44", "45-57", "58-70", "71-83", "84-96"),
+                Boundaries = c("5.5-18.5", "18.5-31.5", "31.5-44.5", "44.5-57.5", "57.5-70.5", "70.5-83.5", "83.5-96.5"), 
+                Mid_point = c(12, 25, 38, 51, 64, 77, 90),
+                
+            Frequency= c(6, 6, 12, 6, 4, 8, 8))
+df |> kable()
+```
+
+## Your turn
+
+Compute
+
+1.  Cumulative-frequency distribution
+
+2.  Percentage cumulative distributions
+
+3.  Relative frequency distribution
+
+4.  Relative cumulative frequency distribution
+
+## Histogram
+
+```{r}
+# Create data frame
+data <- data.frame(
+  CL = c("6-18", "19-31", "32-44", "45-57", "58-70", "71-83", "84-96"),
+  Lower_Boundary = c(5.5, 18.5, 31.5, 44.5, 57.5, 70.5, 83.5),
+  Upper_Boundary = c(18.5, 31.5, 44.5, 57.5, 70.5, 83.5, 96.5),
+  Mid_point = c(12, 25, 38, 51, 64, 77, 90),
+  Frequency = c(6, 6, 12, 6, 4, 8, 8)
+)
+# Load ggplot2
+library(ggplot2)
+
+# Create histogram plot
+ggplot(data, aes(x = Mid_point, y = Frequency)) +
+  geom_bar(stat = "identity", width = 13, col="black", fill="skyblue") +
+  scale_x_continuous(breaks = data$Mid_point, labels = data$Mid_point) +
+  labs(title = "Histogram", x = "Marks", y = "Frequency") +
+  theme_minimal()
+
+```
+
+## Frequency Polygons
+
+```{r}
+# Load ggplot2
+library(ggplot2)
+data <- data.frame(
+  CL = c("","6-18", "19-31", "32-44", "45-57", "58-70", "71-83", "84-96", ""),
+  Lower_Boundary = c(-7.5, 5.5, 18.5, 31.5, 44.5, 57.5, 70.5, 83.5, 96.5),
+  Upper_Boundary = c(5.5, 18.5, 31.5, 44.5, 57.5, 70.5, 83.5, 96.5, 109.5),
+  Mid_point = c(-1, 12, 25, 38, 51, 64, 77, 90, 103),
+  Frequency = c(0,6, 6, 12, 6, 4, 8, 8, 0)
+)
+# Create histogram and frequency polygon plot
+ggplot(data, aes(x = Mid_point, y = Frequency)) +
+  geom_bar(stat = "identity", width = 13, fill = "skyblue", alpha = 0.7, col="black") +
+  geom_line(aes(group = 1), color = "red", size = 1) +
+  geom_point(color = "red", size = 2) +
+  scale_x_continuous(breaks = data$Mid_point, labels = data$Mid_point) +
+  labs(title = "Histogram and Frequency Polygon", x = "Marks", y = "Frequency") +
+  theme_minimal()
+
+```
+
+## 
+
+```{r}
+data |> kable()
+```
+
+## Cumulative Frequency Distribution
+
+The total frequency of all values less than the upper class boundary.
+
+```{r}
+data2 <- data.frame(
+  Marks = c(5.5, 18.5, 31.5, 44.5, 57.5, 70.5, 83.5, 96.5),
+  Cumulative_Frequency = c(0,6, 12, 24, 30, 34, 42, 50)
+)
+data2|>kable()
+```
+
+# The ogive (or Cumulative - Frequency Polygon)
+
+-   Less than Ogive
+
+-   Greater than Ogive
+
+## Less than Ogive
+
+First of all, we have to convert the frequency distribution into a less than cumulative frequency distribution.
+
+::: columns
+::: {.column width="40%"}
+```{r}
+df2 = data.frame(
+                Boundaries = c("5.5-18.5", "18.5-31.5", "31.5-44.5", "44.5-57.5", "57.5-70.5", "70.5-83.5", "83.5-96.5"),
+                
+            Frequency= c(6, 6, 12, 6, 4, 8, 8))
+df2 |> kable()
+```
+:::
+
+::: {.column width="60%"}
+```{r}
+df3 = data.frame(
+                Boundaries = c("less than  18.5", "less than  31.5", "less than  44.5", "less than  57.5",  "less than  70.5", "less than  83.5", "less than  96.5"),
+                
+            Frequency= c( 6, 12, 24, 30, 34, 42, 50))
+df3 |> kable() 
+```
+:::
+:::
+
+## Less than Ogive
+
+```{r}
+df3 = data.frame(
+                Boundaries = c(18.5, 31.5, 44.5, 57.5, 70.5, 83.5, 96.5),
+                
+            Frequency= c( 6, 12, 24, 30, 34, 42, 50))
+ggplot(df3, aes(x=Boundaries, y=Frequency)) +
+  geom_point() + geom_line() +
+  scale_x_continuous(breaks = df3$Boundaries, labels = df3$Boundaries) + ylab("Cumulative Frequency") + xlab("Upper Class Boundary")
+```
+
+## Your turn
+
+Plot greater than ogive.
+
+<!--Help: https://www.geeksforgeeks.org/ogive-cumulative-frequency-curve-and-its-types/-->
+
+## 
+
+First of all, we have to convert the frequency distribution into a greater than cumulative frequency distribution.
+
+::: columns
+::: {.column width="40%"}
+```{r}
+df2 = data.frame(
+                Boundaries = c("5.5-18.5", "18.5-31.5", "31.5-44.5", "44.5-57.5", "57.5-70.5", "70.5-83.5", "83.5-96.5"),
+                
+            Frequency= c(6, 6, 12, 6, 4, 8, 8))
+df2 |> kable()
+```
+:::
+
+::: {.column width="60%"}
+```{r}
+df4 = data.frame(
+                Boundaries = c( "greater than or equal 5.5", "greater than or equal 18.5", "greater than or equal 31.5", "greater than or equal 44.5", "greater than or equal 57.5",  "greater than or equal 70.5", "greater than or equal 83.5"),
+                
+            Frequency= c( 50, 44, 38, 26, 20, 16, 8))
+df4 |> kable()
+```
+:::
+:::
+
+## Your turn
+
+```{r}
+set.seed(8)
+dd <- round(rnorm(80, mean=10, sd=10), 0)
+ddmat <- matrix(dd, ncol=10)
+ kable(ddmat) |>   kable_styling()
+```
+
+## 
+
+Construct
+
+1.  Frequency distribution
+
+2.  Histogram
+
+3.  Polygon
+
+4.  Cumulative frequency distribution
+
+5.  Orgive
