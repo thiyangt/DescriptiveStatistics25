@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.553">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Dr.&nbsp;Thiyanga S. Talagala   Department of Statistics, Faculty of Applied Sciences   University of Sri Jayewardenepura, Sri Lanka">
   <title>STA 113 2.0 Descriptive Statistics</title>
@@ -1043,7 +1043,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <li><p>Each value must have its own cell.</p></li>
 </ol>
 
-<img data-src="data.jpeg" width="201" class="r-stretch quarto-figure-center"><p class="caption">Image Source: https://r4ds.had.co.nz/tidy-data.html</p></section>
+<img data-src="data.jpeg" class="r-stretch quarto-figure-center"><p class="caption">Image Source: https://r4ds.had.co.nz/tidy-data.html</p></section>
 <section id="penguins-dataset" class="slide level2">
 <h2>penguins dataset</h2>
 <ol type="1">
@@ -1749,7 +1749,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <h2>Variable description</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 79%">
@@ -1864,14 +1864,13 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <li>Time taken to complete a task</li>
 </ul></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="your-turn-identify-discrete-and-continuous-variables" class="slide level2">
 <h2>Your turn: Identify discrete and continuous variables</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 79%">
@@ -1945,8 +1944,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <li><p>Hair color: Blonde, black, brown, grey</p></li>
 <li><p>District you live</p></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="ordinal-scale" class="slide level2">
 <h2>Ordinal Scale</h2>
@@ -1966,8 +1964,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <p>Income: Low income, medium income, high income</p>
 <p>Customer Satisfaction: Very Dissatisfied, Dissatisfied, Neutral, Satisfied, Very Satisfied</p>
 <p>Grade: A+, A, A-, B+, B, B-</p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="interval-scale" class="slide level2">
 <h2>Interval Scale</h2>
@@ -1987,8 +1984,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <li><p>Temperature: Measured in Fahrenheit or Celsius</p></li>
 <li><p>Marks: Measured from 0 to 100</p></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="ratio-scale" class="slide level2">
 <h2>Ratio Scale</h2>
@@ -2008,8 +2004,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <li><p>Height: measured in centimeters.</p></li>
 <li><p>Weight: measured in kilograms.</p></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="summary-scales-of-measurements" class="slide level2">
 <h2>Summary: scales of measurements</h2>
@@ -2020,7 +2015,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <p>Identify scales of measurement for each variable.</p>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 20%">
 <col style="width: 79%">
@@ -2393,18 +2388,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -2436,7 +2420,29 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp("https:\/\/thiyangt\.github\.io\/descriptivestatisticsweb\/");
@@ -2444,7 +2450,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

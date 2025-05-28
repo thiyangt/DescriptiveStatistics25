@@ -8,7 +8,7 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.553">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Dr.&nbsp;Thiyanga S. Talagala   Department of Statistics, Faculty of Applied Sciences   University of Sri Jayewardenepura, Sri Lanka">
   <title>STA 113 2.0 Descriptive Statistics</title>
@@ -342,7 +342,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <h2>Data Set</h2>
 <div class="cell">
 <div class="cell-output-display">
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: left;">species</th>
@@ -498,8 +498,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section></section>
 <section>
 <section id="staked-bar-chart" class="title-slide slide level1 center">
@@ -540,8 +539,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="section-6" class="slide level2">
 <h2></h2>
@@ -577,8 +575,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="percentage-chart" class="slide level2">
 <h2>Percentage chart</h2>
@@ -595,8 +592,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <ul>
 <li>Doesn’t provide the raw counts, which might be necessary for understanding the actual volume or size of each category.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="counts-chart" class="slide level2">
 <h2>Counts chart</h2>
@@ -612,8 +608,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <ul>
 <li>Difficulties arise when comparing groups, especially when their sizes differ.</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="grouped-bar-chart-percentage" class="slide level2">
 <h2>Grouped Bar Chart (Percentage)</h2>
@@ -631,8 +626,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <li><p>Complexity with many groups: With a large number of groups or variables, the chart can become crowded and hard to read.</p></li>
 <li><p>Difficulty in showing totals: It’s not straightforward to show the total magnitude of each category since bars are grouped.</p></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="stacked-bar-chart" class="slide level2">
 <h2>Stacked Bar Chart</h2>
@@ -651,8 +645,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 <li><p>Helpful for illustrating the distribution of percentages within categories across different groups or segments.</p></li>
 <li><p>Suitable when you want to emphasize the composition or share of each category relative to the whole.</p></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="stacked-bar-chart-disadvantages" class="slide level2">
 <h2>Stacked Bar Chart: Disadvantages</h2>
@@ -684,8 +677,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 </section></section>
 <section id="facet-bar-chart" class="title-slide slide level1 center">
 <h1>Facet Bar Chart</h1>
@@ -1055,18 +1047,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1098,7 +1079,29 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp("https:\/\/thiyangt\.github\.io\/descriptivestatisticsweb\/");
@@ -1106,7 +1109,7 @@ Dr.&nbsp;Thiyanga S. Talagala <br> Department of Statistics, Faculty of Applied 
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

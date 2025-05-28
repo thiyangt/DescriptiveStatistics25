@@ -32,7 +32,7 @@
     "href": "week9/index.html#range-maximum---minimum",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Range: Maximum - Minimum",
-    "text": "Range: Maximum - Minimum\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\\[\\text{Range} = 100-75 = 25\\]\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298\n\n\n\n\n\n\\[\\text{Range} = 298-0 = 298\\]\n\n\nAdvantages\n\nEasy measure\nEasy to understand\n\nDisadvatages\n\nIt only takes into account the maximum and the minimum value.\nHighly sensitive to outliers.\nDoes not provide information about the spread of data between the minimum and maximum values, nor does it indicate whether the data points are clustered or evenly distributed."
+    "text": "Range: Maximum - Minimum\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\\[\\text{Range} = 100-75 = 25\\]\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298\n\n\n\n\n\n\\[\\text{Range} = 298-0 = 298\\]\n\nAdvantages\n\nEasy measure\nEasy to understand\n\nDisadvatages\n\nIt only takes into account the maximum and the minimum value.\nHighly sensitive to outliers.\nDoes not provide information about the spread of data between the minimum and maximum values, nor does it indicate whether the data points are clustered or evenly distributed."
   },
   {
     "objectID": "week9/index.html#variance",
@@ -46,7 +46,7 @@
     "href": "week9/index.html#compute-sample-variance.",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Compute sample variance.",
-    "text": "Compute sample variance.\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298\n\n\n\n\n\n\n\n\n\n\n−+\n10:00"
+    "text": "Compute sample variance.\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298\n\n\n\n\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "week9/index.html#variance-advatages-and-disadvatages",
@@ -67,7 +67,7 @@
     "href": "week9/index.html#compute-standard-deviation.",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Compute standard deviation.",
-    "text": "Compute standard deviation.\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298\n\n\n\n\n\n\n\n\n\n\n−+\n02:00"
+    "text": "Compute standard deviation.\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298\n\n\n\n\n\n\n\n\n\n−+\n02:00"
   },
   {
     "objectID": "week9/index.html#your-turn",
@@ -88,14 +88,14 @@
     "href": "week7/index.html#marks",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Marks",
-    "text": "Marks\nHere are the marks for 50 students:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n27\n37\n57\n91\n20\n90\n94\n66\n63\n6\n\n\n21\n18\n69\n38\n77\n50\n72\n99\n38\n78\n\n\n93\n21\n65\n13\n27\n39\n1\n38\n87\n34\n\n\n48\n60\n49\n19\n83\n67\n79\n11\n72\n41\n\n\n82\n65\n78\n55\n53\n79\n2\n48\n73\n69"
+    "text": "Marks\nHere are the marks for 50 students:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n27\n37\n57\n91\n20\n90\n94\n66\n63\n6\n\n\n21\n18\n69\n38\n77\n50\n72\n99\n38\n78\n\n\n93\n21\n65\n13\n27\n39\n1\n38\n87\n34\n\n\n48\n60\n49\n19\n83\n67\n79\n11\n72\n41\n\n\n82\n65\n78\n55\n53\n79\n2\n48\n73\n69"
   },
   {
     "objectID": "week7/index.html#ordered-array",
     "href": "week7/index.html#ordered-array",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Ordered array",
-    "text": "Ordered array\nOrdered sequence of raw data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n7\n8\n10\n12\n14\n20\n24\n24\n25\n\n\n26\n29\n32\n33\n33\n33\n34\n35\n39\n40\n\n\n41\n41\n43\n44\n46\n46\n48\n48\n48\n52\n\n\n60\n64\n65\n66\n71\n71\n76\n77\n78\n78\n\n\n80\n81\n84\n86\n86\n88\n88\n89\n91\n96\n\n\n\n\n\n\n\n\nAn ordered list makes it easier to find the highest and lowest values and see the range."
+    "text": "Ordered array\nOrdered sequence of raw data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n7\n8\n10\n12\n14\n20\n24\n24\n25\n\n\n26\n29\n32\n33\n33\n33\n34\n35\n39\n40\n\n\n41\n41\n43\n44\n46\n46\n48\n48\n48\n52\n\n\n60\n64\n65\n66\n71\n71\n76\n77\n78\n78\n\n\n80\n81\n84\n86\n86\n88\n88\n89\n91\n96\n\n\n\n\n\n\n\nAn ordered list makes it easier to find the highest and lowest values and see the range."
   },
   {
     "objectID": "week7/index.html#frequency-distribution",
@@ -109,7 +109,7 @@
     "href": "week7/index.html#step-1-arrange-data-into-an-ordered-array.",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Step 1: Arrange data into an ordered array.",
-    "text": "Step 1: Arrange data into an ordered array.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n7\n8\n10\n12\n14\n20\n24\n24\n25\n\n\n26\n29\n32\n33\n33\n33\n34\n35\n39\n40\n\n\n41\n41\n43\n44\n46\n46\n48\n48\n48\n52\n\n\n60\n64\n65\n66\n71\n71\n76\n77\n78\n78\n\n\n80\n81\n84\n86\n86\n88\n88\n89\n91\n96"
+    "text": "Step 1: Arrange data into an ordered array.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n7\n8\n10\n12\n14\n20\n24\n24\n25\n\n\n26\n29\n32\n33\n33\n33\n34\n35\n39\n40\n\n\n41\n41\n43\n44\n46\n46\n48\n48\n48\n52\n\n\n60\n64\n65\n66\n71\n71\n76\n77\n78\n78\n\n\n80\n81\n84\n86\n86\n88\n88\n89\n91\n96"
   },
   {
     "objectID": "week7/index.html#step-2-decide-on-the-number-of-classes-k",
@@ -256,7 +256,7 @@
     "href": "week7/index.html#your-turn-2",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Your turn",
-    "text": "Your turn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n-20\n25\n27\n-6\n14\n13\n2\n7\n18\n\n\n18\n4\n7\n-1\n2\n4\n4\n4\n-1\n5\n\n\n5\n2\n26\n-1\n23\n12\n21\n-5\n5\n11\n\n\n4\n13\n8\n30\n14\n7\n6\n18\n26\n16\n\n\n17\n14\n23\n16\n18\n16\n16\n16\n14\n-19\n\n\n9\n-3\n10\n-10\n3\n-10\n9\n11\n-6\n16\n\n\n8\n11\n6\n25\n9\n3\n20\n-8\n-5\n34\n\n\n-1\n2\n10\n20\n15\n13\n16\n-1\n20\n4"
+    "text": "Your turn\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n-20\n25\n27\n-6\n14\n13\n2\n7\n18\n\n\n18\n4\n7\n-1\n2\n4\n4\n4\n-1\n5\n\n\n5\n2\n26\n-1\n23\n12\n21\n-5\n5\n11\n\n\n4\n13\n8\n30\n14\n7\n6\n18\n26\n16\n\n\n17\n14\n23\n16\n18\n16\n16\n16\n14\n-19\n\n\n9\n-3\n10\n-10\n3\n-10\n9\n11\n-6\n16\n\n\n8\n11\n6\n25\n9\n3\n20\n-8\n-5\n34\n\n\n-1\n2\n10\n20\n15\n13\n16\n-1\n20\n4"
   },
   {
     "objectID": "week7/index.html#section-2",
@@ -599,7 +599,7 @@
     "href": "week10/index.html#data",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Data",
-    "text": "Data\n\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n-0.4941825\n0.9915941\n1.2651757\n-0.4547021\n\n\n-0.6687905\n0.7621325\n0.4623908\n-0.5227580\n\n\n-0.5469909\n0.4472162\n0.1096497\n-0.9385280\n\n\n-0.6231902\n0.9652850\n1.6850990\n-1.0626077\n\n\n1.4458192\n0.7953235\n0.1734091\n-0.7810612\n\n\n1.4321517\n0.9403680\n0.2576630\n-0.9400142\n\n\n-1.7834318\n0.2037412\n0.9451751\n-0.4921403\n\n\n-0.1310000\n0.5811571\n0.0841218\n-0.9899774\n\n\n-1.1957376\n0.5004076\n0.9543987\n-0.6680712\n\n\n0.4298630\n0.6224225\n0.2428342\n-0.2485180\n\n\n0.6814681\n0.3328808\n0.8645305\n-0.7541138\n\n\n-0.7584425\n0.6059351\n0.8742853\n-0.6532270\n\n\n0.4903058\n0.5572273\n0.0927645\n-1.1676951\n\n\n-0.0359587\n0.9757127\n1.4798731\n-1.0630715\n\n\n-0.4126305\n0.3127026\n0.6411980\n-0.9250913\n\n\n-0.6958339\n0.8282239\n0.6666132\n-1.2498425\n\n\n1.1344751\n0.5325348\n0.1791371\n-0.7756105\n\n\n-0.2479113\n0.2439792\n0.5884629\n-0.8957835\n\n\n0.3880169\n0.0597912\n0.5377590\n-1.2037738\n\n\n-0.6955792\n0.7714712\n0.7566644\n-0.3658032\n\n\n-1.2602048\n0.8607332\n0.0237823\n-0.8675267\n\n\n-0.4121627\n0.9078947\n0.3648342\n-1.3747030\n\n\n-1.0600587\n0.5853123\n0.0991288\n-0.9682996\n\n\n-0.6901896\n0.8314007\n0.1282657\n-0.8799173\n\n\n-0.1512943\n0.7785955\n0.3227742\n-1.3436420\n\n\n-0.8817142\n0.2555937\n0.2120927\n-0.8572044\n\n\n2.3139477\n0.3352818\n3.4199927\n-0.7016565\n\n\n2.6254204\n0.9125926\n0.3246409\n-1.2752869\n\n\n0.0997495\n0.1433173\n0.5174605\n-0.3899073\n\n\n-0.6003863\n0.5621560\n0.8610009\n-0.8642701\n\n\n0.7316799\n0.7373602\n0.2427046\n-1.1415947\n\n\n0.5253369\n0.4902503\n2.0961923\n-0.7712001\n\n\n0.2979311\n0.4586207\n0.2769770\n-0.1074875\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n34\n0.1707726\n0.9417774\n0.5032580\n-0.6044107\n\n\n35\n-0.3198814\n0.8077437\n0.0181263\n-1.2421812\n\n\n36\n-0.8186460\n0.6444308\n6.8161623\n-1.1468929\n\n\n37\n-0.0072054\n0.8448965\n0.3052239\n-0.8844985\n\n\n38\n-0.4512637\n0.3424624\n1.3661048\n-1.3386497\n\n\n39\n-0.1925807\n0.5625122\n0.9218917\n-0.8877711\n\n\n40\n2.2657184\n0.6736529\n0.2075009\n-0.4708897\n\n\n41\n-0.9951849\n0.8909363\n5.0017890\n-0.9994745\n\n\n42\n-0.2856625\n0.8033804\n0.0968602\n-0.7467907\n\n\n43\n0.2191878\n0.1782850\n1.5306568\n-0.7682978\n\n\n44\n-1.0367488\n0.8343284\n0.3886233\n-1.3388111\n\n\n45\n1.1718172\n0.2599477\n2.9639756\n-0.7148029\n\n\n46\n0.1918960\n0.5094981\n0.5536213\n-0.7586514\n\n\n47\n0.5286750\n0.7987479\n0.4308663\n-0.9896018\n\n\n48\n1.5910981\n0.6943393\n0.6255345\n-1.1681160\n\n\n49\n-1.1722861\n0.9982673\n0.4587839\n-0.9371935\n\n\n50\n0.1934595\n0.6716770\n0.3116617\n-1.1103634\n\n\n51\n-1.4356298\n0.9698931\n5.7776384\n0.8623060\n\n\n52\n-0.7890743\n0.5939492\n0.0224797\n1.2137335\n\n\n53\n-0.6106055\n0.0478229\n3.0745683\n0.9983251\n\n\n54\n-2.3119511\n0.5605901\n0.8132757\n0.6957828\n\n\n55\n0.8667858\n0.3635374\n0.2700010\n0.6795177\n\n\n56\n0.4041022\n0.7116650\n0.6794256\n0.8919491\n\n\n57\n2.0842797\n0.6958857\n0.3890802\n1.4396962\n\n\n58\n-1.6350715\n0.4293465\n0.9316933\n1.5557211\n\n\n59\n-1.0041166\n0.7481887\n2.2529575\n0.9289430\n\n\n60\n-0.1833006\n0.8444459\n0.3561461\n1.2954135\n\n\n61\n-0.6370463\n0.6549463\n1.5700440\n1.4239294\n\n\n62\n0.7891126\n0.9183704\n3.4331633\n0.9424039\n\n\n63\n-1.9343009\n0.8069813\n1.7880099\n1.0407747\n\n\n64\n1.0142296\n0.9055865\n0.5375650\n0.0505981\n\n\n65\n1.9339288\n0.2774429\n0.4135352\n1.1525336\n\n\n66\n0.0475422\n0.9947034\n1.3488308\n1.2897422\n\n\n67\n0.2263924\n0.8236884\n0.8586223\n0.4717407\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n68\n-0.4959669\n0.5652228\n1.1851333\n1.1189474\n\n\n69\n0.8229532\n0.8178838\n0.1777389\n0.1525808\n\n\n70\n0.9298399\n0.9716167\n2.0837673\n1.1283459\n\n\n71\n-0.8396403\n0.6955667\n1.1255832\n0.8254749\n\n\n72\n-2.6643294\n0.5633113\n2.6622062\n0.4479653\n\n\n73\n1.6035095\n0.3289823\n0.7328378\n1.1938157\n\n\n74\n-0.7712137\n0.6223501\n3.6241769\n1.0612159\n\n\n75\n-0.3840300\n0.3932550\n0.1783265\n0.9074435\n\n\n76\n0.4037572\n0.8684061\n0.0584704\n0.7707421\n\n\n77\n-0.2177293\n0.7424245\n1.3926143\n0.7044549\n\n\n78\n-0.0787400\n0.8584837\n0.1558730\n0.7731302\n\n\n79\n-1.3780882\n0.4996357\n0.5496975\n1.1174710\n\n\n80\n-0.4246498\n0.9272462\n0.0421114\n1.0224212\n\n\n81\n0.3751303\n0.2122582\n0.0489879\n1.2401247\n\n\n82\n1.0816647\n0.8919946\n5.6415263\n1.1950053\n\n\n83\n-0.1589649\n0.4317767\n0.2723074\n0.6052308\n\n\n84\n0.2382120\n0.1271924\n0.0322854\n0.6628394\n\n\n85\n0.7576892\n0.7173759\n0.5761504\n0.7795326\n\n\n86\n-0.9829056\n0.3897945\n0.4854600\n0.8800581\n\n\n87\n0.3364830\n0.4760740\n2.5864094\n1.1548429\n\n\n88\n-0.2949718\n0.9238953\n1.3136616\n0.5118688\n\n\n89\n0.7969451\n0.6609144\n7.4977078\n1.2616219\n\n\n90\n-0.6483374\n0.3351259\n1.1174526\n0.1745040\n\n\n91\n-0.3334201\n0.9155915\n0.2567393\n1.0479585\n\n\n92\n-0.9726304\n0.6654774\n0.3236723\n0.8446453\n\n\n93\n-0.8009399\n0.2512914\n1.4986115\n0.4152249\n\n\n94\n-1.2797944\n0.9317872\n2.0137554\n0.8929735\n\n\n95\n-1.0862999\n0.5974472\n0.4877782\n0.3485280\n\n\n96\n-1.1646197\n0.9956436\n0.0835399\n0.6462357\n\n\n97\n-0.0201359\n0.7754757\n0.3588838\n1.6385065\n\n\n98\n-0.4628470\n0.6599176\n2.7117010\n0.7595622\n\n\n99\n-0.4063630\n0.4857695\n0.5379405\n0.8379056\n\n\n100\n-0.0119749\n0.8521035\n1.3446080\n0.5883827"
+    "text": "Data\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n-0.4941825\n0.9915941\n1.2651757\n-0.4547021\n\n\n-0.6687905\n0.7621325\n0.4623908\n-0.5227580\n\n\n-0.5469909\n0.4472162\n0.1096497\n-0.9385280\n\n\n-0.6231902\n0.9652850\n1.6850990\n-1.0626077\n\n\n1.4458192\n0.7953235\n0.1734091\n-0.7810612\n\n\n1.4321517\n0.9403680\n0.2576630\n-0.9400142\n\n\n-1.7834318\n0.2037412\n0.9451751\n-0.4921403\n\n\n-0.1310000\n0.5811571\n0.0841218\n-0.9899774\n\n\n-1.1957376\n0.5004076\n0.9543987\n-0.6680712\n\n\n0.4298630\n0.6224225\n0.2428342\n-0.2485180\n\n\n0.6814681\n0.3328808\n0.8645305\n-0.7541138\n\n\n-0.7584425\n0.6059351\n0.8742853\n-0.6532270\n\n\n0.4903058\n0.5572273\n0.0927645\n-1.1676951\n\n\n-0.0359587\n0.9757127\n1.4798731\n-1.0630715\n\n\n-0.4126305\n0.3127026\n0.6411980\n-0.9250913\n\n\n-0.6958339\n0.8282239\n0.6666132\n-1.2498425\n\n\n1.1344751\n0.5325348\n0.1791371\n-0.7756105\n\n\n-0.2479113\n0.2439792\n0.5884629\n-0.8957835\n\n\n0.3880169\n0.0597912\n0.5377590\n-1.2037738\n\n\n-0.6955792\n0.7714712\n0.7566644\n-0.3658032\n\n\n-1.2602048\n0.8607332\n0.0237823\n-0.8675267\n\n\n-0.4121627\n0.9078947\n0.3648342\n-1.3747030\n\n\n-1.0600587\n0.5853123\n0.0991288\n-0.9682996\n\n\n-0.6901896\n0.8314007\n0.1282657\n-0.8799173\n\n\n-0.1512943\n0.7785955\n0.3227742\n-1.3436420\n\n\n-0.8817142\n0.2555937\n0.2120927\n-0.8572044\n\n\n2.3139477\n0.3352818\n3.4199927\n-0.7016565\n\n\n2.6254204\n0.9125926\n0.3246409\n-1.2752869\n\n\n0.0997495\n0.1433173\n0.5174605\n-0.3899073\n\n\n-0.6003863\n0.5621560\n0.8610009\n-0.8642701\n\n\n0.7316799\n0.7373602\n0.2427046\n-1.1415947\n\n\n0.5253369\n0.4902503\n2.0961923\n-0.7712001\n\n\n0.2979311\n0.4586207\n0.2769770\n-0.1074875\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n34\n0.1707726\n0.9417774\n0.5032580\n-0.6044107\n\n\n35\n-0.3198814\n0.8077437\n0.0181263\n-1.2421812\n\n\n36\n-0.8186460\n0.6444308\n6.8161623\n-1.1468929\n\n\n37\n-0.0072054\n0.8448965\n0.3052239\n-0.8844985\n\n\n38\n-0.4512637\n0.3424624\n1.3661048\n-1.3386497\n\n\n39\n-0.1925807\n0.5625122\n0.9218917\n-0.8877711\n\n\n40\n2.2657184\n0.6736529\n0.2075009\n-0.4708897\n\n\n41\n-0.9951849\n0.8909363\n5.0017890\n-0.9994745\n\n\n42\n-0.2856625\n0.8033804\n0.0968602\n-0.7467907\n\n\n43\n0.2191878\n0.1782850\n1.5306568\n-0.7682978\n\n\n44\n-1.0367488\n0.8343284\n0.3886233\n-1.3388111\n\n\n45\n1.1718172\n0.2599477\n2.9639756\n-0.7148029\n\n\n46\n0.1918960\n0.5094981\n0.5536213\n-0.7586514\n\n\n47\n0.5286750\n0.7987479\n0.4308663\n-0.9896018\n\n\n48\n1.5910981\n0.6943393\n0.6255345\n-1.1681160\n\n\n49\n-1.1722861\n0.9982673\n0.4587839\n-0.9371935\n\n\n50\n0.1934595\n0.6716770\n0.3116617\n-1.1103634\n\n\n51\n-1.4356298\n0.9698931\n5.7776384\n0.8623060\n\n\n52\n-0.7890743\n0.5939492\n0.0224797\n1.2137335\n\n\n53\n-0.6106055\n0.0478229\n3.0745683\n0.9983251\n\n\n54\n-2.3119511\n0.5605901\n0.8132757\n0.6957828\n\n\n55\n0.8667858\n0.3635374\n0.2700010\n0.6795177\n\n\n56\n0.4041022\n0.7116650\n0.6794256\n0.8919491\n\n\n57\n2.0842797\n0.6958857\n0.3890802\n1.4396962\n\n\n58\n-1.6350715\n0.4293465\n0.9316933\n1.5557211\n\n\n59\n-1.0041166\n0.7481887\n2.2529575\n0.9289430\n\n\n60\n-0.1833006\n0.8444459\n0.3561461\n1.2954135\n\n\n61\n-0.6370463\n0.6549463\n1.5700440\n1.4239294\n\n\n62\n0.7891126\n0.9183704\n3.4331633\n0.9424039\n\n\n63\n-1.9343009\n0.8069813\n1.7880099\n1.0407747\n\n\n64\n1.0142296\n0.9055865\n0.5375650\n0.0505981\n\n\n65\n1.9339288\n0.2774429\n0.4135352\n1.1525336\n\n\n66\n0.0475422\n0.9947034\n1.3488308\n1.2897422\n\n\n67\n0.2263924\n0.8236884\n0.8586223\n0.4717407\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n68\n-0.4959669\n0.5652228\n1.1851333\n1.1189474\n\n\n69\n0.8229532\n0.8178838\n0.1777389\n0.1525808\n\n\n70\n0.9298399\n0.9716167\n2.0837673\n1.1283459\n\n\n71\n-0.8396403\n0.6955667\n1.1255832\n0.8254749\n\n\n72\n-2.6643294\n0.5633113\n2.6622062\n0.4479653\n\n\n73\n1.6035095\n0.3289823\n0.7328378\n1.1938157\n\n\n74\n-0.7712137\n0.6223501\n3.6241769\n1.0612159\n\n\n75\n-0.3840300\n0.3932550\n0.1783265\n0.9074435\n\n\n76\n0.4037572\n0.8684061\n0.0584704\n0.7707421\n\n\n77\n-0.2177293\n0.7424245\n1.3926143\n0.7044549\n\n\n78\n-0.0787400\n0.8584837\n0.1558730\n0.7731302\n\n\n79\n-1.3780882\n0.4996357\n0.5496975\n1.1174710\n\n\n80\n-0.4246498\n0.9272462\n0.0421114\n1.0224212\n\n\n81\n0.3751303\n0.2122582\n0.0489879\n1.2401247\n\n\n82\n1.0816647\n0.8919946\n5.6415263\n1.1950053\n\n\n83\n-0.1589649\n0.4317767\n0.2723074\n0.6052308\n\n\n84\n0.2382120\n0.1271924\n0.0322854\n0.6628394\n\n\n85\n0.7576892\n0.7173759\n0.5761504\n0.7795326\n\n\n86\n-0.9829056\n0.3897945\n0.4854600\n0.8800581\n\n\n87\n0.3364830\n0.4760740\n2.5864094\n1.1548429\n\n\n88\n-0.2949718\n0.9238953\n1.3136616\n0.5118688\n\n\n89\n0.7969451\n0.6609144\n7.4977078\n1.2616219\n\n\n90\n-0.6483374\n0.3351259\n1.1174526\n0.1745040\n\n\n91\n-0.3334201\n0.9155915\n0.2567393\n1.0479585\n\n\n92\n-0.9726304\n0.6654774\n0.3236723\n0.8446453\n\n\n93\n-0.8009399\n0.2512914\n1.4986115\n0.4152249\n\n\n94\n-1.2797944\n0.9317872\n2.0137554\n0.8929735\n\n\n95\n-1.0862999\n0.5974472\n0.4877782\n0.3485280\n\n\n96\n-1.1646197\n0.9956436\n0.0835399\n0.6462357\n\n\n97\n-0.0201359\n0.7754757\n0.3588838\n1.6385065\n\n\n98\n-0.4628470\n0.6599176\n2.7117010\n0.7595622\n\n\n99\n-0.4063630\n0.4857695\n0.5379405\n0.8379056\n\n\n100\n-0.0119749\n0.8521035\n1.3446080\n0.5883827"
   },
   {
     "objectID": "week10/index.html#your-turn-1",
@@ -669,7 +669,7 @@
     "href": "week10/index.html#interpret-the-following",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Interpret the following",
-    "text": "Interpret the following\n\nFigure 1: Boxplot of Flipper Length by Species\n\n\n\n\n\n\nspecies\nMean\nMedian\nMode\nSD\nQ1\nQ2\nQ3\nKurtosis\nSkewness\n\n\n\n\nAdelie\n190.1027\n190\n190\n6.521825\n186\n190\n195.0\n3.327738\n0.0795785\n\n\nChinstrap\n195.8235\n196\n187\n7.131894\n191\n196\n201.0\n2.956063\n-0.0092622\n\n\nGentoo\n217.2353\n216\n215\n6.585431\n212\n216\n221.5\n2.322009\n0.3640858"
+    "text": "Interpret the following\n\nFigure 1: Boxplot of Flipper Length by Species\n\n\n\n\n\nspecies\nMean\nMedian\nMode\nSD\nQ1\nQ2\nQ3\nKurtosis\nSkewness\n\n\n\n\nAdelie\n190.1027\n190\n190\n6.521825\n186\n190\n195.0\n3.327738\n0.0795785\n\n\nChinstrap\n195.8235\n196\n187\n7.131894\n191\n196\n201.0\n2.956063\n-0.0092622\n\n\nGentoo\n217.2353\n216\n215\n6.585431\n212\n216\n221.5\n2.322009\n0.3640858"
   },
   {
     "objectID": "week0/index.html#how-to-calculate-gpa",
@@ -728,25 +728,25 @@
     "text": "Your Turn\n\nExample: Compute the GPAs for students 2, 3, and 4.\n\n\n\n\n\n\n\n\nCourse code\nStudent 1\nStudent 2\nStudent 3\nStudent 4\n\n\n\n\nSTA 1002\nA\nA\nA\nA\n\n\nSTA 1011\nB\nB\nB\nB\n\n\nSTA 1022\nA\nA\nC+\nA\n\n\nCSC 1003\nA\nC+\nA\nA\n\n\nCSC 1012\nB\nB\nB\nB\n\n\nMAT 1001\nB+\nB+\nB+\nB+\n\n\nMAT 1012\nA+\nA+\nA+\nA\n\n\nMAT 1032\nA+\nA+\nA+\nA\n\n\noverall GPA\n3.75"
   },
   {
-    "objectID": "week0/index.html#sta-113-2.0-descriptive-statistics-type-and-method-of-assessment",
-    "href": "week0/index.html#sta-113-2.0-descriptive-statistics-type-and-method-of-assessment",
+    "objectID": "week0/index.html#sta-1132-descriptive-statistics-type-and-method-of-assessment",
+    "href": "week0/index.html#sta-1132-descriptive-statistics-type-and-method-of-assessment",
     "title": "STA 1132 Descriptive Statistics",
-    "section": "STA 113 2.0 Descriptive Statistics: Type and Method of Assessment",
-    "text": "STA 113 2.0 Descriptive Statistics: Type and Method of Assessment\nType:\nType: Core\nType:\nMethod of Assessment:\nType:\nFormative Assessment (FA):\nFA1: Group assignment: 10% of the total marks\nFA2: Mid-semester examination: 20% of the total marks\nType:\nSummative Assessment (SA):\nSA1: End of Semester Examination: 70% of the total marks"
+    "section": "STA 1132 Descriptive Statistics: Type and Method of Assessment",
+    "text": "STA 1132 Descriptive Statistics: Type and Method of Assessment\nType:\nType: Core\nType:\nMethod of Assessment:\nType:\nFormative Assessment (FA):\nFA1: Group assignment: 10% of the total marks\nFA2: Mid-semester examination: 20% of the total marks\nType:\nSummative Assessment (SA):\nSA1: End of Semester Examination: 70% of the total marks"
   },
   {
-    "objectID": "week0/index.html#sta-113-2.0-descriptive-statistics-logistics",
-    "href": "week0/index.html#sta-113-2.0-descriptive-statistics-logistics",
+    "objectID": "week0/index.html#sta-1132-descriptive-statistics-logistics",
+    "href": "week0/index.html#sta-1132-descriptive-statistics-logistics",
     "title": "STA 1132 Descriptive Statistics",
-    "section": "STA 113 2.0 Descriptive Statistics: Logistics",
-    "text": "STA 113 2.0 Descriptive Statistics: Logistics\nType:\nCourse website: open-access\nhttps://thiyangt.github.io/descriptivestatisticsweb/\nType:\nCourse LMS page: closed access (open only to students enrolled in the unit STA 113 2.0 at FAS, USJ)\n\nCourse outline\nAnnouncements\nExercises\nWeekly schedule\n\n\n\n\nYou must enroll yourself in the LMS course unit page."
+    "section": "STA 1132 Descriptive Statistics: Logistics",
+    "text": "STA 1132 Descriptive Statistics: Logistics\nType:\nCourse website: open-access\nhttps://thiyangt.github.io/descriptivestatisticsweb/\nType:\nCourse LMS page/ Google Classroom: closed access (open only to students enrolled in the unit STA 1132 at FAS, USJ)\n\nCourse outline\nAnnouncements\nExercises\nWeekly schedule\n\n\n\n\nYou must enroll yourself in the LMS course unit page and Google Classroom."
   },
   {
-    "objectID": "week0/index.html#sta-113-2.0-descriptive-statistics-workload",
-    "href": "week0/index.html#sta-113-2.0-descriptive-statistics-workload",
+    "objectID": "week0/index.html#sta-1132-descriptive-statistics-workload",
+    "href": "week0/index.html#sta-1132-descriptive-statistics-workload",
     "title": "STA 1132 Descriptive Statistics",
-    "section": "STA 113 2.0 Descriptive Statistics: Workload",
-    "text": "STA 113 2.0 Descriptive Statistics: Workload\n\n\n\n\n\nType\nHours\n\n\n\n\nTotal\n100\n\n\nLectures and tutorials\n30\n\n\nIndependent learning\n70"
+    "section": "STA 1132 Descriptive Statistics: Workload",
+    "text": "STA 1132 Descriptive Statistics: Workload\n\n\n\n\n\nType\nHours\n\n\n\n\nTotal\n100\n\n\nLectures and tutorials\n30\n\n\nIndependent learning\n70"
   },
   {
     "objectID": "week0/index.html#physical-space",
@@ -858,28 +858,21 @@
     "href": "index.html#policies-and-regulations",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Policies and regulations",
-    "text": "Policies and regulations\nTo access important information regarding the unit STA 113 2.0 Descriptive Statistics, please go to the course Learning Management System (LMS) page. Click here to go directly to the LMS. You must carefully read the “Course Information and Logistic” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information and Logistic” slides."
-  },
-  {
-    "objectID": "index.html#google-classroom",
-    "href": "index.html#google-classroom",
-    "title": "STA 113 2.0 Descriptive Statistics",
-    "section": "Google Classroom",
-    "text": "Google Classroom\nI also opened a Google Classroom as a backup strategy in case the LMS failed. Kindly ensure that you join it. The password is available on LMS under announcements."
+    "text": "Policies and regulations\nTo access important information regarding the unit STA 113 2.0 Descriptive Statistics, please go to the course Learning Management System (LMS) page and Google Classroom. Click here to go directly to the LMS. You must carefully read the “Course Information and Logistic” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information and Logistic” slides."
   },
   {
     "objectID": "index.html#course-outline",
     "href": "index.html#course-outline",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Course outline",
-    "text": "Course outline\nAvailable on LMS"
+    "text": "Course outline\nAvailable on Google Classroom"
   },
   {
     "objectID": "index.html#weekly-schedule",
     "href": "index.html#weekly-schedule",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Weekly schedule",
-    "text": "Weekly schedule\nHere’s your roadmap for the semester!\n\nWeek 1: April 24, 2024\nSlides 1.1: Course Information and Logistics\nSlides 1.2: Definition of Statistics and Role of Statistics\nReading 1.1: American Statistical Association (ASA) Statement on The Role of Statistics in Data Science …\nExercise: Find history of statistics.\n\n\nWeek 2: May 15, 2024\nSlides 2: Basic Terminologies and Concepts in Statistics\nTask: Fill out the survey questionnaire available on the LMS.\n\n\nWeek 3: May 22, 2024\nSlides 3: Data Collection\n\n\nWeek 4: May 29, 2024\nSlides 4: Types and scales of measurement\nAdditional reading\nGroup assignment: 10%\n\n\nWeek 5: June 5, 2024\nSlides 5: Analysing Categorical Data\nTutorial 1: Group assignment help desk: 3.15PM - 4.00PM\n\n\nWeek 6: June 10, 2024\nSlides 6: Analysing Categorical Data - Two-way graphs\nAdditional materials\n\n\nWeek 7: June 12, 2024\nSlides 7: Frequency Distributions\n\nTutorial 2: Please visit Google Classroom to view the tasks for the tutorials on Wednesday, June 12, 2024 from 3.15PM to 4PM.\n\n\nWeek 8: June 19, 2024\nSlides 8: Measures of Central Tendency\nNote: Group assignment deadline is today.\nTutorial 3: Please visit Google Classroom to view the tasks for the tutorials on Wednesday, June 19, 2024 from 3.15PM to 4PM.\n\n\nWeek 9/10: June 26, 2024/ June 28, 2024\nSlides 9: Stem and Leaf Plot, Dot plot, Individual value plot, Measures of Dispersion (Range, Variance, Standard deviation)\nTutorial 4: June 26, 2024 from 3.15PM to 4PM.\nTask: Week 7 slides 28-29 questions.\n\n\nWeek 11: July 3, 2024\nSlides 10: More work on summary measures\nOnline calculator\nTutorial 4: July 3, 2024 from 3.15PM to 4PM.\nPlease go to the Google Classroom to view the tasks.\n\n\nWeek 12: July 10, 2024\nSlides 11: Covariance and Correlation\nSlides 12: Time Series Visualisations\nHelp Desk (Assignment 2): July 10, 2024 from 3.15PM to 4PM.\nPlease go to the Google Classroom/LMS to view the assignment.\n\n\nWeek 13: July 17, 2024\nSlides 13: Spearman’s rank correlation\nHelp Desk (Assignment 2): July 17, 2024 from 3.15PM to 4PM.\n\n\nWeek 14: July 24, 2024\nSlides 14: Measures of Central Tendency and Variability: Grouped Data\nSlide 15Misuses of Statistics"
+    "text": "Weekly schedule\nHere’s your roadmap for the semester!"
   },
   {
     "objectID": "week1/index.html#learning-objective",
@@ -900,7 +893,7 @@
     "href": "week1/index.html#summary-measures",
     "title": "STA 1132 Descriptive Statistics",
     "section": "Summary measures",
-    "text": "Summary measures\n\n\n\n\n\n\nGender\nA\nB\nC\nWeight\n\n\n\n\n\nFemale:50\nMin. : 70.00\nMin. :0.100\nMin. :0.900\nMin. : 312\n\n\n\nMale :50\n1st Qu.: 99.10\n1st Qu.:2.500\n1st Qu.:2.600\n1st Qu.:2976\n\n\n\nNA\nMedian : 99.80\nMedian :3.100\nMedian :3.300\nMedian :3980\n\n\n\nNA\nMean : 99.19\nMean :3.246\nMean :3.385\nMean :4124\n\n\n\nNA\n3rd Qu.:100.50\n3rd Qu.:4.025\n3rd Qu.:4.200\n3rd Qu.:4808\n\n\n\nNA\nMax. :110.00\nMax. :6.100\nMax. :6.300\nMax. :9046"
+    "text": "Summary measures\n\n\n\n\n\n\nGender\nA\nB\nC\nWeight\n\n\n\n\n\nFemale:50\nMin. : 70.0\nMin. :0.600\nMin. :1.600\nMin. : 927\n\n\n\nMale :50\n1st Qu.: 99.3\n1st Qu.:2.500\n1st Qu.:3.100\n1st Qu.:3259\n\n\n\nNA\nMedian :100.0\nMedian :3.400\nMedian :3.600\nMedian :4144\n\n\n\nNA\nMean : 99.3\nMean :3.271\nMean :3.689\nMean :4210\n\n\n\nNA\n3rd Qu.:100.5\n3rd Qu.:4.025\n3rd Qu.:4.300\n3rd Qu.:5358\n\n\n\nNA\nMax. :110.0\nMax. :5.300\nMax. :6.300\nMax. :7550"
   },
   {
     "objectID": "week1/index.html#presenting-data-example",
@@ -908,6 +901,13 @@
     "title": "STA 1132 Descriptive Statistics",
     "section": "Presenting Data: Example",
     "text": "Presenting Data: Example\nhttps://thiyangt.github.io/dsjobtraker_dashboard_mc/#top-software-and-skills"
+  },
+  {
+    "objectID": "week1/index.html#from-the-sales-data-the-company-gained-insights-into-customer-behavior-such-as-which-products-were-most-popular-in-different-regions.",
+    "href": "week1/index.html#from-the-sales-data-the-company-gained-insights-into-customer-behavior-such-as-which-products-were-most-popular-in-different-regions.",
+    "title": "STA 1132 Descriptive Statistics",
+    "section": "From the sales data, the company gained insights into customer behavior — such as which products were most popular in different regions.",
+    "text": "From the sales data, the company gained insights into customer behavior — such as which products were most popular in different regions."
   },
   {
     "objectID": "week1/index.html#applications-of-statistics-in-different-fields",
@@ -1418,7 +1418,7 @@
     "href": "week8/index.html#data",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Data",
-    "text": "Data\n\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n-0.4941825\n0.9915941\n1.2651757\n-0.4547021\n\n\n-0.6687905\n0.7621325\n0.4623908\n-0.5227580\n\n\n-0.5469909\n0.4472162\n0.1096497\n-0.9385280\n\n\n-0.6231902\n0.9652850\n1.6850990\n-1.0626077\n\n\n1.4458192\n0.7953235\n0.1734091\n-0.7810612\n\n\n1.4321517\n0.9403680\n0.2576630\n-0.9400142\n\n\n-1.7834318\n0.2037412\n0.9451751\n-0.4921403\n\n\n-0.1310000\n0.5811571\n0.0841218\n-0.9899774\n\n\n-1.1957376\n0.5004076\n0.9543987\n-0.6680712\n\n\n0.4298630\n0.6224225\n0.2428342\n-0.2485180\n\n\n0.6814681\n0.3328808\n0.8645305\n-0.7541138\n\n\n-0.7584425\n0.6059351\n0.8742853\n-0.6532270\n\n\n0.4903058\n0.5572273\n0.0927645\n-1.1676951\n\n\n-0.0359587\n0.9757127\n1.4798731\n-1.0630715\n\n\n-0.4126305\n0.3127026\n0.6411980\n-0.9250913\n\n\n-0.6958339\n0.8282239\n0.6666132\n-1.2498425\n\n\n1.1344751\n0.5325348\n0.1791371\n-0.7756105\n\n\n-0.2479113\n0.2439792\n0.5884629\n-0.8957835\n\n\n0.3880169\n0.0597912\n0.5377590\n-1.2037738\n\n\n-0.6955792\n0.7714712\n0.7566644\n-0.3658032\n\n\n-1.2602048\n0.8607332\n0.0237823\n-0.8675267\n\n\n-0.4121627\n0.9078947\n0.3648342\n-1.3747030\n\n\n-1.0600587\n0.5853123\n0.0991288\n-0.9682996\n\n\n-0.6901896\n0.8314007\n0.1282657\n-0.8799173\n\n\n-0.1512943\n0.7785955\n0.3227742\n-1.3436420\n\n\n-0.8817142\n0.2555937\n0.2120927\n-0.8572044\n\n\n2.3139477\n0.3352818\n3.4199927\n-0.7016565\n\n\n2.6254204\n0.9125926\n0.3246409\n-1.2752869\n\n\n0.0997495\n0.1433173\n0.5174605\n-0.3899073\n\n\n-0.6003863\n0.5621560\n0.8610009\n-0.8642701\n\n\n0.7316799\n0.7373602\n0.2427046\n-1.1415947\n\n\n0.5253369\n0.4902503\n2.0961923\n-0.7712001\n\n\n0.2979311\n0.4586207\n0.2769770\n-0.1074875\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n34\n0.1707726\n0.9417774\n0.5032580\n-0.6044107\n\n\n35\n-0.3198814\n0.8077437\n0.0181263\n-1.2421812\n\n\n36\n-0.8186460\n0.6444308\n6.8161623\n-1.1468929\n\n\n37\n-0.0072054\n0.8448965\n0.3052239\n-0.8844985\n\n\n38\n-0.4512637\n0.3424624\n1.3661048\n-1.3386497\n\n\n39\n-0.1925807\n0.5625122\n0.9218917\n-0.8877711\n\n\n40\n2.2657184\n0.6736529\n0.2075009\n-0.4708897\n\n\n41\n-0.9951849\n0.8909363\n5.0017890\n-0.9994745\n\n\n42\n-0.2856625\n0.8033804\n0.0968602\n-0.7467907\n\n\n43\n0.2191878\n0.1782850\n1.5306568\n-0.7682978\n\n\n44\n-1.0367488\n0.8343284\n0.3886233\n-1.3388111\n\n\n45\n1.1718172\n0.2599477\n2.9639756\n-0.7148029\n\n\n46\n0.1918960\n0.5094981\n0.5536213\n-0.7586514\n\n\n47\n0.5286750\n0.7987479\n0.4308663\n-0.9896018\n\n\n48\n1.5910981\n0.6943393\n0.6255345\n-1.1681160\n\n\n49\n-1.1722861\n0.9982673\n0.4587839\n-0.9371935\n\n\n50\n0.1934595\n0.6716770\n0.3116617\n-1.1103634\n\n\n51\n-1.4356298\n0.9698931\n5.7776384\n0.8623060\n\n\n52\n-0.7890743\n0.5939492\n0.0224797\n1.2137335\n\n\n53\n-0.6106055\n0.0478229\n3.0745683\n0.9983251\n\n\n54\n-2.3119511\n0.5605901\n0.8132757\n0.6957828\n\n\n55\n0.8667858\n0.3635374\n0.2700010\n0.6795177\n\n\n56\n0.4041022\n0.7116650\n0.6794256\n0.8919491\n\n\n57\n2.0842797\n0.6958857\n0.3890802\n1.4396962\n\n\n58\n-1.6350715\n0.4293465\n0.9316933\n1.5557211\n\n\n59\n-1.0041166\n0.7481887\n2.2529575\n0.9289430\n\n\n60\n-0.1833006\n0.8444459\n0.3561461\n1.2954135\n\n\n61\n-0.6370463\n0.6549463\n1.5700440\n1.4239294\n\n\n62\n0.7891126\n0.9183704\n3.4331633\n0.9424039\n\n\n63\n-1.9343009\n0.8069813\n1.7880099\n1.0407747\n\n\n64\n1.0142296\n0.9055865\n0.5375650\n0.0505981\n\n\n65\n1.9339288\n0.2774429\n0.4135352\n1.1525336\n\n\n66\n0.0475422\n0.9947034\n1.3488308\n1.2897422\n\n\n67\n0.2263924\n0.8236884\n0.8586223\n0.4717407\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n68\n-0.4959669\n0.5652228\n1.1851333\n1.1189474\n\n\n69\n0.8229532\n0.8178838\n0.1777389\n0.1525808\n\n\n70\n0.9298399\n0.9716167\n2.0837673\n1.1283459\n\n\n71\n-0.8396403\n0.6955667\n1.1255832\n0.8254749\n\n\n72\n-2.6643294\n0.5633113\n2.6622062\n0.4479653\n\n\n73\n1.6035095\n0.3289823\n0.7328378\n1.1938157\n\n\n74\n-0.7712137\n0.6223501\n3.6241769\n1.0612159\n\n\n75\n-0.3840300\n0.3932550\n0.1783265\n0.9074435\n\n\n76\n0.4037572\n0.8684061\n0.0584704\n0.7707421\n\n\n77\n-0.2177293\n0.7424245\n1.3926143\n0.7044549\n\n\n78\n-0.0787400\n0.8584837\n0.1558730\n0.7731302\n\n\n79\n-1.3780882\n0.4996357\n0.5496975\n1.1174710\n\n\n80\n-0.4246498\n0.9272462\n0.0421114\n1.0224212\n\n\n81\n0.3751303\n0.2122582\n0.0489879\n1.2401247\n\n\n82\n1.0816647\n0.8919946\n5.6415263\n1.1950053\n\n\n83\n-0.1589649\n0.4317767\n0.2723074\n0.6052308\n\n\n84\n0.2382120\n0.1271924\n0.0322854\n0.6628394\n\n\n85\n0.7576892\n0.7173759\n0.5761504\n0.7795326\n\n\n86\n-0.9829056\n0.3897945\n0.4854600\n0.8800581\n\n\n87\n0.3364830\n0.4760740\n2.5864094\n1.1548429\n\n\n88\n-0.2949718\n0.9238953\n1.3136616\n0.5118688\n\n\n89\n0.7969451\n0.6609144\n7.4977078\n1.2616219\n\n\n90\n-0.6483374\n0.3351259\n1.1174526\n0.1745040\n\n\n91\n-0.3334201\n0.9155915\n0.2567393\n1.0479585\n\n\n92\n-0.9726304\n0.6654774\n0.3236723\n0.8446453\n\n\n93\n-0.8009399\n0.2512914\n1.4986115\n0.4152249\n\n\n94\n-1.2797944\n0.9317872\n2.0137554\n0.8929735\n\n\n95\n-1.0862999\n0.5974472\n0.4877782\n0.3485280\n\n\n96\n-1.1646197\n0.9956436\n0.0835399\n0.6462357\n\n\n97\n-0.0201359\n0.7754757\n0.3588838\n1.6385065\n\n\n98\n-0.4628470\n0.6599176\n2.7117010\n0.7595622\n\n\n99\n-0.4063630\n0.4857695\n0.5379405\n0.8379056\n\n\n100\n-0.0119749\n0.8521035\n1.3446080\n0.5883827"
+    "text": "Data\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n-0.4941825\n0.9915941\n1.2651757\n-0.4547021\n\n\n-0.6687905\n0.7621325\n0.4623908\n-0.5227580\n\n\n-0.5469909\n0.4472162\n0.1096497\n-0.9385280\n\n\n-0.6231902\n0.9652850\n1.6850990\n-1.0626077\n\n\n1.4458192\n0.7953235\n0.1734091\n-0.7810612\n\n\n1.4321517\n0.9403680\n0.2576630\n-0.9400142\n\n\n-1.7834318\n0.2037412\n0.9451751\n-0.4921403\n\n\n-0.1310000\n0.5811571\n0.0841218\n-0.9899774\n\n\n-1.1957376\n0.5004076\n0.9543987\n-0.6680712\n\n\n0.4298630\n0.6224225\n0.2428342\n-0.2485180\n\n\n0.6814681\n0.3328808\n0.8645305\n-0.7541138\n\n\n-0.7584425\n0.6059351\n0.8742853\n-0.6532270\n\n\n0.4903058\n0.5572273\n0.0927645\n-1.1676951\n\n\n-0.0359587\n0.9757127\n1.4798731\n-1.0630715\n\n\n-0.4126305\n0.3127026\n0.6411980\n-0.9250913\n\n\n-0.6958339\n0.8282239\n0.6666132\n-1.2498425\n\n\n1.1344751\n0.5325348\n0.1791371\n-0.7756105\n\n\n-0.2479113\n0.2439792\n0.5884629\n-0.8957835\n\n\n0.3880169\n0.0597912\n0.5377590\n-1.2037738\n\n\n-0.6955792\n0.7714712\n0.7566644\n-0.3658032\n\n\n-1.2602048\n0.8607332\n0.0237823\n-0.8675267\n\n\n-0.4121627\n0.9078947\n0.3648342\n-1.3747030\n\n\n-1.0600587\n0.5853123\n0.0991288\n-0.9682996\n\n\n-0.6901896\n0.8314007\n0.1282657\n-0.8799173\n\n\n-0.1512943\n0.7785955\n0.3227742\n-1.3436420\n\n\n-0.8817142\n0.2555937\n0.2120927\n-0.8572044\n\n\n2.3139477\n0.3352818\n3.4199927\n-0.7016565\n\n\n2.6254204\n0.9125926\n0.3246409\n-1.2752869\n\n\n0.0997495\n0.1433173\n0.5174605\n-0.3899073\n\n\n-0.6003863\n0.5621560\n0.8610009\n-0.8642701\n\n\n0.7316799\n0.7373602\n0.2427046\n-1.1415947\n\n\n0.5253369\n0.4902503\n2.0961923\n-0.7712001\n\n\n0.2979311\n0.4586207\n0.2769770\n-0.1074875\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n34\n0.1707726\n0.9417774\n0.5032580\n-0.6044107\n\n\n35\n-0.3198814\n0.8077437\n0.0181263\n-1.2421812\n\n\n36\n-0.8186460\n0.6444308\n6.8161623\n-1.1468929\n\n\n37\n-0.0072054\n0.8448965\n0.3052239\n-0.8844985\n\n\n38\n-0.4512637\n0.3424624\n1.3661048\n-1.3386497\n\n\n39\n-0.1925807\n0.5625122\n0.9218917\n-0.8877711\n\n\n40\n2.2657184\n0.6736529\n0.2075009\n-0.4708897\n\n\n41\n-0.9951849\n0.8909363\n5.0017890\n-0.9994745\n\n\n42\n-0.2856625\n0.8033804\n0.0968602\n-0.7467907\n\n\n43\n0.2191878\n0.1782850\n1.5306568\n-0.7682978\n\n\n44\n-1.0367488\n0.8343284\n0.3886233\n-1.3388111\n\n\n45\n1.1718172\n0.2599477\n2.9639756\n-0.7148029\n\n\n46\n0.1918960\n0.5094981\n0.5536213\n-0.7586514\n\n\n47\n0.5286750\n0.7987479\n0.4308663\n-0.9896018\n\n\n48\n1.5910981\n0.6943393\n0.6255345\n-1.1681160\n\n\n49\n-1.1722861\n0.9982673\n0.4587839\n-0.9371935\n\n\n50\n0.1934595\n0.6716770\n0.3116617\n-1.1103634\n\n\n51\n-1.4356298\n0.9698931\n5.7776384\n0.8623060\n\n\n52\n-0.7890743\n0.5939492\n0.0224797\n1.2137335\n\n\n53\n-0.6106055\n0.0478229\n3.0745683\n0.9983251\n\n\n54\n-2.3119511\n0.5605901\n0.8132757\n0.6957828\n\n\n55\n0.8667858\n0.3635374\n0.2700010\n0.6795177\n\n\n56\n0.4041022\n0.7116650\n0.6794256\n0.8919491\n\n\n57\n2.0842797\n0.6958857\n0.3890802\n1.4396962\n\n\n58\n-1.6350715\n0.4293465\n0.9316933\n1.5557211\n\n\n59\n-1.0041166\n0.7481887\n2.2529575\n0.9289430\n\n\n60\n-0.1833006\n0.8444459\n0.3561461\n1.2954135\n\n\n61\n-0.6370463\n0.6549463\n1.5700440\n1.4239294\n\n\n62\n0.7891126\n0.9183704\n3.4331633\n0.9424039\n\n\n63\n-1.9343009\n0.8069813\n1.7880099\n1.0407747\n\n\n64\n1.0142296\n0.9055865\n0.5375650\n0.0505981\n\n\n65\n1.9339288\n0.2774429\n0.4135352\n1.1525336\n\n\n66\n0.0475422\n0.9947034\n1.3488308\n1.2897422\n\n\n67\n0.2263924\n0.8236884\n0.8586223\n0.4717407\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ns1\ns2\ns3\ns4\n\n\n\n\n68\n-0.4959669\n0.5652228\n1.1851333\n1.1189474\n\n\n69\n0.8229532\n0.8178838\n0.1777389\n0.1525808\n\n\n70\n0.9298399\n0.9716167\n2.0837673\n1.1283459\n\n\n71\n-0.8396403\n0.6955667\n1.1255832\n0.8254749\n\n\n72\n-2.6643294\n0.5633113\n2.6622062\n0.4479653\n\n\n73\n1.6035095\n0.3289823\n0.7328378\n1.1938157\n\n\n74\n-0.7712137\n0.6223501\n3.6241769\n1.0612159\n\n\n75\n-0.3840300\n0.3932550\n0.1783265\n0.9074435\n\n\n76\n0.4037572\n0.8684061\n0.0584704\n0.7707421\n\n\n77\n-0.2177293\n0.7424245\n1.3926143\n0.7044549\n\n\n78\n-0.0787400\n0.8584837\n0.1558730\n0.7731302\n\n\n79\n-1.3780882\n0.4996357\n0.5496975\n1.1174710\n\n\n80\n-0.4246498\n0.9272462\n0.0421114\n1.0224212\n\n\n81\n0.3751303\n0.2122582\n0.0489879\n1.2401247\n\n\n82\n1.0816647\n0.8919946\n5.6415263\n1.1950053\n\n\n83\n-0.1589649\n0.4317767\n0.2723074\n0.6052308\n\n\n84\n0.2382120\n0.1271924\n0.0322854\n0.6628394\n\n\n85\n0.7576892\n0.7173759\n0.5761504\n0.7795326\n\n\n86\n-0.9829056\n0.3897945\n0.4854600\n0.8800581\n\n\n87\n0.3364830\n0.4760740\n2.5864094\n1.1548429\n\n\n88\n-0.2949718\n0.9238953\n1.3136616\n0.5118688\n\n\n89\n0.7969451\n0.6609144\n7.4977078\n1.2616219\n\n\n90\n-0.6483374\n0.3351259\n1.1174526\n0.1745040\n\n\n91\n-0.3334201\n0.9155915\n0.2567393\n1.0479585\n\n\n92\n-0.9726304\n0.6654774\n0.3236723\n0.8446453\n\n\n93\n-0.8009399\n0.2512914\n1.4986115\n0.4152249\n\n\n94\n-1.2797944\n0.9317872\n2.0137554\n0.8929735\n\n\n95\n-1.0862999\n0.5974472\n0.4877782\n0.3485280\n\n\n96\n-1.1646197\n0.9956436\n0.0835399\n0.6462357\n\n\n97\n-0.0201359\n0.7754757\n0.3588838\n1.6385065\n\n\n98\n-0.4628470\n0.6599176\n2.7117010\n0.7595622\n\n\n99\n-0.4063630\n0.4857695\n0.5379405\n0.8379056\n\n\n100\n-0.0119749\n0.8521035\n1.3446080\n0.5883827"
   },
   {
     "objectID": "week8/index.html#histogram",
@@ -1516,7 +1516,7 @@
     "href": "week8/index.html#steps-in-calculating-median",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Steps in calculating median",
-    "text": "Steps in calculating median\n\nArrange the data in an ordered array of numbers.\nCount the number of observations. Suppose there are \\(n\\) number of observations.\nLocate the middle value of the ordered array as follws\n\n\n\nMedian formula when n is odd\n\\(Median = (\\frac{n+1}{2})^{th} \\text{observation}\\)\n\nMedian formula when n is even\n\\(Median = \\frac{(\\frac{n}{2})^{observation} + (\\frac{n}{2} + 1)^{observation}}{2}\\)\n\n\nImportant: To compute the median, at least the required scale of measurement is ordinal."
+    "text": "Steps in calculating median\n\nArrange the data in an ordered array of numbers.\nCount the number of observations. Suppose there are \\(n\\) number of observations.\nLocate the middle value of the ordered array as follws\n\n\n\nMedian formula when n is odd\n\\(Median = (\\frac{n+1}{2})^{th} \\text{observation}\\)\n\nMedian formula when n is even\n\\(Median = \\frac{(\\frac{n}{2})^{observation} + (\\frac{n}{2} + 1)^{observation}}{2}\\)\n\nImportant: To compute the median, at least the required scale of measurement is ordinal."
   },
   {
     "objectID": "week8/index.html#your-turn-1",
@@ -1544,41 +1544,13 @@
     "href": "week8/index.html#your-turn-3",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Your turn",
-    "text": "Your turn\nThe following table shows the number of insects observed on a farm over the course of a week. Calculate the mean, median, and mode of data.\n\n\n\n\n\n\nDay\nNumber of Insects\n\n\n\n\nMonday\n45\n\n\nTuesday\n50\n\n\nWednesday\n42\n\n\nThursday\n55\n\n\nFriday\n48\n\n\nSaturday\n53\n\n\nSunday\n47\n\n\n\n\n\n\n\n\n\n\n\n−+\n06:00"
+    "text": "Your turn\nThe following table shows the number of insects observed on a farm over the course of a week. Calculate the mean, median, and mode of data.\n\n\n\n\n\nDay\nNumber of Insects\n\n\n\n\nMonday\n45\n\n\nTuesday\n50\n\n\nWednesday\n42\n\n\nThursday\n55\n\n\nFriday\n48\n\n\nSaturday\n53\n\n\nSunday\n47\n\n\n\n\n\n\n\n\n\n\n−+\n06:00"
   },
   {
     "objectID": "week8/index.html#your-turn-4",
     "href": "week8/index.html#your-turn-4",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Your turn",
-    "text": "Your turn\nThe following table shows the number of insects observed on a farm over the course of the month of April. Calculate the mean, median, and mode of the number of insects observed during this period.\n\n\n\n\n\n\nNumber of Insects\nNumber of days\n\n\n\n\n45\n5\n\n\n50\n6\n\n\n42\n3\n\n\n55\n3\n\n\n48\n2\n\n\n53\n1\n\n\n47\n2\n\n\n40\n8\n\n\n\n\n\n\n\n\n\n\n\n−+\n10:00"
-  },
-  {
-    "objectID": "week0/index.html#sta-1132-descriptive-statistics-type-and-method-of-assessment",
-    "href": "week0/index.html#sta-1132-descriptive-statistics-type-and-method-of-assessment",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "STA 1132 Descriptive Statistics: Type and Method of Assessment",
-    "text": "STA 1132 Descriptive Statistics: Type and Method of Assessment\nType:\nType: Core\nType:\nMethod of Assessment:\nType:\nFormative Assessment (FA):\nFA1: Group assignment: 10% of the total marks\nFA2: Mid-semester examination: 20% of the total marks\nType:\nSummative Assessment (SA):\nSA1: End of Semester Examination: 70% of the total marks"
-  },
-  {
-    "objectID": "week0/index.html#sta-1132-descriptive-statistics-logistics",
-    "href": "week0/index.html#sta-1132-descriptive-statistics-logistics",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "STA 1132 Descriptive Statistics: Logistics",
-    "text": "STA 1132 Descriptive Statistics: Logistics\nType:\nCourse website: open-access\nhttps://thiyangt.github.io/descriptivestatisticsweb/\nType:\nCourse LMS page/ Google Classroom: closed access (open only to students enrolled in the unit STA 1132 at FAS, USJ)\n\nCourse outline\nAnnouncements\nExercises\nWeekly schedule\n\n\n\n\nYou must enroll yourself in the LMS course unit page and Google Classroom."
-  },
-  {
-    "objectID": "week0/index.html#sta-1132-descriptive-statistics-workload",
-    "href": "week0/index.html#sta-1132-descriptive-statistics-workload",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "STA 1132 Descriptive Statistics: Workload",
-    "text": "STA 1132 Descriptive Statistics: Workload\n\n\n\n\n\nType\nHours\n\n\n\n\nTotal\n100\n\n\nLectures and tutorials\n30\n\n\nIndependent learning\n70"
-  },
-  {
-    "objectID": "week1/index.html#example",
-    "href": "week1/index.html#example",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "Example:",
-    "text": "Example:\nFrom the sales data, the company gained insights into customer behavior — such as which products were most popular in different regions."
+    "text": "Your turn\nThe following table shows the number of insects observed on a farm over the course of the month of April. Calculate the mean, median, and mode of the number of insects observed during this period.\n\n\n\n\n\nNumber of Insects\nNumber of days\n\n\n\n\n45\n5\n\n\n50\n6\n\n\n42\n3\n\n\n55\n3\n\n\n48\n2\n\n\n53\n1\n\n\n47\n2\n\n\n40\n8\n\n\n\n\n\n\n\n\n\n\n−+\n10:00"
   }
 ]

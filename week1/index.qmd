@@ -347,7 +347,27 @@ knitr::include_graphics("dsjobtraker.png")
 
 ------------------------------------------------------------------------
 
-# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:red;"} results derived from that data to gain insights and make informed decisions.
+
+# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:blue;"} results derived from that data to gain insights and make informed decisions.
+
+------------------------------------------------------------------------
+
+# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:blue;"} results derived from that data to [gain insights]{style="color:red;"} and make informed decisions.
+
+------------------------------------------------------------------------
+
+# When you analyze data and gain insights, you’re uncovering patterns, trends, or meaningful information.
+
+Example:
+
+From the sales data, the company gained insights into customer behavior — such as which products were most popular in different regions.
+------------------------------------------------------------------------
+
+# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:blue;"} results derived from that data to [gain insights]{style="color:blue;"} and make [informed decisions]{style="color:red;"}.
+
+# "Informed" means based on knowledge, facts, or awareness.
+
+> **When we say "informed decisions," it refers to choices made after carefully considering relevant information or data, rather than guessing or relying on assumptions.**
 
 
 ------------------------------------------------------------------------
@@ -431,21 +451,6 @@ tf |> knitr::kable()
 
 [Source and Reading materials: https://en.wikipedia.org/wiki/List_of_fields_of_application_of_statistics](https://en.wikipedia.org/wiki/List_of_fields_of_application_of_statistics)
 
-# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:blue;"} results derived from that data to gain insights and make informed decisions.
-
-# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:blue;"} results derived from that data to [gain insights]{style="color:red;"} and make informed decisions.
-
-# When you analyze data and gain insights, you’re uncovering patterns, trends, or meaningful information.
-
-## Example:
-
-From the sales data, the company gained insights into customer behavior — such as which products were most popular in different regions.
-
-# The [science]{style="color:blue;"} of [collecting]{style="color:blue;"}, [organizing]{style="color:blue;"}, and [analyzing]{style="color:blue;"} [data]{style="color:blue;"}, and [presenting, and interpreting]{style="color:blue;"} results derived from that data to [gain insights]{style="color:blue;"} and make [informed decisions]{style="color:red;"}.
-
-# "Informed" means based on knowledge, facts, or awareness.
-
-When we say "informed decisions," it refers to choices made after carefully considering relevant information or data, rather than guessing or relying on assumptions.
 
 # Outline
 
