@@ -26,7 +26,11 @@ Here’s your roadmap for the semester!
 
 # Lectures
 
-### Week 1: May 28, 2025
+### Week 1: May 21, 2025
+
+[Growing with Data: Statistics from Kindergarten to School](https://thiyangt.github.io/DS2025/#/title-slide)
+
+### Week 2: May 28, 2025
 
 **Slides 1.1:** [Course Information and Logistics](./week0/index.html)
 
@@ -36,7 +40,7 @@ Here’s your roadmap for the semester!
 
 **Exercise:** Find history of statistics.
 
-### Week 2: June 04, 2025
+### Week 3: June 04, 2025
 
 **Slides 2:** [Basic Terminologies and Concepts in Statistics](./week2/index.html)
 
