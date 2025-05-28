@@ -1,5 +1,5 @@
 ---
-title: "STA 113 2.0 Descriptive Statistics"
+title: "STA 1132 Descriptive Statistics"
 subtitle: "Basic Terminologies and Concepts in Statistics"
 author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
 format:
