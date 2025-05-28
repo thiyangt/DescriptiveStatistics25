@@ -3,21 +3,19 @@ project:
   output-dir: docs
 
 website:
-  title: "STA 113 2.0 Descriptive Statistics"
+  title: "STA 1132 Descriptive Statistics"
   site-url: "https://thiyangt.github.io/descriptivestatisticsweb/"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
-      - ga.qmd
-      - ia.qmd
-      - ma.qmd
+
 
 
 format:
   html:
-    theme: pulse
+    theme: sandstone
     css: styles.css
     toc: true
 
