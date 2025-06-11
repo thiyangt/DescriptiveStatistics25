@@ -42,8 +42,6 @@ Here’s your roadmap for the semester!
 
 **Slides 2:** [Basic Terminologies and Concepts in Statistics](./week2/index.html)
 
-
-
 ### Week 4: June 11. 2025
 
 **Slides 4** [Data Collection](./week3/index.html)
