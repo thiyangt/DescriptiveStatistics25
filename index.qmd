@@ -14,8 +14,6 @@ ttalagala\@sjp.ac.lk
 
 To access important information regarding the unit STA 113 2.0 Descriptive Statistics, please go to the course Learning Management System (LMS) page **and** Google Classroom. [**Click here**](https://lms.fas.sjp.ac.lk/enrol/index.php?id=3646) to go directly to the LMS. You must carefully read the "Course Information and Logistic" slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the "Course Information and Logistic" slides.
 
-
-
 ## Course outline
 
 Available on Google Classroom
@@ -44,7 +42,13 @@ Here’s your roadmap for the semester!
 
 **Slides 2:** [Basic Terminologies and Concepts in Statistics](./week2/index.html)
 
-**Task:** Fill out the survey questionnaire available on the LMS.
+
+
+### Week 4: June 11. 2025
+
+**Slides 4** [Data Collection](./week3/index.html)
+
+**Slides 5** [Types of Data](./week4/index.html)
 
 # Tutorials
 
