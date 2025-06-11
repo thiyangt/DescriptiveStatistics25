@@ -35,7 +35,7 @@ format:
 
 ## Methods of collecting primary data
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 -   surveys
 
@@ -61,7 +61,7 @@ format:
 
 -   analyse social media content
 :::
-:::
+:::::
 
 # Observational Studies vs Experimental Study
 
@@ -71,7 +71,7 @@ Investigate the effect of fertilizer A and B on chili crop yield.
 
 ------------------------------------------------------------------------
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ### Researcher 1
 
@@ -93,11 +93,11 @@ Group B: Farmers using fertilizer B.
 
 **Step 3:** Data Collection: Measure the chili crop yield from each plot at the end of the growing season.
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ### Researcher 1
 
@@ -109,7 +109,7 @@ In-class demo:
 
 In-class demo:
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 

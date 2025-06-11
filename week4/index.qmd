@@ -102,7 +102,7 @@ Your turn: Identify quantitative variables in the penguins dataset.
 
 ------------------------------------------------------------------------
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ### Discrete
 
@@ -134,7 +134,7 @@ Your turn: Identify quantitative variables in the penguins dataset.
     -   Temperature
     -   Time taken to complete a task
 :::
-:::
+:::::
 
 ## Your turn: Identify discrete and continuous variables
 
@@ -150,7 +150,7 @@ knitr::include_graphics("scales.png")
 
 ## Nominal Scale
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ### Properties
 
@@ -178,11 +178,11 @@ knitr::include_graphics("scales.png")
 
 -   District you live
 :::
-:::
+:::::
 
 ## Ordinal Scale
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ### Properties
 
@@ -208,11 +208,11 @@ Customer Satisfaction: Very Dissatisfied, Dissatisfied, Neutral, Satisfied, Very
 
 Grade: A+, A, A-, B+, B, B-
 :::
-:::
+:::::
 
 ## Interval Scale
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ### Properties
 
@@ -234,11 +234,11 @@ These variables have
 
 -   Marks: Measured from 0 to 100
 :::
-:::
+:::::
 
 ## Ratio Scale
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ### Properties
 
@@ -260,7 +260,7 @@ These variables have
 
 -   Weight: measured in kilograms.
 :::
-:::
+:::::
 
 ## Summary: scales of measurements
 

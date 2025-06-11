@@ -893,7 +893,7 @@
     "href": "week1/index.html#summary-measures",
     "title": "STA 1132 Descriptive Statistics",
     "section": "Summary measures",
-    "text": "Summary measures\n\n\n\n\n\n\nGender\nA\nB\nC\nWeight\n\n\n\n\n\nFemale:50\nMin. : 70.00\nMin. :0.900\nMin. :1.000\nMin. :1523\n\n\n\nMale :50\n1st Qu.: 99.38\n1st Qu.:2.600\n1st Qu.:2.875\n1st Qu.:3068\n\n\n\nNA\nMedian :100.10\nMedian :3.400\nMedian :3.500\nMedian :3945\n\n\n\nNA\nMean : 99.29\nMean :3.282\nMean :3.496\nMean :4169\n\n\n\nNA\n3rd Qu.:100.72\n3rd Qu.:4.000\n3rd Qu.:4.025\n3rd Qu.:5077\n\n\n\nNA\nMax. :110.00\nMax. :5.400\nMax. :6.300\nMax. :8140"
+    "text": "Summary measures\n\n\n\n\n\n\nGender\nA\nB\nC\nWeight\n\n\n\n\n\nFemale:50\nMin. : 70.00\nMin. :0.900\nMin. :1.100\nMin. :1017\n\n\n\nMale :50\n1st Qu.: 99.20\n1st Qu.:2.675\n1st Qu.:3.000\n1st Qu.:3243\n\n\n\nNA\nMedian : 99.80\nMedian :3.300\nMedian :3.650\nMedian :3994\n\n\n\nNA\nMean : 99.07\nMean :3.318\nMean :3.523\nMean :4257\n\n\n\nNA\n3rd Qu.:100.30\n3rd Qu.:4.100\n3rd Qu.:4.100\n3rd Qu.:5078\n\n\n\nNA\nMax. :110.00\nMax. :5.900\nMax. :6.300\nMax. :8450"
   },
   {
     "objectID": "week1/index.html#presenting-data-example",
