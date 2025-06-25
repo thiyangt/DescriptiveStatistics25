@@ -50,12 +50,15 @@ Here’s your roadmap for the semester!
 
 ### Week 5: June 18, 2025
 
-
 **Slides 6:** [Analysing Categorical Data](./week5/index.html)
-
 
 **Slides 7:** [Analysing Categorical Data - Two-way graphs](./week6/index.html)
 
 [Additional materials](./week5/tables.pdf)
 
+### Week 6: June 29, 2025
 
+**Slides 8:** [Frequency Distributions](./week7/index.html)
+
+
+**Slides 9:** [Measures of Central Tendency](./week8/index.html)
