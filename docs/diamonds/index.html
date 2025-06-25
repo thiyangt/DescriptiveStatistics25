@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>STA 113 2.0 Descriptive Statistics – STA 1132 Descriptive Statistics</title>
+<title>Bar charts – STA 1132 Descriptive Statistics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +20,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">STA 1132 Descriptive Statistics</span>
     </a>
   </div>
@@ -89,11 +123,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">Teaching and Learning Apps</span></a>
   </li>  
 </ul>
@@ -112,23 +146,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lecturer-in-charge" id="toc-lecturer-in-charge" class="nav-link active" data-scroll-target="#lecturer-in-charge">Lecturer-in-charge</a>
-  <ul class="collapse">
-  <li><a href="#dr-thiyanga-s.-talagala" id="toc-dr-thiyanga-s.-talagala" class="nav-link" data-scroll-target="#dr-thiyanga-s.-talagala">Dr Thiyanga S. Talagala</a></li>
-  </ul></li>
-  <li><a href="#email" id="toc-email" class="nav-link" data-scroll-target="#email">Email</a></li>
-  <li><a href="#policies-and-regulations" id="toc-policies-and-regulations" class="nav-link" data-scroll-target="#policies-and-regulations">Policies and regulations</a></li>
-  <li><a href="#course-outline" id="toc-course-outline" class="nav-link" data-scroll-target="#course-outline">Course outline</a></li>
-  <li><a href="#weekly-schedule" id="toc-weekly-schedule" class="nav-link" data-scroll-target="#weekly-schedule">Weekly schedule</a></li>
-  <li><a href="#lectures" id="toc-lectures" class="nav-link" data-scroll-target="#lectures">Lectures</a>
-  <ul class="collapse">
-  <li><a href="#week-1-may-21-2025" id="toc-week-1-may-21-2025" class="nav-link" data-scroll-target="#week-1-may-21-2025">Week 1: May 21, 2025</a></li>
-  <li><a href="#week-2-may-28-2025" id="toc-week-2-may-28-2025" class="nav-link" data-scroll-target="#week-2-may-28-2025">Week 2: May 28, 2025</a></li>
-  <li><a href="#week-3-june-04-2025" id="toc-week-3-june-04-2025" class="nav-link" data-scroll-target="#week-3-june-04-2025">Week 3: June 04, 2025</a></li>
-  <li><a href="#week-4-june-11-2025" id="toc-week-4-june-11-2025" class="nav-link" data-scroll-target="#week-4-june-11-2025">Week 4: June 11, 2025</a></li>
-  <li><a href="#week-5-june-18-2025" id="toc-week-5-june-18-2025" class="nav-link" data-scroll-target="#week-5-june-18-2025">Week 5: June 18, 2025</a></li>
-  <li><a href="#week-6-june-29-2025" id="toc-week-6-june-29-2025" class="nav-link" data-scroll-target="#week-6-june-29-2025">Week 6: June 29, 2025</a></li>
-  </ul></li>
+  <li><a href="#count-bar-charts" id="toc-count-bar-charts" class="nav-link active" data-scroll-target="#count-bar-charts">Count bar charts</a></li>
+  <li><a href="#percentage-bar-charts" id="toc-percentage-bar-charts" class="nav-link" data-scroll-target="#percentage-bar-charts">Percentage bar charts</a></li>
   </ul>
 </nav>
     </div>
@@ -137,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">STA 113 2.0 Descriptive Statistics</h1>
+<h1 class="title">Bar charts</h1>
 </div>
 
 
@@ -154,64 +173,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="lecturer-in-charge" class="level2">
-<h2 class="anchored" data-anchor-id="lecturer-in-charge">Lecturer-in-charge</h2>
-<section id="dr-thiyanga-s.-talagala" class="level3">
-<h3 class="anchored" data-anchor-id="dr-thiyanga-s.-talagala"><a href="https://thiyanga.netlify.app/">Dr Thiyanga S. Talagala</a></h3>
+<section id="count-bar-charts" class="level2">
+<h2 class="anchored" data-anchor-id="count-bar-charts">Count bar charts</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"diamonds"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(diamonds, <span class="fu">aes</span>(<span class="at">x=</span>clarity, <span class="at">fill=</span>color)) <span class="sc">+</span> <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(diamonds, <span class="fu">aes</span>(<span class="at">x=</span>clarity, <span class="at">fill=</span>color)) <span class="sc">+</span> <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"dodge"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(diamonds, <span class="fu">aes</span>(<span class="at">x=</span>color)) <span class="sc">+</span> <span class="fu">geom_bar</span>() <span class="sc">+</span> <span class="fu">facet_wrap</span>(<span class="sc">~</span>clarity)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-1-3.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-</section>
-<section id="email" class="level2">
-<h2 class="anchored" data-anchor-id="email">Email</h2>
-<p>ttalagala@sjp.ac.lk</p>
-</section>
-<section id="policies-and-regulations" class="level2">
-<h2 class="anchored" data-anchor-id="policies-and-regulations">Policies and regulations</h2>
-<p>To access important information regarding the unit STA 113 2.0 Descriptive Statistics, please go to the course Learning Management System (LMS) page <strong>and</strong> Google Classroom. <a href="https://lms.fas.sjp.ac.lk/enrol/index.php?id=3646"><strong>Click here</strong></a> to go directly to the LMS. You must carefully read the “Course Information and Logistic” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information and Logistic” slides.</p>
-</section>
-<section id="course-outline" class="level2">
-<h2 class="anchored" data-anchor-id="course-outline">Course outline</h2>
-<p>Available on Google Classroom</p>
-</section>
-<section id="weekly-schedule" class="level2">
-<h2 class="anchored" data-anchor-id="weekly-schedule">Weekly schedule</h2>
-<p>Here’s your roadmap for the semester!</p>
-</section>
-<section id="lectures" class="level1">
-<h1>Lectures</h1>
-<section id="week-1-may-21-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-1-may-21-2025">Week 1: May 21, 2025</h3>
-<p><a href="https://thiyangt.github.io/DS2025/#/title-slide">Growing with Data: Statistics from Kindergarten to School</a></p>
-</section>
-<section id="week-2-may-28-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-2-may-28-2025">Week 2: May 28, 2025</h3>
-<p><strong>Slides 1.1:</strong> <a href="./week0/index.html">Course Information and Logistics</a></p>
-<p><strong>Slides 1.2:</strong> <a href="./week1/index.html">Definition of Statistics and Role of Statistics</a></p>
-<p><strong>Reading 1.1:</strong> <a href="https://www.amstat.org/docs/default-source/amstat-documents/the-role-of-statistics-in-data-science-and-artificial-intelligence.pdf">American Statistical Association (ASA) Statement on The Role of Statistics in Data Science …</a></p>
-<p><strong>Exercise:</strong> Find history of statistics.</p>
-</section>
-<section id="week-3-june-04-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-3-june-04-2025">Week 3: June 04, 2025</h3>
-<p><strong>Slides 2:</strong> <a href="./week2/index.html">Basic Terminologies and Concepts in Statistics</a></p>
-</section>
-<section id="week-4-june-11-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-4-june-11-2025">Week 4: June 11, 2025</h3>
-<p><strong>Slides 4:</strong> <a href="./Week3/index.html">Data Collection</a></p>
-<p><strong>Slides 5</strong> <a href="./week4/index.html">Types of Data</a></p>
-</section>
-<section id="week-5-june-18-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-5-june-18-2025">Week 5: June 18, 2025</h3>
-<p><strong>Slides 6:</strong> <a href="./week5/index.html">Analysing Categorical Data</a></p>
-<p><strong>Slides 7:</strong> <a href="./week6/index.html">Analysing Categorical Data - Two-way graphs</a></p>
-<p><a href="./week5/tables.pdf">Additional materials</a></p>
-<p><a href="./diamonds/index.html">In-class demo</a></p>
-</section>
-<section id="week-6-june-29-2025" class="level3">
-<h3 class="anchored" data-anchor-id="week-6-june-29-2025">Week 6: June 29, 2025</h3>
-<p><strong>Slides 8:</strong> <a href="./week7/index.html">Frequency Distributions</a></p>
-<p><strong>Slides 9:</strong> <a href="./week8/index.html">Measures of Central Tendency</a></p>
+<section id="percentage-bar-charts" class="level2">
+<h2 class="anchored" data-anchor-id="percentage-bar-charts">Percentage bar charts</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(diamonds, <span class="fu">aes</span>(<span class="at">x =</span> clarity, <span class="at">fill =</span> color)) <span class="sc">+</span> </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">position =</span> <span class="st">"fill"</span>) <span class="sc">+</span> </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">labels =</span> scales<span class="sc">::</span>percent) <span class="sc">+</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">y =</span> <span class="st">"Percentage"</span>, <span class="at">title =</span> <span class="st">"100% Stacked Bar Chart by Clarity and Color"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell" data-messages="false">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="1440"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

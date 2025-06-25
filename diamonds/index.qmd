@@ -1,0 +1,66 @@
+---
+title: "Bar charts"
+---
+
+## Count bar charts
+
+```{r}
+library(ggplot2)
+data("diamonds")
+ggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar()
+ggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar(position = "dodge")
+ggplot(diamonds, aes(x=color)) + geom_bar() + facet_wrap(~clarity)
+```
+
+## Percentage bar charts
+
+```{r}
+ggplot(diamonds, aes(x = clarity, fill = color)) + 
+  geom_bar(position = "fill") + 
+  scale_y_continuous(labels = scales::percent) +
+  labs(y = "Percentage", title = "100% Stacked Bar Chart by Clarity and Color")
+
+```
+
+```{r}
+#| echo: false
+#| messages: false
+#| warning: false
+#| fig-width: 15
+#| fig-height: 12
+library(dplyr)
+
+# Precompute percentages
+df_percent <- diamonds %>%
+  count(clarity, color) %>%
+  group_by(clarity) %>%
+  mutate(percent = n / sum(n))
+
+# Plot
+ggplot(df_percent, aes(x = clarity, y = percent, fill = color)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  scale_y_continuous(labels = scales::percent) +
+  labs(y = "Percentage", title = "Grouped Bar Chart by Clarity and Color (in %)")
+
+```
+
+```{r}
+#| echo: false
+
+
+# Step 1: Calculate percentages within each clarity level
+diamonds_percent <- diamonds %>%
+  count(clarity, color) %>%
+  group_by(clarity) %>%
+  mutate(percent = n / sum(n))
+
+# Step 2: Plot the percentage chart
+ggplot(diamonds_percent, aes(x = color, y = percent, fill = color)) +
+  geom_col() +
+  facet_wrap(~clarity) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(y = "Percentage", x = "Color",
+       title = "Distribution of Diamond Color (as %), Faceted by Clarity") +
+  theme_minimal()
+
+```

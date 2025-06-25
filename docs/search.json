@@ -1552,5 +1552,26 @@
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "Your turn",
     "text": "Your turn\nThe following table shows the number of insects observed on a farm over the course of the month of April. Calculate the mean, median, and mode of the number of insects observed during this period.\n\n\n\n\n\nNumber of Insects\nNumber of days\n\n\n\n\n45\n5\n\n\n50\n6\n\n\n42\n3\n\n\n55\n3\n\n\n48\n2\n\n\n53\n1\n\n\n47\n2\n\n\n40\n8\n\n\n\n\n\n\n\n\n\n\n−+\n10:00"
+  },
+  {
+    "objectID": "diamonds/index.html",
+    "href": "diamonds/index.html",
+    "title": "Bar charts",
+    "section": "",
+    "text": "library(ggplot2)\ndata(\"diamonds\")\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar()\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar(position = \"dodge\")\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=color)) + geom_bar() + facet_wrap(~clarity)"
+  },
+  {
+    "objectID": "diamonds/index.html#count-bar-charts",
+    "href": "diamonds/index.html#count-bar-charts",
+    "title": "Bar charts",
+    "section": "",
+    "text": "library(ggplot2)\ndata(\"diamonds\")\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar()\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar(position = \"dodge\")\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=color)) + geom_bar() + facet_wrap(~clarity)"
+  },
+  {
+    "objectID": "diamonds/index.html#percentage-bar-charts",
+    "href": "diamonds/index.html#percentage-bar-charts",
+    "title": "Bar charts",
+    "section": "Percentage bar charts",
+    "text": "Percentage bar charts\n\nggplot(diamonds, aes(x = clarity, fill = color)) + \n  geom_bar(position = \"fill\") + \n  scale_y_continuous(labels = scales::percent) +\n  labs(y = \"Percentage\", title = \"100% Stacked Bar Chart by Clarity and Color\")"
   }
 ]

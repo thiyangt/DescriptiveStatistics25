@@ -56,6 +56,8 @@ Here’s your roadmap for the semester!
 
 [Additional materials](./week5/tables.pdf)
 
+[In-class demo](./diamonds/index.html)
+
 ### Week 6: June 29, 2025
 
 **Slides 8:** [Frequency Distributions](./week7/index.html)
