@@ -158,7 +158,7 @@
     "href": "week7/index.html#to-find-class-boundaries",
     "title": "STA 113 2.0 Descriptive Statistics",
     "section": "To find class boundaries",
-    "text": "To find class boundaries\n\nSubtract the first upper class limit from the second lower class limit and divide the difference by 2.\nSubtract the value calculated in step 1\n\nfrom all of the lower class limits\nadd to all of the upper class limits."
+    "text": "To find class boundaries\n\nSubtract the first upper class limit from the second lower class limit and divide the difference by 2.\nThe value calculated in step 1\n\nsubtract from all of the lower class limits\nadd to all of the upper class limits."
   },
   {
     "objectID": "week7/index.html#idea-behind-class-boundaries",

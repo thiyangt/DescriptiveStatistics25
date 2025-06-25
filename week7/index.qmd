@@ -128,11 +128,13 @@ df |> kable()
 
 1.  Subtract the first upper class limit from the second lower class limit and divide the difference by 2.
 
-2.  Subtract the value calculated in step 1
+2.  The value calculated in step 1
 
-    -   from all of the lower class limits
+      
+    - subtract from all of the lower class limits
 
-    -   add to all of the upper class limits.
+    - add to all of the upper class limits.
+
 
 <!--[Additional reading]( https://statisticstechs.weebly.com/desciptive-statistics/frequency-distribution-and-data-presentation)-->
 
@@ -243,17 +245,7 @@ ggplot(data, aes(x = Mid_point, y = Frequency)) +
 data |> kable()
 ```
 
-## Cumulative Frequency Distribution
 
-The total frequency of all values less than the upper class boundary.
-
-```{r}
-data2 <- data.frame(
-  Marks = c(5.5, 18.5, 31.5, 44.5, 57.5, 70.5, 83.5, 96.5),
-  Cumulative_Frequency = c(0,6, 12, 24, 30, 34, 42, 50)
-)
-data2|>kable()
-```
 
 # The ogive (or Cumulative - Frequency Polygon)
 
