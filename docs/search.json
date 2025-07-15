@@ -2,84 +2,84 @@
   {
     "objectID": "week9/index.html#stem-and-leaf-plot",
     "href": "week9/index.html#stem-and-leaf-plot",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Stem and Leaf Plot",
     "text": "Stem and Leaf Plot\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\n  The decimal point is 1 digit(s) to the right of the |\n\n   7 | 59\n   8 | 0005678\n   9 | \n  10 | 0\n\n\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298\n\n\n\n\n\n\n  The decimal point is 1 digit(s) to the right of the |\n\n   0 | 00012\n   1 | 0\n   2 | \n   3 | \n   4 | \n   5 | \n   6 | \n   7 | \n   8 | \n   9 | \n  10 | \n  11 | \n  12 | 9\n  13 | \n  14 | \n  15 | 0\n  16 | \n  17 | \n  18 | \n  19 | \n  20 | \n  21 | \n  22 | \n  23 | \n  24 | \n  25 | 0\n  26 | \n  27 | \n  28 | \n  29 | 8"
   },
   {
     "objectID": "week9/index.html#bins-0-5-5-10-..",
     "href": "week9/index.html#bins-0-5-5-10-..",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Bins: 0-5, 5-10, …..",
     "text": "Bins: 0-5, 5-10, …..\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298"
   },
   {
     "objectID": "week9/index.html#individual-value-plot",
     "href": "week9/index.html#individual-value-plot",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Individual value plot",
     "text": "Individual value plot"
   },
   {
     "objectID": "week9/index.html#individual-value-plot-1",
     "href": "week9/index.html#individual-value-plot-1",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Individual value plot",
     "text": "Individual value plot"
   },
   {
     "objectID": "week9/index.html#range-maximum---minimum",
     "href": "week9/index.html#range-maximum---minimum",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Range: Maximum - Minimum",
     "text": "Range: Maximum - Minimum\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\\[\\text{Range} = 100-75 = 25\\]\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298\n\n\n\n\n\n\\[\\text{Range} = 298-0 = 298\\]\n\nAdvantages\n\nEasy measure\nEasy to understand\n\nDisadvatages\n\nIt only takes into account the maximum and the minimum value.\nHighly sensitive to outliers.\nDoes not provide information about the spread of data between the minimum and maximum values, nor does it indicate whether the data points are clustered or evenly distributed."
   },
   {
     "objectID": "week9/index.html#variance",
     "href": "week9/index.html#variance",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Variance",
     "text": "Variance\n\nVariance is the mean squared deviations from the mean.\nMeasure of the spread of the data around the mean.\n\nPopulation Variance\n\\[\\text{Population variance} = \\sum_{i=1}^N \\frac{(x_i-\\mu)^2}{N}\\]\n\\(N\\) - population size\n\\(\\mu\\) - population mean\nSample Variance\n\\[\\text{Sample variance} = \\sum_{i=1}^n \\frac{(x_i-\\bar{x})^2}{n-1}\\]\n\\(n\\) - sample size\n\\(\\bar{x}\\) - sample mean"
   },
   {
     "objectID": "week9/index.html#compute-sample-variance.",
     "href": "week9/index.html#compute-sample-variance.",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Compute sample variance.",
     "text": "Compute sample variance.\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298\n\n\n\n\n\n\n\n\n\n−+\n10:00"
   },
   {
     "objectID": "week9/index.html#variance-advatages-and-disadvatages",
     "href": "week9/index.html#variance-advatages-and-disadvatages",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Variance: Advatages and Disadvatages",
     "text": "Variance: Advatages and Disadvatages\nAdvantages:\n\nVariance considers all data points in the dataset.\n\nDisadvantages:\n\nSensitive to outliers/ extreme values.\nThe units of variance are the square of the units of the original data, which can make interpretation difficult. For example, if the data are in meters, the variance will be in square meters.\nVariance is less intuitive to understand than other measures of dispersion like the range or interquartile range. People often find the concept of squared deviations harder to grasp."
   },
   {
     "objectID": "week9/index.html#standard-deviation",
     "href": "week9/index.html#standard-deviation",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Standard deviation",
     "text": "Standard deviation\n\\[\\text{Standard deviation} = \\sqrt{Variance}\\]\n\nThe variance and the standard deviation are measures of the spread of the data around the mean. They summarise how close each observed data value is to the mean value.\nStandard deviation is expressed in the same units as the original values (e.g., minutes or meters)"
   },
   {
     "objectID": "week9/index.html#compute-standard-deviation.",
     "href": "week9/index.html#compute-standard-deviation.",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Compute standard deviation.",
     "text": "Compute standard deviation.\n\n\nCricketer 1\n\n\n\n\n\n75\n79\n80\n80\n80\n\n\n85\n86\n87\n88\n100\n\n\n\n\n\n\nCricketer 2\n\n\n\n\n\n0\n0\n0\n1\n2\n\n\n10\n129\n150\n250\n298\n\n\n\n\n\n\n\n\n\n−+\n02:00"
   },
   {
     "objectID": "week9/index.html#your-turn",
     "href": "week9/index.html#your-turn",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Your turn",
     "text": "Your turn\nIf the variance of a dataset is 0, what can you conclude about the values within the dataset?\n\n\n\n−+\n02:00"
   },
   {
     "objectID": "week9/index.html#next-week",
     "href": "week9/index.html#next-week",
-    "title": "STA 113 2.0 Descriptive Statistics",
+    "title": "STA 1132 Descriptive Statistics",
     "section": "Next week",
     "text": "Next week\n\nOther measures of central tendency and measures of dispersion\nInterpretation of measurements\nOther methods of visualizing numerical data"
   },

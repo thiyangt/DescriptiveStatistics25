@@ -131,7 +131,7 @@ $$IQR = Q_3 - Q_1$$
 
 ## Box and whisker Plot
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ```{r, echo=FALSE}
 library(ggplot2)
@@ -150,7 +150,7 @@ summary(a)
 
 ::: {.column width="50%"}
 :::
-:::
+:::::
 
 ## Data
 
@@ -174,7 +174,7 @@ df <- data.frame(s1=s1, s2=s2, s3=s3, s4=s4)
 
 ```
 
-::: columns
+:::::: columns
 ::: {.column width="33%"}
 ```{r}
 library(kableExtra)
@@ -193,11 +193,11 @@ df[34:67, ] |> knitr::kable() |> kable_styling(font_size = 18)
 df[68:100, ] |> knitr::kable() |> kable_styling(font_size = 18)
 ```
 :::
-:::
+::::::
 
 ------------------------------------------------------------------------
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 **Histogram**
 
@@ -219,7 +219,7 @@ df2 <- df |> pivot_longer(1:4, names_to = "group", values_to="value")
 ggplot(df2, aes(x=group, y=value, fill=group)) + geom_boxplot()
 ```
 :::
-:::
+:::::
 
 ## Your turn
 
@@ -267,7 +267,7 @@ D)  height and weight values are identical.
 
 ## Skewness and the relationship of the mean, median and mode
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 In-class diagram:
 :::
@@ -279,7 +279,7 @@ Formula used to calculate skewness in Excel:
 
 $$\text{Skewness} = \frac{n}{(n-1)(n-2)}\sum_{i=1}^{n}(\frac{X_i - \bar{X}}{8})^3$$
 :::
-:::
+:::::
 
 ------------------------------------------------------------------------
 

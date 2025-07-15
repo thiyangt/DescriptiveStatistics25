@@ -1,5 +1,5 @@
 ---
-title: "STA 113 2.0 Descriptive Statistics"
+title: "STA 1132 Descriptive Statistics"
 subtitle: "Measures of Spread"
 author: "Dr. Thiyanga S. Talagala <br/>  Department of Statistics, Faculty of Applied Sciences <br/> University of Sri Jayewardenepura, Sri Lanka"
 format:
@@ -27,7 +27,7 @@ format:
 
 The marks for the last 10 matches are listed below:
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 **Cricketer 1**
 
@@ -47,11 +47,11 @@ c2mat <- matrix(c2, nrow=2)
 c2mat |> knitr::kable()
 ```
 :::
-:::
+:::::
 
 ## Stem and Leaf Plot
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 **Cricketer 1**
 
@@ -73,13 +73,13 @@ c2mat |> knitr::kable()
 stem(c2, scale=10)
 ```
 :::
-:::
+:::::
 
 # dot plot
 
 **Bidwidth: 1 (Bins: 1, 2, 3,..)**
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 **Cricketer 1**
 
@@ -99,14 +99,14 @@ c2mat <- matrix(c2, nrow=2, byrow=TRUE)
 c2mat |> knitr::kable()
 ```
 :::
-:::
+:::::
 
 ```{r}
 library(tidyverse)
 marks <- c(c1, c2)
 cricketer <- c(rep("Cricketer 1", 10), rep("Cricketer 2", 10))
 dfboth <- data.frame(marks=marks, cricketer = cricketer)
-ggplot(dfboth, aes(x=marks, fill=cricketer)) + geom_dotplot(binwidth=1) +  facet_wrap(~cricketer, ncol=1)+ scale_y_continuous(NULL, breaks = NULL)+ theme(
+ggplot(dfboth, aes(x=marks, fill=cricketer)) + geom_dotplot(binwidth=1, size=10) +  facet_wrap(~cricketer, ncol=1)+ scale_y_continuous(NULL, breaks = NULL)+ theme(
     axis.text = element_text(size = 16),  # Increase tick mark font size
     axis.title = element_text(size = 18)  # Increase axis label font size
   )
@@ -116,7 +116,7 @@ ggplot(dfboth, aes(x=marks, fill=cricketer)) + geom_dotplot(binwidth=1) +  facet
 
 ## Bins: 0-5, 5-10, .....
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 **Cricketer 1**
 
@@ -136,7 +136,7 @@ c2mat <- matrix(c2, nrow=2, byrow=TRUE)
 c2mat |> knitr::kable()
 ```
 :::
-:::
+:::::
 
 ```{r}
 library(tidyverse)
@@ -165,7 +165,7 @@ ggplot(dfboth, aes(y=marks, x=cricketer, fill=cricketer)) +geom_dotplot(binaxis 
 
 ## Range: Maximum - Minimum
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 **Cricketer 1**
 
@@ -189,7 +189,7 @@ c2mat |> knitr::kable()
 
 $$\text{Range} = 298-0 = 298$$
 :::
-:::
+:::::
 
 Advantages
 
@@ -229,7 +229,7 @@ $\bar{x}$ - sample mean
 
 ## Compute sample variance.
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 **Cricketer 1**
 
@@ -249,7 +249,7 @@ c2mat <- matrix(c2, nrow=2, byrow=TRUE)
 c2mat |> knitr::kable()
 ```
 :::
-:::
+:::::
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(countdown)
@@ -280,7 +280,7 @@ $$\text{Standard deviation} = \sqrt{Variance}$$
 
 ## Compute standard deviation.
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 **Cricketer 1**
 
@@ -300,7 +300,7 @@ c2mat <- matrix(c2, nrow=2, byrow=TRUE)
 c2mat |> knitr::kable()
 ```
 :::
-:::
+:::::
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(countdown)
