@@ -23,14 +23,14 @@ As part of your coursework, you will be working on a group assignment. This assi
     -   Research Coordinator - Data collection
 
     -   Research Coordinator - Introduction and Literature review
-    
+
     -   Research Coordinator - Data analysis
-    
+
     -   Research Coordinator - Report finalizing
-    
+
     If there are more members, designate one or more as Research Coordinators and assign them specific task areas to oversee.
-    
-    All members should support each task. This task allocation is intended to coordinate the work."
+
+    All members should support each task. This task allocation is intended to coordinate the work.
 
 **2. Assignment Task**
 
@@ -54,7 +54,6 @@ The aim of this assignment is to develop your data analysis and presentation ski
 
 All charts, tables, and interpretations must be hand-drawn. Ensure they are clear, well-labeled, and accurately represent your findings.
 
-
 **3. Submission Format:**
 
 Submit the completed report as a single document following the specified format guidelines.
@@ -67,8 +66,7 @@ Submit the completed report as a single document following the specified format 
 
     Title
 
-    Content: Introduction, Objectives of the study,
-     Data description, Data analysis, conclusions
+    Content: Introduction, Objectives of the study, Data description, Data analysis, conclusions
 
     References
 
@@ -81,12 +79,10 @@ Submit the completed report as a single document following the specified format 
     -   Meeting minutes
 
     -   Duties performed by the members (Assist the secretary in maintaining records and documentation, Ensure proper formatting and organization of the document, etc.)
-    
-    - Each members contribution to the report content
-    
-    
-**Help guideline for the content**
 
+    -   Each members contribution to the report content
+
+**Help guideline for the content**
 
 **Introduction:**
 
@@ -107,7 +103,6 @@ Present your findings using **hand-drawn** charts and tables. Each visual and ta
 **Conclusions:**
 
 Summarize the key insights and implications of your analysis.
-
 
 **4. Submission deadline**
 

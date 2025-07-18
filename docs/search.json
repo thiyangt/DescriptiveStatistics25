@@ -665,130 +665,67 @@
     "text": "Interpret the following\n\nFigure 1: Boxplot of Flipper Length by Species\n\n\n\n\n\nspecies\nMean\nMedian\nMode\nSD\nQ1\nQ2\nQ3\nKurtosis\nSkewness\n\n\n\n\nAdelie\n190.1027\n190\n190\n6.521825\n186\n190\n195.0\n3.327738\n0.0795785\n\n\nChinstrap\n195.8235\n196\n187\n7.131894\n191\n196\n201.0\n2.956063\n-0.0092622\n\n\nGentoo\n217.2353\n216\n215\n6.585431\n212\n216\n221.5\n2.322009\n0.3640858"
   },
   {
-    "objectID": "week0/index.html#how-to-calculate-gpa",
-    "href": "week0/index.html#how-to-calculate-gpa",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "How to calculate GPA?",
-    "text": "How to calculate GPA?\n\nExample\n\n\n\n\n\n\n\n\nCourse code\nStudent 1 - grade\n\n\n\n\nSTA 1002\nA\n\n\nSTA 1011\nB\n\n\nSTA 1022\nA\n\n\nCSC 1003\nA\n\n\nCSC 1012\nB\n\n\nMAT 1001\nB+\n\n\nMAT 1012\nA+\n\n\nMAT 1032\nA+"
+    "objectID": "index.html#email",
+    "href": "index.html#email",
+    "title": "STA 113 2.0 Descriptive Statistics",
+    "section": "Email",
+    "text": "Email\nttalagala@sjp.ac.lk"
   },
   {
-    "objectID": "week0/index.html#how-to-calculate-gpa-1",
-    "href": "week0/index.html#how-to-calculate-gpa-1",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "How to calculate GPA?",
-    "text": "How to calculate GPA?\n\nExample\n\n\n\n\n\n\n\n\nCourse code\nStudent 1 - grade\n\n\n\n\nSTA 1002\nA\n\n\nSTA 1011\nB\n\n\nSTA 1022\nA\n\n\nCSC 1003\nA\n\n\nCSC 1012\nB\n\n\nMAT 1001\nB+\n\n\nMAT 1012\nA+\n\n\nMAT 1032\nA+\n\n\n\n\n\n\n\n\n\n\n\nLetter grade\nGrade Point Value\n\n\n\n\nA+\n4.0\n\n\nA\n4.0\n\n\nA-\n3.7\n\n\nB+\n3.3\n\n\nB\n3.0\n\n\nB-\n2.7\n\n\nC+\n2.3\n\n\nC\n2.0\n\n\nC-\n1.7\n\n\nD+\n1.3\n\n\nD\n1.0\n\n\nE\n0.0"
+    "objectID": "index.html#policies-and-regulations",
+    "href": "index.html#policies-and-regulations",
+    "title": "STA 113 2.0 Descriptive Statistics",
+    "section": "Policies and regulations",
+    "text": "Policies and regulations\nTo access important information regarding the unit STA 113 2.0 Descriptive Statistics, please go to the course Learning Management System (LMS) page and Google Classroom. Click here to go directly to the LMS. You must carefully read the “Course Information and Logistic” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information and Logistic” slides."
   },
   {
-    "objectID": "week0/index.html#section",
-    "href": "week0/index.html#section",
-    "title": "STA 1132 Descriptive Statistics",
+    "objectID": "index.html#course-outline",
+    "href": "index.html#course-outline",
+    "title": "STA 113 2.0 Descriptive Statistics",
+    "section": "Course outline",
+    "text": "Course outline\nAvailable on Google Classroom"
+  },
+  {
+    "objectID": "index.html#weekly-schedule",
+    "href": "index.html#weekly-schedule",
+    "title": "STA 113 2.0 Descriptive Statistics",
+    "section": "Weekly schedule",
+    "text": "Weekly schedule\nHere’s your roadmap for the semester!"
+  },
+  {
+    "objectID": "ga.html",
+    "href": "ga.html",
+    "title": "Group Assignment",
     "section": "",
-    "text": "source: Degree Programmes and Examination Regulation Booklet 2019/2020"
+    "text": "Date released: July 15, 2025\nAs part of your coursework, you will be working on a group assignment. This assignment will contribute 10% towards your final grade. Below are the details:\n1. Group Formation:\n2. Assignment Task\nThe aim of this assignment is to develop your data analysis and presentation skills by selecting and analyzing a publicly available data set. You need to prepare a report including the results of the analysis.\nSteps to Complete the Assignment:\n1. Select a Publicly Available Data Set:\n2. Analyze Your Data Set:\nAll charts, tables, and interpretations must be hand-drawn. Ensure they are clear, well-labeled, and accurately represent your findings.\n3. Submission Format:\nSubmit the completed report as a single document following the specified format guidelines.\nHelp guideline for the content\nIntroduction:\nProvide an overview of the topic and the importance of the data set.\nObjectives of the Study:\nClearly state the goals and objectives of your analysis.\nData:\nDescribe the data set, including its source, type of data, and any preprocessing steps taken. (for example if you select a subset, you can mention it here)\nData Analysis:\nPresent your findings using hand-drawn charts and tables. Each visual and table should be accompanied by a brief interpretation.\nConclusions:\nSummarize the key insights and implications of your analysis.\n4. Submission deadline\nAugust 5, 2025\nThe entire report should be hand written.\nYou have been given a three-week timeframe to complete the assignment. Please begin work promptly to accommodate any unforeseen circumstances.\nThis assignment provides an opportunity to deepen your understanding of statistical concepts and their practical applications while fostering teamwork and collaboration.\nEvery member should be familiar with the entire content of the report to ensure a comprehensive understanding\nIf you have any questions or require further clarification, please feel free to reach out to me (email: ttalagala@sjp.ac.lk)."
   },
   {
-    "objectID": "week0/index.html#how-to-calculate-gpa-2",
-    "href": "week0/index.html#how-to-calculate-gpa-2",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "How to calculate GPA?",
-    "text": "How to calculate GPA?\n\nExample\n\n\n\n\n\n\n\n\nCourse code\nStudent 1 - grade\nCourse Unit Grade Point Value\n\n\n\n\nSTA 1002\nA\n4.0\n\n\nSTA 1011\nB\n3.0\n\n\nSTA 1022\nA\n4.0\n\n\nCSC 1003\nA\n4.0\n\n\nCSC 1012\nB\n3.0\n\n\nMAT 1001\nB+\n3.3\n\n\nMAT 1012\nA+\n4.0\n\n\nMAT 1032\nA+\n4.0\n\n\n\n\n\n\n\n\n\n\n\nLetter grade\ngpa\n\n\n\n\nA+\n4.0\n\n\nA\n4.0\n\n\nA-\n3.7\n\n\nB+\n3.3\n\n\nB\n3.0\n\n\nB-\n2.7\n\n\nC+\n2.3\n\n\nC\n2.0\n\n\nC-\n1.7\n\n\nD+\n1.3\n\n\nD\n1.0\n\n\nE\n0.0"
-  },
-  {
-    "objectID": "week0/index.html#how-to-calculate-gpa-3",
-    "href": "week0/index.html#how-to-calculate-gpa-3",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "How to calculate GPA?",
-    "text": "How to calculate GPA?\n\nExample\n\n\n\n\n\n\n\n\nCourse code\nStudent 1 - grade\nCourse Unit Grade Point Value\n\n\n\n\nSTA 1002\nA\n4.0\n\n\nSTA 1011\nB\n3.0\n\n\nSTA 1022\nA\n4.0\n\n\nCSC 1003\nA\n4.0\n\n\nCSC 1012\nB\n3.0\n\n\nMAT 1001\nB+\n3.3\n\n\nMAT 1012\nA+\n4.0\n\n\nMAT 1032\nA+\n4.0"
-  },
-  {
-    "objectID": "week0/index.html#how-to-calculate-gpa-4",
-    "href": "week0/index.html#how-to-calculate-gpa-4",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "How to calculate GPA?",
-    "text": "How to calculate GPA?\n\nExample\n\n\n\n\n\n\n\n\nCourse code\nStudent 1 - grade\nUnit GP value\nCredit value\n\n\n\n\nSTA 1002\nA\n4.0\n2\n\n\nSTA 1011\nB\n3.0\n1\n\n\nSTA 1022\nA\n4.0\n2\n\n\nCSC 1003\nA\n4.0\n3\n\n\nCSC 1012\nB\n3.0\n2\n\n\nMAT 1001\nB+\n3.3\n1\n\n\nMAT 1012\nA+\n4.0\n2\n\n\nMAT 1032\nA+\n4.0\n2"
-  },
-  {
-    "objectID": "week0/index.html#how-to-calculate-gpa-5",
-    "href": "week0/index.html#how-to-calculate-gpa-5",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "How to calculate GPA?",
-    "text": "How to calculate GPA?\n\nExample\n\n\n\n\n\n\n\n\nCourse code\nStudent 1 - grade\nUnit GP value\nCredit value\n\n\n\n\nSTA 1002\nA\n4.0\n2\n\n\nSTA 1011\nB\n3.0\n1\n\n\nSTA 1022\nA\n4.0\n2\n\n\nCSC 1003\nA\n4.0\n3\n\n\nCSC 1012\nB\n3.0\n2\n\n\nMAT 1001\nB+\n3.3\n1\n\n\nMAT 1012\nA+\n4.0\n2\n\n\nMAT 1032\nA+\n4.0\n2\n\n\n\n\n\n\\[\\text{overall GPA} = \\frac{(4 \\times 2) + (3 \\times 1)+(4 \\times 2)+(4 \\times 3)+(3 \\times 2)+(3.3 \\times 1) + (4 \\times 2) + (4 \\times 2)}{(2+1+2+3+2+1+2+2)} = 3.75\\]"
-  },
-  {
-    "objectID": "week0/index.html#your-turn",
-    "href": "week0/index.html#your-turn",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "Your Turn",
-    "text": "Your Turn\n\nExample: Compute the GPAs for students 2, 3, and 4.\n\n\n\n\n\n\n\n\nCourse code\nStudent 1\nStudent 2\nStudent 3\nStudent 4\n\n\n\n\nSTA 1002\nA\nA\nA\nA\n\n\nSTA 1011\nB\nB\nB\nB\n\n\nSTA 1022\nA\nA\nC+\nA\n\n\nCSC 1003\nA\nC+\nA\nA\n\n\nCSC 1012\nB\nB\nB\nB\n\n\nMAT 1001\nB+\nB+\nB+\nB+\n\n\nMAT 1012\nA+\nA+\nA+\nA\n\n\nMAT 1032\nA+\nA+\nA+\nA\n\n\noverall GPA\n3.75"
-  },
-  {
-    "objectID": "week0/index.html#sta-1132-descriptive-statistics-type-and-method-of-assessment",
-    "href": "week0/index.html#sta-1132-descriptive-statistics-type-and-method-of-assessment",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "STA 1132 Descriptive Statistics: Type and Method of Assessment",
-    "text": "STA 1132 Descriptive Statistics: Type and Method of Assessment\nType:\nType: Core\nType:\nMethod of Assessment:\nType:\nFormative Assessment (FA):\nFA1: Group assignment: 10% of the total marks\nFA2: Mid-semester examination: 20% of the total marks\nType:\nSummative Assessment (SA):\nSA1: End of Semester Examination: 70% of the total marks"
-  },
-  {
-    "objectID": "week0/index.html#sta-1132-descriptive-statistics-logistics",
-    "href": "week0/index.html#sta-1132-descriptive-statistics-logistics",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "STA 1132 Descriptive Statistics: Logistics",
-    "text": "STA 1132 Descriptive Statistics: Logistics\nType:\nCourse website: open-access\nhttps://thiyangt.github.io/descriptivestatisticsweb/\nType:\nCourse LMS page/ Google Classroom: closed access (open only to students enrolled in the unit STA 1132 at FAS, USJ)\n\nCourse outline\nAnnouncements\nExercises\nWeekly schedule\n\n\n\n\nYou must enroll yourself in the LMS course unit page and Google Classroom."
-  },
-  {
-    "objectID": "week0/index.html#sta-1132-descriptive-statistics-workload",
-    "href": "week0/index.html#sta-1132-descriptive-statistics-workload",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "STA 1132 Descriptive Statistics: Workload",
-    "text": "STA 1132 Descriptive Statistics: Workload\n\n\n\n\n\nType\nHours\n\n\n\n\nTotal\n100\n\n\nLectures and tutorials\n30\n\n\nIndependent learning\n70"
-  },
-  {
-    "objectID": "week0/index.html#physical-space",
-    "href": "week0/index.html#physical-space",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "Physical Space",
-    "text": "Physical Space"
-  },
-  {
-    "objectID": "week0/index.html#calendar-space",
-    "href": "week0/index.html#calendar-space",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "Calendar Space",
-    "text": "Calendar Space"
-  },
-  {
-    "objectID": "week0/index.html#mental-space",
-    "href": "week0/index.html#mental-space",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "Mental Space",
-    "text": "Mental Space"
-  },
-  {
-    "objectID": "week0/index.html#section-1",
-    "href": "week0/index.html#section-1",
-    "title": "STA 1132 Descriptive Statistics",
-    "section": "",
-    "text": "Image sources: https://pixabay.com/"
-  },
-  {
-    "objectID": "ma.html",
-    "href": "ma.html",
-    "title": "Individual Makeup Assignment",
-    "section": "",
-    "text": "Date released: July 29, 2024\nPurpose: This assignment is for students who were unable to complete the group project due to late enrollment or other valid reasons.\nThis assignment will contribute 10% towards your final grade.\nTask:\nSelect two fields from the following list and provide examples of statistical misuse in each:\nSubmission Guidelines:\nLength: Your assignment should be formatted to fit within two A4 sheets, which equates to four pages in total.\nSubmission Platforms: Please submit your completed assignment to both Google Classroom and the LMS.\nSubmission deadline:\nAugust 8, 2024\nIt is the student’s responsibility to manage their time effectively to ensure that they have enough time to complete the assignment within the given timeframe. This includes allocating enough time to research, plan, and write the assignment, as well as allowing for unexpected circumstances or delays. It is important for students to plan their workload and prioritize their assignments to ensure that they are able to complete them on time and to the best of their ability.\nLate submission: Submitting late work will be penalized by 1 mark per day. I will not accept any submissions after August 15, 2024.\nExtensions will be made in exceptional circumstances only."
-  },
-  {
-    "objectID": "ma.html#requesting-a-deadline-extension",
-    "href": "ma.html#requesting-a-deadline-extension",
-    "title": "Individual Makeup Assignment",
-    "section": "Requesting a deadline extension",
-    "text": "Requesting a deadline extension\n\nYou are allowed to apply for a deadline extension for the assignment under the following conditions only.\n\nCategory A\nAn illness that requires the student to miss all of his or her classes for 2 days or more.\nCategory B\nA period of grief for the loss of a family member or friend.\nCategory C\nA family emergency.\nValid documentation of proof is required prior to the assignment deadline.\nThe philosophy driving our late policy has three goals\n\nKeep things fair.\nEncourage good time management.\nEncouragement and appreciation of on-time submission students.\n\nYou have been given a 7 days timeframe to complete the assignment. Please begin work promptly to accommodate any unforeseen circumstances.\nIf you have any questions or require further clarification, please feel free to reach out to me (email: ttalagala@sjp.ac.lk)."
-  },
-  {
-    "objectID": "ma.html#help-desk",
-    "href": "ma.html#help-desk",
-    "title": "Individual Makeup Assignment",
+    "objectID": "ga.html#help-desk",
+    "href": "ga.html#help-desk",
+    "title": "Group Assignment",
     "section": "Help desk",
-    "text": "Help desk\nHelp desk session will be held on July 31, 2024 from 3.15pm to 4.00pm.\nIf you need any additional support, please send an email to statdemos@sci.sjp.ac.lk and reserve a time for a meeting (weekdays only between 8 a.m. and 4 p.m.)."
+    "text": "Help desk\nFirst help desk session will be held on July 16, 2025 from 3.15pm to 4.00pm.\nIf you need any additional support, please send an email to statdemos@sci.sjp.ac.lk and reserve a time for a meeting (weekdays only between 8 a.m. and 4 p.m.)."
+  },
+  {
+    "objectID": "diamonds/index.html",
+    "href": "diamonds/index.html",
+    "title": "Bar charts",
+    "section": "",
+    "text": "library(ggplot2)\ndata(\"diamonds\")\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar()\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar(position = \"dodge\")\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=color)) + geom_bar() + facet_wrap(~clarity)"
+  },
+  {
+    "objectID": "diamonds/index.html#count-bar-charts",
+    "href": "diamonds/index.html#count-bar-charts",
+    "title": "Bar charts",
+    "section": "",
+    "text": "library(ggplot2)\ndata(\"diamonds\")\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar()\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar(position = \"dodge\")\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=color)) + geom_bar() + facet_wrap(~clarity)"
+  },
+  {
+    "objectID": "diamonds/index.html#percentage-bar-charts",
+    "href": "diamonds/index.html#percentage-bar-charts",
+    "title": "Bar charts",
+    "section": "Percentage bar charts",
+    "text": "Percentage bar charts\n\nggplot(diamonds, aes(x = clarity, fill = color)) + \n  geom_bar(position = \"fill\") + \n  scale_y_continuous(labels = scales::percent) +\n  labs(y = \"Percentage\", title = \"100% Stacked Bar Chart by Clarity and Color\")"
   },
   {
     "objectID": "ia.html",
@@ -826,67 +763,25 @@
     "text": "Submission\n\nThe scanned poster, calculation sheet, and dataset should be saved using your index number.\nStore all the documents inside a folder. Convert the folder to a zip file and upload it."
   },
   {
-    "objectID": "diamonds/index.html",
-    "href": "diamonds/index.html",
-    "title": "Bar charts",
+    "objectID": "ma.html",
+    "href": "ma.html",
+    "title": "Individual Makeup Assignment",
     "section": "",
-    "text": "library(ggplot2)\ndata(\"diamonds\")\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar()\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar(position = \"dodge\")\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=color)) + geom_bar() + facet_wrap(~clarity)"
+    "text": "Date released: July 29, 2024\nPurpose: This assignment is for students who were unable to complete the group project due to late enrollment or other valid reasons.\nThis assignment will contribute 10% towards your final grade.\nTask:\nSelect two fields from the following list and provide examples of statistical misuse in each:\nSubmission Guidelines:\nLength: Your assignment should be formatted to fit within two A4 sheets, which equates to four pages in total.\nSubmission Platforms: Please submit your completed assignment to both Google Classroom and the LMS.\nSubmission deadline:\nAugust 8, 2024\nIt is the student’s responsibility to manage their time effectively to ensure that they have enough time to complete the assignment within the given timeframe. This includes allocating enough time to research, plan, and write the assignment, as well as allowing for unexpected circumstances or delays. It is important for students to plan their workload and prioritize their assignments to ensure that they are able to complete them on time and to the best of their ability.\nLate submission: Submitting late work will be penalized by 1 mark per day. I will not accept any submissions after August 15, 2024.\nExtensions will be made in exceptional circumstances only."
   },
   {
-    "objectID": "diamonds/index.html#count-bar-charts",
-    "href": "diamonds/index.html#count-bar-charts",
-    "title": "Bar charts",
-    "section": "",
-    "text": "library(ggplot2)\ndata(\"diamonds\")\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar()\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=clarity, fill=color)) + geom_bar(position = \"dodge\")\n\n\n\n\n\n\n\nggplot(diamonds, aes(x=color)) + geom_bar() + facet_wrap(~clarity)"
+    "objectID": "ma.html#requesting-a-deadline-extension",
+    "href": "ma.html#requesting-a-deadline-extension",
+    "title": "Individual Makeup Assignment",
+    "section": "Requesting a deadline extension",
+    "text": "Requesting a deadline extension\n\nYou are allowed to apply for a deadline extension for the assignment under the following conditions only.\n\nCategory A\nAn illness that requires the student to miss all of his or her classes for 2 days or more.\nCategory B\nA period of grief for the loss of a family member or friend.\nCategory C\nA family emergency.\nValid documentation of proof is required prior to the assignment deadline.\nThe philosophy driving our late policy has three goals\n\nKeep things fair.\nEncourage good time management.\nEncouragement and appreciation of on-time submission students.\n\nYou have been given a 7 days timeframe to complete the assignment. Please begin work promptly to accommodate any unforeseen circumstances.\nIf you have any questions or require further clarification, please feel free to reach out to me (email: ttalagala@sjp.ac.lk)."
   },
   {
-    "objectID": "diamonds/index.html#percentage-bar-charts",
-    "href": "diamonds/index.html#percentage-bar-charts",
-    "title": "Bar charts",
-    "section": "Percentage bar charts",
-    "text": "Percentage bar charts\n\nggplot(diamonds, aes(x = clarity, fill = color)) + \n  geom_bar(position = \"fill\") + \n  scale_y_continuous(labels = scales::percent) +\n  labs(y = \"Percentage\", title = \"100% Stacked Bar Chart by Clarity and Color\")"
-  },
-  {
-    "objectID": "ga.html",
-    "href": "ga.html",
-    "title": "Group Assignment",
-    "section": "",
-    "text": "Date released: July 15, 2025\nAs part of your coursework, you will be working on a group assignment. This assignment will contribute 10% towards your final grade. Below are the details:\n1. Group Formation:\n2. Assignment Task\nThe aim of this assignment is to develop your data analysis and presentation skills by selecting and analyzing a publicly available data set. You need to prepare a report including the results of the analysis.\nSteps to Complete the Assignment:\n1. Select a Publicly Available Data Set:\n2. Analyze Your Data Set:\nAll charts, tables, and interpretations must be hand-drawn. Ensure they are clear, well-labeled, and accurately represent your findings.\n3. Submission Format:\nSubmit the completed report as a single document following the specified format guidelines.\nHelp guideline for the content\nIntroduction:\nProvide an overview of the topic and the importance of the data set.\nObjectives of the Study:\nClearly state the goals and objectives of your analysis.\nData:\nDescribe the data set, including its source, type of data, and any preprocessing steps taken. (for example if you select a subset, you can mention it here)\nData Analysis:\nPresent your findings using hand-drawn charts and tables. Each visual and table should be accompanied by a brief interpretation.\nConclusions:\nSummarize the key insights and implications of your analysis.\n4. Submission deadline\nAugust 5, 2025\nThe entire report should be hand written.\nYou have been given a three-week timeframe to complete the assignment. Please begin work promptly to accommodate any unforeseen circumstances.\nThis assignment provides an opportunity to deepen your understanding of statistical concepts and their practical applications while fostering teamwork and collaboration.\nEvery member should be familiar with the entire content of the report to ensure a comprehensive understanding\nIf you have any questions or require further clarification, please feel free to reach out to me (email: ttalagala@sjp.ac.lk)."
-  },
-  {
-    "objectID": "ga.html#help-desk",
-    "href": "ga.html#help-desk",
-    "title": "Group Assignment",
+    "objectID": "ma.html#help-desk",
+    "href": "ma.html#help-desk",
+    "title": "Individual Makeup Assignment",
     "section": "Help desk",
-    "text": "Help desk\nFirst help desk session will be held on July 16, 2025 from 3.15pm to 4.00pm.\nIf you need any additional support, please send an email to statdemos@sci.sjp.ac.lk and reserve a time for a meeting (weekdays only between 8 a.m. and 4 p.m.)."
-  },
-  {
-    "objectID": "index.html#email",
-    "href": "index.html#email",
-    "title": "STA 113 2.0 Descriptive Statistics",
-    "section": "Email",
-    "text": "Email\nttalagala@sjp.ac.lk"
-  },
-  {
-    "objectID": "index.html#policies-and-regulations",
-    "href": "index.html#policies-and-regulations",
-    "title": "STA 113 2.0 Descriptive Statistics",
-    "section": "Policies and regulations",
-    "text": "Policies and regulations\nTo access important information regarding the unit STA 113 2.0 Descriptive Statistics, please go to the course Learning Management System (LMS) page and Google Classroom. Click here to go directly to the LMS. You must carefully read the “Course Information and Logistic” slide set for essential details. It is your responsibility to be aware of important details by thoroughly reviewing the “Course Information and Logistic” slides."
-  },
-  {
-    "objectID": "index.html#course-outline",
-    "href": "index.html#course-outline",
-    "title": "STA 113 2.0 Descriptive Statistics",
-    "section": "Course outline",
-    "text": "Course outline\nAvailable on Google Classroom"
-  },
-  {
-    "objectID": "index.html#weekly-schedule",
-    "href": "index.html#weekly-schedule",
-    "title": "STA 113 2.0 Descriptive Statistics",
-    "section": "Weekly schedule",
-    "text": "Weekly schedule\nHere’s your roadmap for the semester!"
+    "text": "Help desk\nHelp desk session will be held on July 31, 2024 from 3.15pm to 4.00pm.\nIf you need any additional support, please send an email to statdemos@sci.sjp.ac.lk and reserve a time for a meeting (weekdays only between 8 a.m. and 4 p.m.)."
   },
   {
     "objectID": "week1/index.html#learning-objective",
@@ -907,7 +802,7 @@
     "href": "week1/index.html#summary-measures",
     "title": "STA 1132 Descriptive Statistics",
     "section": "Summary measures",
-    "text": "Summary measures\n\n\n\n\n\n\nGender\nA\nB\nC\nWeight\n\n\n\n\n\nFemale:50\nMin. : 70.00\nMin. :0.200\nMin. :1.100\nMin. : 433\n\n\n\nMale :50\n1st Qu.: 99.28\n1st Qu.:2.675\n1st Qu.:2.700\n1st Qu.:3347\n\n\n\nNA\nMedian : 99.90\nMedian :3.350\nMedian :3.450\nMedian :4313\n\n\n\nNA\nMean : 99.18\nMean :3.240\nMean :3.463\nMean :4123\n\n\n\nNA\n3rd Qu.:100.50\n3rd Qu.:4.000\n3rd Qu.:4.000\n3rd Qu.:5025\n\n\n\nNA\nMax. :110.00\nMax. :5.800\nMax. :6.300\nMax. :7550"
+    "text": "Summary measures\n\n\n\n\n\n\nGender\nA\nB\nC\nWeight\n\n\n\n\n\nFemale:50\nMin. : 70.00\nMin. :1.800\nMin. :0.800\nMin. :1901\n\n\n\nMale :50\n1st Qu.: 99.08\n1st Qu.:2.600\n1st Qu.:2.475\n1st Qu.:3412\n\n\n\nNA\nMedian :100.00\nMedian :3.350\nMedian :3.100\nMedian :4059\n\n\n\nNA\nMean : 99.11\nMean :3.361\nMean :3.222\nMean :4304\n\n\n\nNA\n3rd Qu.:100.50\n3rd Qu.:3.925\n3rd Qu.:3.925\n3rd Qu.:5100\n\n\n\nNA\nMax. :110.00\nMax. :5.300\nMax. :6.300\nMax. :7550"
   },
   {
     "objectID": "week1/index.html#presenting-data-example",
