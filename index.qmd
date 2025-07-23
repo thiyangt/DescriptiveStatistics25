@@ -64,7 +64,6 @@ Here’s your roadmap for the semester!
 
 **Slides 9:** [Measures of Central Tendency](./week8/index.html)
 
-
 ### Week 8
 
 Mid semester examination (Wk1-Wk6) will be evaluated
@@ -73,4 +72,8 @@ Mid semester examination (Wk1-Wk6) will be evaluated
 
 **Slides 10:** [Measures of Spread](./week9/index.html)
 
+### Week 10
+
 **Slides 11:**[Summary Measures (Cont.)](./week10/index.html)
+
+**Slides 12:**[COvariance and Correlation](./week11/index.html)
