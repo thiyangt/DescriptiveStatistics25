@@ -76,4 +76,8 @@ Mid semester examination (Wk1-Wk6) will be evaluated
 
 **Slides 11:**[Summary Measures (Cont.)](./week10/index.html)
 
+### Week 11
+
 **Slides 12:**[COvariance and Correlation](./week11/index.html)
+
+**Slides 13:**[Time Series Plots](./week12/index.html)
