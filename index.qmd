@@ -78,6 +78,14 @@ Mid semester examination (Wk1-Wk6) will be evaluated
 
 ### Week 11
 
-**Slides 12:**[COvariance and Correlation](./week11/index.html)
+**Slides 12:**[Covariance and Correlation](./week11/index.html)
 
 **Slides 13:**[Time Series Plots](./week12/index.html)
+
+### Week 12
+
+
+**Slides 14:** [Spearman's rank correlation](./week13/index.html)
+
+
+**Slides 15:** [Measures of Central Tendency and Variability: Grouped Data](./week14/index.html)
