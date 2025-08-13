@@ -28,6 +28,12 @@ library(denguedatahub)
 library(TourSriLanka)
 ```
 
+
+## Misuse of statistics
+
+Misuse of statistics refers to the incorrect application or interpretation of statistical data, which can lead to misleading conclusions. 
+
+
 ------------------------------------------------------------------------
 
 ## Non-zero baseline barchart
@@ -70,6 +76,13 @@ grid.arrange(p1, p2, ncol = 2)
 ```{r}
 library(here)
 knitr::include_graphics(here("week15","gundeaths.png"))
+```
+
+---
+
+```{r}
+library(here)
+knitr::include_graphics(here("week15","gd.png"))
 ```
 
 <!--inverted y-axis-->
@@ -131,5 +144,28 @@ knitr::include_graphics(here("week15","corona.png"))
 ```{r}
 library(here)
 knitr::include_graphics(here("week15","pie.png"))
+```
+
+---
+
+## Why this should never be done
+
+- Too many categories →
+Human eyes can’t reliably compare many wedge angles. Once you get more than 4–5 slices, it becomes guesswork.
+
+- Pie charts in general →
+They encode data by angle, which our brains are not great at judging, especially without a baseline.
+A simple bar chart usually communicates the same information much more clearly.
+
+- 3D pies are worse →
+The perspective distortion changes wedge sizes, making some slices look bigger or smaller than they really are.
+
+---
+
+## Improve the visualization
+
+```{r}
+library(here)
+knitr::include_graphics(here("week15","pie2.png"))
 ```
 
