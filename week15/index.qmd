@@ -122,3 +122,14 @@ knitr::include_graphics(here("week15","corona.png"))
 - Ignoring skewness – Using the mean when the distribution is skewed, leading to a poor representation of central tendency.
 
 - Over-reliance on a single measure – Reporting only the mean or median without spread (range, variance, standard deviation, IQR).
+
+
+---
+
+## What went wrong with the pie chart? Redraw it correcting the issues.
+
+```{r}
+library(here)
+knitr::include_graphics(here("week15","pie.png"))
+```
+
