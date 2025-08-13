@@ -94,10 +94,31 @@ library(here)
 knitr::include_graphics(here("week15","colour.png"))
 ```
 
-
 # Why is this chart misleading?
 
 ```{r}
 library(here)
 knitr::include_graphics(here("week15","corona.png"))
 ```
+
+---
+
+## More examples
+
+- Presenting proportions without counts – Reporting percentages without the raw numbers, making it hard to assess sample size or reliability.
+
+- Simpson’s paradox – Ignoring subgroup effects that reverse the overall trend when data are aggregated.
+
+- Reversing the axis – Flipping the scale direction to create a misleading impression.
+
+---
+
+## More examples (cont.)
+
+- Presenting summaries without visualizations – Omitting graphs that could reveal distribution shape, outliers, or patterns.
+
+- Bar charts that do not start at zero – Exaggerating differences by truncating the axis baseline.
+
+- Ignoring skewness – Using the mean when the distribution is skewed, leading to a poor representation of central tendency.
+
+- Over-reliance on a single measure – Reporting only the mean or median without spread (range, variance, standard deviation, IQR).

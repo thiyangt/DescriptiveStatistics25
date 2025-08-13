@@ -84,8 +84,10 @@ Mid semester examination (Wk1-Wk6) will be evaluated
 
 ### Week 12
 
-
 **Slides 14:** [Spearman's rank correlation](./week13/index.html)
 
-
 **Slides 15:** [Measures of Central Tendency and Variability: Grouped Data](./week14/index.html)
+
+### Week 13
+
+**Slides 16** [Misuse of Statistics](./week15/index.html)
