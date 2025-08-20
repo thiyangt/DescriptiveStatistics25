@@ -5,15 +5,13 @@ project:
 website:
   title: "STA 1132 Descriptive Statistics"
   site-url: "https://thiyangt.github.io/descriptivestatisticsweb/"
+  google-analytics: "G-5VN43K37RX"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
       - ga.qmd
-
-metadata:
-  google-analytics: "G-5VN43K37RX"
 
 
 format:
