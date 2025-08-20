@@ -12,6 +12,8 @@ website:
       - about.qmd
       - ga.qmd
 
+metadata:
+  google-analytics: "G-5VN43K37RX"
 
 
 format:
